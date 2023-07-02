@@ -1,2 +1,2 @@
 FROM nginx
-ADD . /var/www
+ADD . /usr/share/nginx/html
