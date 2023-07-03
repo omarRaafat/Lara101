@@ -14,7 +14,7 @@ pipeline {
                 sh '''
                 docker rm job101 -f
                 docker system prune -f
-                sudo docker build /home/ubuntu/jenkins/workspace/job101 -t job101
+                sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101
                 sudo docker run  --name job101 -it -p 82:80 -d job101
                 '''
             }
