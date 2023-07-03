@@ -9,12 +9,13 @@ pipeline {
     }
     stages {
         stage('Clean Environment ....'){
+            steps {
           echo "Environment Cleaning Process....."
             sh '''
                docker rm job101 -f
                docker system prune -f
             '''
-
+            }
         }
         stage('Building....') {
             steps {
