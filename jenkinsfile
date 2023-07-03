@@ -15,6 +15,7 @@ pipeline {
                 cd myapp
                 pip install -r requirements.txt
                 docker rm job101 -f
+                docker system prune -f
                 sudo docker build /home/ubuntu/jenkins/workspace/job101 -t job101
                 sudo docker run  --name job101 -it -p 82:80 -d job101
                 '''
