@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building..."
                 sh '''
                 docker rm job101 -f
                 docker system prune -f
