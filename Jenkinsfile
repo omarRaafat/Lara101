@@ -26,6 +26,15 @@ pipeline {
                 '''
             }
         }
+
+        stage('Post Build'){
+
+           steps{
+                     
+                   echo 'Post Buidl Proccessing ......'
+                   sh "cp README.md README.md.backup"
+		}
+        }
         stage('Testing ....') {
             steps {
                 echo "Testing.."
