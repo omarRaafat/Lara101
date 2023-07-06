@@ -22,7 +22,7 @@ pipeline {
                 echo "Building..."
                 sh '''
                 sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job102
-                sudo docker run  --name job101 -it -p 82:80 -d job103
+                sudo docker run  --name job101 -it -p 82:80 -d job102
                 '''
             }
         }
