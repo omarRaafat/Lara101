@@ -13,6 +13,7 @@ php-intl \
 php-cli \
 php-zip \
 php-curl
+RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
 RUN apt-get install -y composer unzip zip
 RUN apt-get clean
 ADD . .   
