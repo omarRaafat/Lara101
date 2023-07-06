@@ -30,7 +30,7 @@ COPY php-fpm.conf /etc/php/8.0/fpm/php-fpm.conf
 
 COPY www.conf /etc/php/8.0/fpm/pool.d/www.conf
 
-COPY php.ini /etc/php/8.0/fpm/php.ini
+
 
 EXPOSE 80
 ADD . /var/www/html
