@@ -13,6 +13,6 @@ php-intl \
 php-cli \
 php-zip \
 php-curl
-RUN apt-get install composer unzip zip
+RUN apt-get install -y composer unzip zip
 RUN apt-get clean
 ADD . .   
