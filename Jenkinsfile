@@ -24,7 +24,7 @@ pipeline {
         }
 
         stage('Post Build'){
-
+    //create new image from the cuurent one (job101:latest) to push it to dockerhub
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
@@ -43,6 +43,7 @@ pipeline {
             }
         }
         stage('Deploying ...') {
+		// push the new tag image to dockerhub
             steps {
                 echo 'Deliver....'
                 sh '''
