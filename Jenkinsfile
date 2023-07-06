@@ -31,6 +31,8 @@ pipeline {
                    sh '''  
 		   docker rm job101 -f 
                    sudo docker run  --name job101 -it -p 82:80 -d nginx/job101
+		   docker tag nginx/job101:latest omar2023/job101:latest
+                   
 		   '''
 		}
         }
@@ -45,6 +47,7 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 echo "server upodated"
+		docker push omar2023/job101:latest
                 '''
             }
         }
