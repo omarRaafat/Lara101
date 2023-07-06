@@ -21,8 +21,8 @@ pipeline {
             steps {
                 echo "Building..."
                 sh '''
-                sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job102
-                sudo docker run  --name job101 -it -p 82:80 -d job102
+                sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101
+                sudo docker run  --name job101 -it -p 82:80 -d job101
                 '''
             }
         }
