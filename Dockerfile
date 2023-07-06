@@ -1,2 +1,2 @@
-FROM nignx
+FROM nginx
 ADD . /var/www/html
