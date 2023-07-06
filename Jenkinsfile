@@ -30,7 +30,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    sh '''  
 		   docker rm job101 -f 
-                   sudo docker run  --name job101 -it -p 82:80 -d job101
+                   sudo docker run  --name job101 -it -p 82:80 -d nginx/job101
 		   '''
 		}
         }
