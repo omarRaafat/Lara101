@@ -19,10 +19,7 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-                sh '''
-                sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101
-                sudo docker run  --name job101 -it -p 82:80 -d job101
-                '''
+                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101 "
             }
         }
 
@@ -31,7 +28,10 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                   sh "  docker rm job101 -f "
+                   sh '''  
+		   docker rm job101 -f 
+                   sudo docker run  --name job101 -it -p 82:80 -d job101
+		   '''
 		}
         }
         stage('Testing ....') {
