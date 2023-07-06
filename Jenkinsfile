@@ -12,7 +12,6 @@ pipeline {
             steps {
           echo "Environment Cleaning Process....."
             sh '''
-               docker rm job101 -f
                docker system prune -f
             '''
             }
@@ -32,7 +31,7 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                   sh "cp README.md README.md.backup"
+                   sh "  docker rm job101 -f "
 		}
         }
         stage('Testing ....') {
