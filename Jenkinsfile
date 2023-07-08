@@ -19,7 +19,7 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101 "
+                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t nginx/job101 "
             }
         }
 
