@@ -8,14 +8,7 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Clean Environment ....'){
-            steps {
-          echo "Environment Cleaning Process....."
-            sh '''
-               docker system prune -f
-            '''
-            }
-        }
+      
         stage('Building....') {
             steps {
                 echo "Building..."
@@ -35,6 +28,14 @@ pipeline {
                    
 		   '''
 		}
+        }
+	 stage('Clean Environment ....'){
+            steps {
+          echo "Environment Cleaning Process....."
+            sh '''
+               docker system prune -f
+            '''
+            }
         }
         stage('Testing ....') {
             steps {
