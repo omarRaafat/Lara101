@@ -22,7 +22,7 @@ pipeline {
                      
                    echo 'Post Buidl Proccessing ......'
                    sh '''  
-		   docker rm job101 -f 
+		
                    sudo docker run  --name job101 -it -p 82:80 -d omar2023/job101:latest
 		 
                    
