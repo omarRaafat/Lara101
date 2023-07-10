@@ -13,7 +13,7 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t omar2023/job101:latest2 "
+                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t omar2023/job101:latest3 "
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    sh '''  
 		   docker rm job101 -f 
-                   sudo docker run  --name job101 -it -p 82:80 -d omar2023/job101:latest2
+                   sudo docker run  --name job101 -it -p 82:80 -d omar2023/job101:latest3
 		 
                    
 		   '''
@@ -50,7 +50,7 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 echo "server upodated"
-		docker push omar2023/job101:latest2
+		docker push omar2023/job101:latest3
                 '''
             }
         }
