@@ -1,6 +1,6 @@
 pipeline {
 	environment {
-    IMAGE_TAG = "omar2023/job101:${BUILD_NUMBER}-${BUILD_ID}"
+    IMAGE_TAG = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
   }
     agent { 
          node {
