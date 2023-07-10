@@ -1,5 +1,5 @@
 pipeline {
-	def counter = env.BUILD_NUMBER
+	
     agent { 
          node {
             label 'testing-mail'
@@ -13,7 +13,7 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t omar2023/job101:${counter} "
+                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t omar2023/job101:latest2 "
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    sh '''  
 		
-                   sudo docker run  --name job101 -it -p 82:80 -d omar2023/job101:${counter}
+                   sudo docker run  --name job101 -it -p 82:80 -d omar2023/job101:latest2
 		 
                    
 		   '''
@@ -50,7 +50,7 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 echo "server upodated"
-		docker push omar2023/job101:${counter}
+		docker push omar2023/job101:latest2
                 '''
             }
         }
