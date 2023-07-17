@@ -57,6 +57,7 @@ pipeline {
                 echo 'Deliver....'
 
                 sh '''
+		echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
 		docker push ${dockerImage}
                 docker logout
   		'''
