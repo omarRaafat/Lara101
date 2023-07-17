@@ -20,9 +20,9 @@ pipeline {
                     properties([
                         parameters([
                             string(
-                                defaultValue: 'scriptcrunch', 
-                                name: 'STRING-PARAMETER', 
-                                trim: true
+                                defaultValue: 'ls -a', 
+                                name: 'COMMAND', 
+                                trim: false
                             )
                         ])
                     ])
@@ -62,7 +62,7 @@ pipeline {
         stage('Testing ....') {
             steps {
                 echo "Testing.."
-               
+                sh "docker exec job101 ${params.COMMAND}"
             }
         }
         stage('Deploying ...') {
