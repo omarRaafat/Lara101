@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Building..."
 		    script{
-                    dockerImage =  docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${IMAGE_TAG} 
+                    dockerImage =  docker build "/home/ubuntu/jenkins/workspace/job101-pipline" -t ${IMAGE_TAG} 
 		    }
             }
         }
