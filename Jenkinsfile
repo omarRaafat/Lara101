@@ -55,10 +55,7 @@ pipeline {
 		// push the new tag image to dockerhub
             steps {
                 echo 'Deliver....'
-               script {
-              docker.withRegistry( '', registryCredential ) {
-              dockerImage.push()
-}
+                sh "docker push ${dockerImage}"
             }
         }
     }
