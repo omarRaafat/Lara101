@@ -2,8 +2,8 @@ pipeline {
 	environment {
     registry = "omar2023/job101"
     registryCredential = 'dkh2023'
-    IMAGE_TAG = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
-		dockerImage = ''
+    dockerImage = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
+		
   }
     agent { 
          node {
@@ -18,9 +18,9 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-		    script{
-                    dockerImage =  docker build "/home/ubuntu/jenkins/workspace/job101-pipline" -t ${IMAGE_TAG} 
-		    }
+		    
+                     sh "docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${dockerImage} " 
+		    
             }
         }
 
@@ -31,7 +31,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    sh '''  
 		   docker rm job101 -f 
-                   sudo docker run  --name job101 -it -p 82:80 -d ${IMAGE_TAG}
+                   sudo docker run  --name job101 -it -p 82:80 -d ${dockerImage}
 		 
                    
 		   '''
