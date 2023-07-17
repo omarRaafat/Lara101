@@ -55,7 +55,7 @@ pipeline {
 		// push the new tag image to dockerhub
             steps {
                 echo 'Deliver....'
-                sh "docker push ${dockerImage}"
+                sh "docker push ${dockerImage} "
             }
         }
     }
