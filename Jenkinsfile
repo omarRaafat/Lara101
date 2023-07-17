@@ -14,7 +14,21 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-      
+      stage('Setup parameters') {
+            steps {
+                script { 
+                    properties([
+                        parameters([
+                            string(
+                                defaultValue: 'scriptcrunch', 
+                                name: 'STRING-PARAMETER', 
+                                trim: true
+                            )
+                        ])
+                    ])
+                }
+            }
+        }
         stage('Building....') {
             steps {
                 echo "Building..."
