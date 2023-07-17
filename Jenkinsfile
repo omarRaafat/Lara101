@@ -1,6 +1,8 @@
 pipeline {
 	environment {
-    IMAGE_TAG = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
+    registry = "omar2023/job101"
+    registryCredential = 'dkh2023'
+    IMAGE_TAG = registry:${BUILD_NUMBER}-${JOB_NAME}"
   }
     agent { 
          node {
@@ -15,7 +17,9 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-                sh " sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${IMAGE_TAG}  "
+		    script{
+                    dockerImage =  docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${IMAGE_TAG} 
+		    }
             }
         }
 
@@ -50,10 +54,10 @@ pipeline {
 		// push the new tag image to dockerhub
             steps {
                 echo 'Deliver....'
-                sh '''
-                echo "server upodated"
-		docker push ${IMAGE_TAG}
-                '''
+               script {
+              docker.withRegistry( '', registryCredential ) {
+              dockerImage.push()
+}
             }
         }
     }
