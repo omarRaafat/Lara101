@@ -3,6 +3,7 @@ pipeline {
     registry = "omar2023/job101"
     registryCredential = 'dkh2023'
     IMAGE_TAG = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
+		dockerImage = ''
   }
     agent { 
          node {
