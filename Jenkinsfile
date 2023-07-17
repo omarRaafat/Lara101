@@ -2,7 +2,7 @@ pipeline {
 	environment {
     registry = "omar2023/job101"
     registryCredential = credentials('dkh2023')
-    dockerImage = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
+    dockerImage = $registry:${BUILD_NUMBER}-${JOB_NAME}
 		
   }
     agent { 
