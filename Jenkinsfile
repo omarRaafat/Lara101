@@ -1,7 +1,7 @@
 pipeline {
 	environment {
     registry = "omar2023/job101"
-    registryCredential = 'dkh2023'
+    registryCredential = credentials('dkh2023')
     dockerImage = "omar2023/job101:${BUILD_NUMBER}-${JOB_NAME}"
 		
   }
@@ -55,12 +55,11 @@ pipeline {
 		// push the new tag image to dockerhub
             steps {
                 echo 'Deliver....'
-		    script {
-docker.withRegistry( '', registryCredential ) {
-dockerImage.push()
-}
-		    }
-               // sh "docker push ${dockerImage} "
+
+                sh '''
+		docker push ${dockerImage}
+                docker logout
+  		'''
             }
         }
     }
