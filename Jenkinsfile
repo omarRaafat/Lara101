@@ -2,7 +2,7 @@ pipeline {
 	environment {
     registry = "omar2023/job101"
     registryCredential = 'dkh2023'
-    IMAGE_TAG = registry:${BUILD_NUMBER}-${JOB_NAME}"
+    IMAGE_TAG = registry :${BUILD_NUMBER}-${JOB_NAME}"
   }
     agent { 
          node {
