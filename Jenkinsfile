@@ -43,12 +43,7 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                   sh '''  
-		   docker rm job101 -f 
-                   sudo docker run  --name job101 -it -p 82:80 -d ${dockerImage}
-		 
-                   
-		   '''
+                   sh "docker rm job101 -f"
 		}
         }
 	 stage('Clean Environment ....'){
@@ -71,6 +66,7 @@ pipeline {
                 echo 'Deliver....'
 
                 sh '''
+		sudo docker run  --name job101 -it -p 82:80 -d ${dockerImage}
 		echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
 		docker push ${dockerImage}
                 docker logout
