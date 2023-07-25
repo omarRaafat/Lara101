@@ -1,4 +1,6 @@
 pipeline {
+
+	// where to put all general variables and Jenkins environment variables 
 	environment {
     registry = "omar2023/job101"
     registryCredential = credentials('dkh2023')
@@ -6,6 +8,7 @@ pipeline {
 		
   }
     agent { 
+	    // which server to deploy on
          node {
             label 'testing-mail'
          }
@@ -18,6 +21,7 @@ pipeline {
             steps {
                 script { 
                     properties([
+			    // predefined Jenkins pipeline parameters (string type )
                         parameters([
                             string(
                                 defaultValue: 'ls -a', 
@@ -32,14 +36,14 @@ pipeline {
         stage('Building....') {
             steps {
                 echo "Building..."
-		    
+		    // build docker image from docker file injecting source code 
                      sh "docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${dockerImage} " 
 		    
             }
         }
 
         stage('Post Build'){
-    //create new image from the cuurent one (job101:latest) to push it to dockerhub
+    //create a new image from the current one (job101:latest) to push it to the docker hub
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
@@ -52,6 +56,8 @@ pipeline {
 	 stage('Clean Environment ....'){
             steps {
           echo "Environment Cleaning Process....."
+
+		    //Delete all unnecessary resources 
             sh '''
                docker system prune -f
             '''
@@ -60,14 +66,15 @@ pipeline {
         stage('Testing ....') {
             steps {
                 echo "Testing.."
+		    //Open the running application container and execute this command  
                 sh "docker exec job101 ${params.COMMAND}"
             }
         }
         stage('Deploying ...') {
-		// push the new tag image to dockerhub
+		//Push the new tag image to the docker hub
             steps {
                 echo 'Deliver....'
-
+                //Get docker hub credentials and log in to the docker hub account then push the image to the repo
                 sh '''
 		echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
 		docker push ${dockerImage}
