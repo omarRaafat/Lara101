@@ -38,10 +38,10 @@ pipeline {
                 echo "Building..."
 		    // build docker image from docker file injecting source code 
                      sh '''
-		        sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
+		             sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
                   	docker-compose -f docker-compose.yaml up -d  
-
-    			'''
+ 
+          			'''
 		    
             }
         }
