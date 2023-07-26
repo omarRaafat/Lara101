@@ -4,5 +4,4 @@ services:
       build: .
       ports: 
        - "82:80"
-    nginx:
-      image: "nginx:latest" 
+  
