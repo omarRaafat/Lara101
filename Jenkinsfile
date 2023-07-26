@@ -37,7 +37,11 @@ pipeline {
             steps {
                 echo "Building..."
 		    // build docker image from docker file injecting source code 
-                     sh "docker build /home/ubuntu/jenkins/workspace/job101-pipline -t ${dockerImage} " 
+                     sh '''
+		        sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
+                  	docker-compose -f docker-compose.yaml up -d  
+
+    			'''
 		    
             }
         }
