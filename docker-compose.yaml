@@ -5,7 +5,7 @@ services:
        context: .
        dockerfile: Dockerfile
       container_name: job101
-      image: omar2023/job101:155-job101-pipline  
+      image: dockerImage 
       ports:
        - "82:80"
 
