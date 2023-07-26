@@ -39,7 +39,8 @@ pipeline {
 		    // build docker image from docker file injecting source code 
                      sh '''
 		             sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
-                  	docker-compose -f docker-compose.yaml up -d  
+                     	docker-compose -f docker-compose.yaml down  
+                  	    docker-compose -f docker-compose.yaml up -d  
  
           			'''
 		    
@@ -51,7 +52,7 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                   sh "docker rm job101 -f"
+                  sh "docker exec job101 ${params.COMMAND}"
 		}
         }
 	 stage('Clean Environment ....'){
@@ -68,7 +69,7 @@ pipeline {
             steps {
                 echo "Testing.."
 		    //Open the running application container and execute this command  
-                sh "docker exec job101 ${params.COMMAND}"
+               
             }
         }
         stage('Deploying ...') {
