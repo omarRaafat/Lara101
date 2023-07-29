@@ -12,6 +12,6 @@ services:
         -  job101-vol:/app
       
 volumes:
-   job101-test:
+   job101-vol:
      driver: local        
 
