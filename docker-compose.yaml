@@ -13,5 +13,5 @@ services:
       
 volumes:
    job101-vol:
-     driver: local        
+     driver: /home/ubuntu/job101/logs        
 
