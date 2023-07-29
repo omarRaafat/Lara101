@@ -61,7 +61,7 @@ pipeline {
 
 		    //Delete all unnecessary resources 
             sh '''
-               docker system prune -f
+               docker system prune -a -f
             '''
             }
         }
