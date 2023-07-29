@@ -9,7 +9,7 @@ services:
       ports:
        - "82:80"
       volumes:
-        -  job101-test:/agent/
+        -  job101-test:./agent
 volumes:
    job101-test:
      driver: local        
