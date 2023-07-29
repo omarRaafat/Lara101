@@ -8,4 +8,6 @@ services:
       image: dockerImage 
       ports:
        - "82:80"
+      volumes:
+        - job101-vol
 
