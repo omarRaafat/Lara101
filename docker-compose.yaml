@@ -13,5 +13,10 @@ services:
       
 volumes:
    job101-vol:
-     driver: /home/ubuntu/job101/logs        
+     driver: local
+     driver_opts:
+       type: 'none'
+       o: 'bind'
+       device: '/home/ubuntu/job101/logs'
+        
 
