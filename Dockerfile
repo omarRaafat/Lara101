@@ -1,4 +1,4 @@
-FROM nginx:1.25.1-alpine-slim
+FROM nginx:latest
 WORKDIR /job101
 COPY ./app.conf /etc/nginx/conf.d/default.conf
 RUN apt-get update && apt-get install -y nano
