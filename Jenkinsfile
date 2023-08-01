@@ -1,12 +1,7 @@
 pipeline {
 
 	// where to put all general variables and Jenkins environment variables 
-	environment {
-    registry = "omar2023/job101"
-    registryCredential = credentials('dkh2023')
-    dockerImage = "$registry:${BUILD_NUMBER}-${JOB_NAME}"
-		
-  }
+	
     agent { 
 	    // which server to deploy on
          node {
@@ -17,37 +12,11 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-      stage('Setup parameters') {
-            steps {
-                script { 
-                    properties([
-			    // predefined Jenkins pipeline parameters (string type )
-                        parameters([
-                            string(
-                                defaultValue: 'ls -a', 
-                                name: 'COMMAND', 
-                                trim: false
-                            )
-                        ])
-                    ])
-                }
-            }
-        }
+   
         stage('Building....') {
             steps {
                 echo "Building..."
-		    // build docker image from docker file injecting source code 
-            // first command to update dockerimage value with the new one
-            // second command removes all running container , networks and images (from docker compose only)
-            // third one create new ones
-                     sh '''
-                     
-		             sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
-                     	docker-compose -f docker-compose.yaml down  
-                  	    docker-compose -f docker-compose.yaml up -d  
- 
-          			'''
-		    
+	
             }
         }
 
@@ -56,7 +25,7 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                  sh "docker exec job101 ${params.COMMAND}"
+              
 		}
         }
 	 stage('Clean Environment ....'){
@@ -64,9 +33,7 @@ pipeline {
           echo "Environment Cleaning Process....."
 
 		    //Delete all unnecessary resources 
-            sh '''
-               docker system prune -a -f
-            '''
+          
             }
         }
         stage('Testing ....') {
@@ -81,11 +48,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 //Get docker hub credentials and log in to the docker hub account then push the image to the repo
-                sh '''
-		echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
-		docker push ${dockerImage}
-                docker logout
-  		'''
+              
             }
         }
     }
