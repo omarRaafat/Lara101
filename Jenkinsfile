@@ -28,6 +28,11 @@ pipeline {
                                 name: 'COMMAND', 
                                 trim: false
                             )
+                            booleanParam(
+                                defaultValue:true,
+                                name:executeCommand,
+                                description:''
+                            )
                         ])
                     ])
                 }
@@ -53,6 +58,12 @@ pipeline {
 
         stage('Post Build'){
     //create a new image from the current one (job101:latest) to push it to the docker hub
+    // add checker to check whether need to run this command or not
+       when{
+          expression{
+            params.executeCommand
+          }
+       }
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
