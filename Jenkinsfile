@@ -29,7 +29,7 @@ pipeline {
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:true,
+                                defaultValue:false,
                                 name:'executeCommand',
                                 description:''
                             )
