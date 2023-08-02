@@ -27,7 +27,7 @@ pipeline {
                                 defaultValue: 'ls -a', 
                                 name: 'COMMAND', 
                                 trim: false
-                            )
+                            ),
                             booleanParam(
                                 defaultValue:true,
                                 name:executeCommand,
