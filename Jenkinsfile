@@ -70,6 +70,7 @@ pipeline {
                   sh "docker exec job101 ${params.COMMAND}"
 		}
         }
+        
 	 stage('Clean Environment ....'){
             steps {
           echo "Environment Cleaning Process....."
