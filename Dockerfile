@@ -37,7 +37,7 @@ ADD . .
 
 RUN composer install --no-interaction --no-scripts --no-progress
  
-RUN  chgrp -R www-data lara101/storage lara101/bootstrap/cache &&  chmod -R ug+rwx lara101/storage lara101/bootstrap/cache
+RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
  
 RUN chown -R www-data:www-data \
         /var/www/html/storage \
