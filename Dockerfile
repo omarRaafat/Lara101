@@ -20,7 +20,7 @@ composer \
 unzip \
 zip
 
-RUN  composer install -y
+RUN  composer install 
 RUN  chgrp -R www-data lara101/storage lara101/bootstrap/cache &&  chmod -R ug+rwx lara101/storage lara101/bootstrap/cache
  
 
