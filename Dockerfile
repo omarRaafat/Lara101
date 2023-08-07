@@ -6,15 +6,15 @@ WORKDIR /lara101
 
 RUN apt-get update && apt-get install -y mariadb-server \
 nano \
-php-mysql \
-php-common \
-php-mbstring \
-php-xmlrpc \
-php-xml \
-php-intl \
-php-cli \
-php-zip \
-php-curl \
+mysql \
+common \
+mbstring \
+xmlrpc \
+xml \
+intl \
+cli \
+zip \
+curl \
 composer \
 unzip \
 zip \
