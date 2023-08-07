@@ -20,7 +20,8 @@ composer \
 unzip \
 zip
 
-# RUN  chgrp -R www-data storage/ bootstrap/cache/ &&  chmod -R ug+rwx storage/ bootstrap/cache/
+RUN composer install
+RUN  chgrp -R www-data lara101/storage lara101/bootstrap/cache &&  chmod -R ug+rwx lara101/storage lara101/bootstrap/cache
  
 
 RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
