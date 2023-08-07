@@ -20,7 +20,7 @@ composer \
 unzip \
 zip
 
-RUN  chgrp -R www-data storage bootstrap/cache && sudo chmod -R ug+rwx storage bootstrap/cache
+RUN  chgrp -R www-data /lara1017/storage /lara1017/bootstrap/cache && sudo chmod -R ug+rwx /lara1017/storage /lara1017/bootstrap/cache
  
 
 RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.1/fpm/php.ini
