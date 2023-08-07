@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM  php:8.1
 
 WORKDIR /lara101
 
@@ -18,9 +18,13 @@ php-zip \
 php-curl \
 composer \
 unzip \
-zip
+zip \
+nginx
 
-RUN  composer install 
+COPY composer.json composer.lock ./
+
+RUN composer install --no-interaction --no-scripts --no-progress
+ 
 RUN  chgrp -R www-data lara101/storage lara101/bootstrap/cache &&  chmod -R ug+rwx lara101/storage lara101/bootstrap/cache
  
 
