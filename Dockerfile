@@ -17,7 +17,8 @@ libzip-dev \
 unzip \
 git \
 libonig-dev \
-curl
+curl \ 
+nginx
 
 
 # Clear cache
@@ -35,8 +36,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
  
 
-COPY ./app.conf /etc/nginx/conf.d/default.conf
-
+COPY ./app.conf /etc/nginx/sites-enabled/default
 
 # RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
 
