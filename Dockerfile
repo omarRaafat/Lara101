@@ -51,10 +51,6 @@ COPY script.sh /etc/script.sh
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
 
-
-# copy all installed configuration inside image 
-ADD . .   
-
 # generates new key for laravel env file
 RUN php artisan key:generate
 
@@ -63,6 +59,8 @@ RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage boots
 RUN chmod +x /etc/script.sh
 
 
-RUN /etc/script.sh
+# copy all installed configuration inside image 
+ADD . .   
 
+RUN /etc/script.sh
 
