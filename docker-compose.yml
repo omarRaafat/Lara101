@@ -8,4 +8,5 @@ services:
     container_name: lara101-app
     ports:
       - 82:80
-    
+    networks:
+      - lara101
