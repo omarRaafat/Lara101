@@ -20,7 +20,6 @@ libonig-dev \
 curl \ 
 nginx
 
-RUN  service nginx start
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -48,7 +47,7 @@ COPY .env.example .env
 
 # shell script to start nginx web server 
 COPY script.sh /etc/script.sh
-
+RUN bash -c "/etc/script.sh"
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
 
