@@ -28,7 +28,7 @@ pipeline {
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:true,
+                                defaultValue:false,
                                 name:'executeCommand',
                                 description:''
                             )
@@ -58,11 +58,7 @@ pipeline {
         stage('Post Build'){
     //create a new image from the current one (job101:latest) to push it to the docker hub
     // add checker to check whether need to run this command or not
-       when{
-          expression{
-            params.executeCommand
-          }
-       }
+     
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
@@ -89,6 +85,11 @@ pipeline {
         }
         stage('Deploying ...') {
 		//Push the new tag image to the docker hub
+          when{
+          expression{
+            params.executeCommand
+          }
+       }
             steps {
                 echo 'Deliver....'
                 //Get docker hub credentials and log in to the docker hub account then push the image to the repo
