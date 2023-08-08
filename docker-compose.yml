@@ -14,4 +14,4 @@ services:
 networks:
   lara101:
     external: false
-    name: lara101
+   
