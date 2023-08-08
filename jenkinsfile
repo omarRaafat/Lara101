@@ -10,7 +10,7 @@ pipeline {
     agent { 
 	    // which server to deploy on
          node {
-            label 'testing-mail'
+            label 'remote-node'
          }
       }
     triggers {
