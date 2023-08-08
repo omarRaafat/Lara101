@@ -46,9 +46,9 @@ pipeline {
             // third one create new ones
                      sh '''
                      
-		                sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
-                     	docker-compose -f docker-compose.yaml down  
-                  	    docker-compose -f docker-compose.yaml up -d  
+		                sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yml
+                     	docker-compose -f docker-compose.yml down  
+                  	    docker-compose -f docker-compose.yml up -d  
  
           			'''
 		    
