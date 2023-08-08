@@ -62,6 +62,6 @@ RUN chmod +x /etc/script.sh
 RUN php artisan key:generate
 
 EXPOSE 9000
-CMD ["php-fpm"]
+CMD ["/etc/script.sh"]
 
 
