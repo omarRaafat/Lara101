@@ -61,7 +61,6 @@ RUN chmod +x /etc/script.sh
 # generates new key for laravel env file
 RUN php artisan key:generate
 
-EXPOSE 9000
-CMD ["/etc/script.sh"]
+
 
 
