@@ -4,8 +4,7 @@ pipeline {
 	environment {
     registry = "omar2023/lara101"
     registryCredential = credentials('dkh2023')
-    dockerImage = "$registry:${GIT_COMMIT}-${JOB_NAME}"
-		
+    dockerImage = "$registry:${GIT_COMMIT}-${JOB_NAME}"	
   }
     agent { 
 	    // which server to deploy on
