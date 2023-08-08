@@ -47,7 +47,7 @@ COPY .env.example .env
 # shell script to start nginx web server 
 COPY script.sh /etc/script.sh
 
-# copy all installed configuration inside image on WORKDIR
+# copy all installed configuration inside image 
 ADD . .   
 
 
@@ -56,6 +56,6 @@ RUN php artisan key:generate
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
 RUN chmod +x /etc/script.sh
 
-ENTRYPOINT ["/etc/script.sh"]
+# ENTRYPOINT ["/etc/script.sh"]
 
 
