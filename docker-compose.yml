@@ -10,3 +10,8 @@ services:
       - 82:80
     networks:
       - lara101
+
+networks:
+  lara101:
+    external: false
+    name: lara101
