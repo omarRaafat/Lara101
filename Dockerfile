@@ -20,6 +20,7 @@ libonig-dev \
 curl \ 
 nginx
 
+RUN  service nginx start
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -60,5 +61,5 @@ RUN chmod +x /etc/script.sh
 
 # generates new key for laravel env file
 RUN php artisan key:generate
-RUN  service nginx start
+
 
