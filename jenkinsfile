@@ -2,15 +2,15 @@ pipeline {
 
 	// where to put all general variables and Jenkins environment variables 
 	environment {
-    registry = "omar2023/job101"
+    registry = "omar2023/lara101"
     registryCredential = credentials('dkh2023')
-    dockerImage = "$registry:${BUILD_NUMBER}-${JOB_NAME}"
+    dockerImage = "$registry:${GIT_COMMIT}-${JOB_NAME}"
 		
   }
     agent { 
 	    // which server to deploy on
          node {
-            label 'testing-mail'
+            label 'remote-node'
          }
       }
     triggers {
@@ -24,12 +24,12 @@ pipeline {
 			    // predefined Jenkins pipeline parameters (string type )
                         parameters([
                             string(
-                                defaultValue: 'ls -a', 
+                                defaultValue: 'service nginx start', 
                                 name: 'COMMAND', 
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:false,
+                                defaultValue:true,
                                 name:'executeCommand',
                                 description:''
                             )
@@ -47,7 +47,7 @@ pipeline {
             // third one create new ones
                      sh '''
                      
-		             sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
+		                sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yaml
                      	docker-compose -f docker-compose.yaml down  
                   	    docker-compose -f docker-compose.yaml up -d  
  
@@ -67,7 +67,7 @@ pipeline {
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                  sh "docker exec job101 ${params.COMMAND}"
+                  sh "docker-compose exec lara101 ${params.COMMAND}"
 		}
         }
         
@@ -94,8 +94,8 @@ pipeline {
                 echo 'Deliver....'
                 //Get docker hub credentials and log in to the docker hub account then push the image to the repo
                 sh '''
-		echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
-		docker push ${dockerImage}
+                echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
+                docker push ${dockerImage}
                 docker logout
   		'''
             }
