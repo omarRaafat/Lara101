@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  lara101:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lara101:staging-app-v1
+    container_name: lara101-app
+    ports:
+      - 82:80
+    
