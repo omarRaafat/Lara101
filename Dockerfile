@@ -47,7 +47,8 @@ COPY .env.example .env
 
 # shell script to start nginx web server 
 COPY script.sh /etc/script.sh
-
+RUN chmod +x /etc/script.sh
+RUN /bin/bash -c '/etc/script.sh' 
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
 
@@ -56,11 +57,11 @@ ADD . .
 
 # fix 301 forbidden permission to laravel storage and caches for read and write
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
-RUN chmod +x /etc/script.sh
+
 
 # generates new key for laravel env file
 RUN php artisan key:generate
 
 
-CMD [ "sh" , "/etc/script.sh"]  
+
 
