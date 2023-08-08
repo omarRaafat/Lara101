@@ -62,5 +62,5 @@ RUN chmod +x /etc/script.sh
 RUN php artisan key:generate
 
 
-RUN '/etc/script.sh' 
+CMD ["/etc/script.sh"]
 
