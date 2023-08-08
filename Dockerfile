@@ -42,10 +42,18 @@ COPY ./app.conf /etc/nginx/sites-enabled/default
 
 RUN apt-get clean
 
+COPY .env.example .env
+
+COPY script.sh /etc/script.sh
+
 # copy all installed configuration inside image on WORKDIR
 ADD . .   
 
+RUN php artisan key:generate
 RUN composer install --no-interaction --no-scripts --no-progress
- 
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
+
+
+ENTRYPOINT ["/etc/script.sh"]
+
 
