@@ -42,20 +42,23 @@ COPY ./app.conf /etc/nginx/sites-enabled/default
 
 RUN apt-get clean
 
+#laravel required env file for deploying
 COPY .env.example .env
 
 # shell script to start nginx web server 
 COPY script.sh /etc/script.sh
 
+# install laravel dependencies and packages via composer
+RUN composer install --no-interaction --no-scripts --no-progress
+RUN php artisan key:generate
+
 # copy all installed configuration inside image 
 ADD . .   
 
-
-RUN composer install --no-interaction --no-scripts --no-progress
-RUN php artisan key:generate
+# fix 301 forbidden permission to laravel storage and caches for read and write
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
 RUN chmod +x /etc/script.sh
 
-RUN ["/etc/script.sh"]
+RUN /etc/script.sh
 
 
