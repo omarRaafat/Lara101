@@ -35,7 +35,7 @@ COPY composer.json composer.lock /lara101/
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
  
-
+# copy nginx configuration to container
 COPY ./app.conf /etc/nginx/sites-enabled/default
 
 # RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
@@ -44,13 +44,15 @@ RUN apt-get clean
 
 COPY .env.example .env
 
+# shell script to start nginx web server 
 COPY script.sh /etc/script.sh
 
 # copy all installed configuration inside image on WORKDIR
 ADD . .   
 
-RUN php artisan key:generate
+
 RUN composer install --no-interaction --no-scripts --no-progress
+RUN php artisan key:generate
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
 
 
