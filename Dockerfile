@@ -54,7 +54,7 @@ ADD . .
 RUN composer install --no-interaction --no-scripts --no-progress
 RUN php artisan key:generate
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
-
+RUN chmod +x /etc/script.sh
 
 ENTRYPOINT ["/etc/script.sh"]
 
