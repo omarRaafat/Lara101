@@ -46,7 +46,7 @@ RUN apt-get clean
 COPY .env.example .env
 
 # shell script to start nginx web server 
-COPY script.sh /usr/bin/
+COPY cmd.sh /usr/bin/
 
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
@@ -56,12 +56,12 @@ ADD . .
 
 # fix 301 forbidden permission to laravel storage and caches for read and write
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
-RUN chmod 777 /usr/bin/script.sh
+RUN chmod 777 /usr/bin/cmd.sh
 
 # generates new key for laravel env file
 RUN php artisan key:generate
 
-CMD [ "/usr/bin/script.sh" ]
+CMD [ "/usr/bin/cmd.sh" ]
 
 
 
