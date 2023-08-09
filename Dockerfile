@@ -61,7 +61,7 @@ RUN chmod 777 /usr/bin/cmd.sh
 # generates new key for laravel env file
 RUN php artisan key:generate
 
-CMD [ "/usr/bin/cmd.sh" ]
+# CMD [ "/usr/bin/cmd.sh" ]
 
 
 
