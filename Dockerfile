@@ -46,7 +46,7 @@ RUN apt-get clean
 COPY .env.example .env
 
 # shell script to start nginx web server 
-COPY cmd.sh /usr/bin/
+COPY /scripts/cmd.sh /usr/bin/
 
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
