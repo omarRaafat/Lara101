@@ -37,7 +37,7 @@ pipeline {
                 }
             }
         }
-        stage('Building....') {
+        stage('Building Docker Image....') {
             steps {
                 echo "Building..."
 		    // build docker image from docker file injecting source code 
@@ -46,23 +46,27 @@ pipeline {
             // third one create new ones
                      sh '''
                      
-		                sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yml
-                     	docker-compose -f docker-compose.yml down  
-                  	    docker-compose -f docker-compose.yml up -d  
+		                sed -i.bak "s|dockerImage|${dockerImage}|g" docker-compose.yml  
+                        sed -i.bak "s|containerName|${BUILD_NUMBER}-lara101-app|g" docker-compose.yml  
+                  	    docker-compose -f docker-compose.yml build   
  
           			'''
 		    
             }
         }
 
-        stage('Post Build'){
+        stage('Deploying App Container ... '){
     //create a new image from the current one (job101:latest) to push it to the docker hub
     // add checker to check whether need to run this command or not
      
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                  sh "docker-compose exec lara101 ${params.COMMAND}"
+                   
+                  sh '''
+                  docker-compose -f docker-compose.yml up -d
+                  docker-compose exec ${BUILD_NUMBER}-lara101-app ${params.COMMAND}
+                  '''
 		}
         }
         
@@ -72,6 +76,7 @@ pipeline {
 
 		    //Delete all unnecessary resources 
             sh '''
+               docker-compose -f docker-compose.yml down 
                docker system prune -a -f
             '''
             }
