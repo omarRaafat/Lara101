@@ -1,0 +1,13 @@
+Started on Jul 8, 2023, 3:20:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 460bc13a3b09cc957c7238adc72749412c84f1a5 (origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/omarRaafat/job101.git # timeout=10
+Found 1 remote heads on https://github.com/omarRaafat/job101.git
+[poll] Latest remote head revision on refs/heads/main is: cdcebaf75cb17af33cb066253d460c2dd9c59d14
+Done. Took 0.6 sec
+Changes found

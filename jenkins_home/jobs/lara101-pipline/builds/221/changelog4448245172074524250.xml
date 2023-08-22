@@ -1,0 +1,10 @@
+commit dd83a5f4174e47e30ebe8170c2f7ee0b4c730ecd
+tree 477152dcfb894bfedc0fd8f3cd3aaf48f5caed02
+parent 8714e3340523c0dc52f576376d815b0395dd5b5c
+author o.elgendy <o.elgendy@res.inc> 2023-07-29 05:56:13 +0300
+committer o.elgendy <o.elgendy@res.inc> 2023-07-29 05:56:13 +0300
+
+    volum attach
+
+
+:100644 100644 491af26cb0e31781efb01b5ab3531e0d2db25e61 c3fc367f4fe315c97a3cb7ffd9058fe498ba3f50 M	docker-compose.yaml

@@ -1,0 +1,27 @@
+commit f0ef4f3ecbb2a9146c4af4ae72976e9ae4ae392e
+tree be5f164d289fa3849b3c1c6498bf644c1c4f8b4c
+parent 50c7d692bb393214f9477b950b99dc0512e32a56
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-10 16:10:03 +0300
+committer GitHub <noreply@github.com> 2023-07-10 16:10:03 +0300
+
+    Update Jenkinsfile
+
+:100644 100644 796ec7aaac285512fb19f1370584e4a90ba1a522 c979de9a89b958865e77ca1b8583840476536d31 M	Jenkinsfile
+commit 50c7d692bb393214f9477b950b99dc0512e32a56
+tree 1dc81c6bff06b78b6e89bf6426db8ef0e1b548c0
+parent c5aadf74b8fd6af419a4260d1399faea811fb2c7
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-10 16:06:52 +0300
+committer GitHub <noreply@github.com> 2023-07-10 16:06:52 +0300
+
+    Update Jenkinsfile
+
+:100644 100644 de64b489f97ce373facc3c7f52b6d2b5044a9973 796ec7aaac285512fb19f1370584e4a90ba1a522 M	Jenkinsfile
+commit c5aadf74b8fd6af419a4260d1399faea811fb2c7
+tree ada9b24f9ac1b208fcf8f9e39438427986663a84
+parent b9e3ddd077fce5d6f2978924c580b8904d33b89d
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-10 16:05:27 +0300
+committer GitHub <noreply@github.com> 2023-07-10 16:05:27 +0300
+
+    Update Jenkinsfile
+
+:100644 100644 85b60ec42e95c0f6eb846ebdf3d8d4f8f65881d9 de64b489f97ce373facc3c7f52b6d2b5044a9973 M	Jenkinsfile

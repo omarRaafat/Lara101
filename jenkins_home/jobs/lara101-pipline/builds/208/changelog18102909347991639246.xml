@@ -1,0 +1,10 @@
+commit 7d5e74ad90162f6003af006f5c4f03f0b4953148
+tree b042537d5177a0405b0ee4f682abd97d817c3e8b
+parent 442b347debd249fb94a60b7f3383cad5bdcfd049
+author o.elgendy <o.elgendy@res.inc> 2023-07-26 05:55:23 +0300
+committer o.elgendy <o.elgendy@res.inc> 2023-07-26 05:55:23 +0300
+
+    update colour
+
+
+:100644 100644 eff08fb1d36b13dab6e6ea2d4ff1f4443d8ff60d 1a4310461c861b11c93d93f8dda069bcc7c8e925 M	index.html

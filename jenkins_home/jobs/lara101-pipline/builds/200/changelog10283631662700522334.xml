@@ -1,0 +1,29 @@
+commit 18b4ba8dcf2a4c921c94cc82353ddf54d52d5742
+tree 8525ef7c52d6d07fb806501a62927e110c45c035
+parent 8567669078c5f7ed400e4912acefe8e5aaec3082
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-26 04:20:22 +0300
+committer GitHub <noreply@github.com> 2023-07-26 04:20:22 +0300
+
+    Update docker-compose.yaml
+
+:100644 100644 7637127a7bb5279ddc7d9a9fdc9bfb4d19ee7c57 15a3b7eedb4db3741d0da0c76a0dc4ff86263062 M	docker-compose.yaml
+commit 8567669078c5f7ed400e4912acefe8e5aaec3082
+tree a9020e3b706f63048762045adc448d59818af8ea
+parent 3a09ab32ac8ea99c3e18fb330a02e359db885325
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-26 04:15:36 +0300
+committer GitHub <noreply@github.com> 2023-07-26 04:15:36 +0300
+
+    Update docker-compose.yaml
+
+:100644 100644 455a498e3a6634012d903f0ee090e62a74e72168 7637127a7bb5279ddc7d9a9fdc9bfb4d19ee7c57 M	docker-compose.yaml
+commit 3a09ab32ac8ea99c3e18fb330a02e359db885325
+tree 7f9bb520b413d06282f07dd5400fb5843b30a043
+parent 3c47a595690c97257f78ca1f0d3a55e65ff92eb6
+author root <root@res.inc> 2023-07-26 09:14:14 +0800
+committer root <root@res.inc> 2023-07-26 09:14:14 +0800
+
+    add compose file
+
+
+:000000 100644 0000000000000000000000000000000000000000 925bee1e7e519fec9bf7f36e16457569da94cc6d A	.Jenkinsfile.swp
+:000000 100644 0000000000000000000000000000000000000000 455a498e3a6634012d903f0ee090e62a74e72168 A	docker-compose.yaml

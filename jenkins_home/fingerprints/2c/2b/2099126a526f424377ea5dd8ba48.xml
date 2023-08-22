@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-07-17 23:17:20.262 UTC</timestamp>
+  <md5sum>2c2b2099126a526f424377ea5dd8ba48</md5sum>
+  <fileName>Credential id=dkh2023 name=omar2023/******</fileName>
+  <usages>
+    <entry>
+      <string>lara101-pipline</string>
+      <ranges>275-289</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

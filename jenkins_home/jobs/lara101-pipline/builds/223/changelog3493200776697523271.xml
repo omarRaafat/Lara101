@@ -1,0 +1,11 @@
+commit a89fa54190a6bc6fe01f55759fbdc1c041796a4f
+tree 85b150e8856752d8dcd7895c5dfdc5f9e01cb129
+parent 819dc87412d2f58202c5f4c355309e7b78b0de90
+author o.elgendy <o.elgendy@res.inc> 2023-07-29 06:09:47 +0300
+committer o.elgendy <o.elgendy@res.inc> 2023-07-29 06:09:47 +0300
+
+    volum attach
+
+
+:100644 100644 30d74d258442c7c65512eafab474568dd706c430 30d74d258442c7c65512eafab474568dd706c430 R100	agent/logs.txt	app/logs.txt
+:100644 100644 dfe6424df058380f9e4fad40af5c003d93e57a29 a2a2718d9e76c98c5ee5946e278c7c4f93f34743 M	docker-compose.yaml

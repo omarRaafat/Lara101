@@ -1,0 +1,10 @@
+commit a413f1e2ecef7c577dcb118e0870a601b9d307b4
+tree 9c72f6ad5a73109a95a90a653c62f1b85e8ee9a1
+parent 380cc079e51266ca823442a2f9e8e32a63851565
+author o.elgendy <o.elgendy@res.inc> 2023-08-02 02:52:29 +0300
+committer o.elgendy <o.elgendy@res.inc> 2023-08-02 02:52:29 +0300
+
+    update c
+
+
+:100644 100644 1af705727ce34b3b5c13e7060b09da0ecbf085f2 6ba249ebbaed450735c2bdecd1a0192a642d01ca M	index.html

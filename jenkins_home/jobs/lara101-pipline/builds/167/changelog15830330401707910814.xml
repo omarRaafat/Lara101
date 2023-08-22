@@ -1,0 +1,10 @@
+commit 6d3f4663bb3c249b15af352df3f7b043eb94383d
+tree 16e03cae6ad46eecd79190c1b487d3645b962a08
+parent 9f939a9040d9c422b5cfbbcadf4abd5d26aab082
+author root <root@res.inc> 2023-07-18 05:07:10 +0800
+committer root <root@res.inc> 2023-07-18 05:07:10 +0800
+
+    re,move gtactions
+
+
+:100644 000000 9cc8c945692ce03f0f84cc061f3c41ca0afc62d9 0000000000000000000000000000000000000000 D	.github/workflows/main.yml

@@ -1,0 +1,86 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@3536.vb_8a_6628079d5">
+    <parentIds>
+      <string>10</string>
+    </parentIds>
+    <id>11</id>
+    <startId>3</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@1200.v8005c684b_a_c6">
+      <startTime>1688369992445</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@1200.v8005c684b_a_c6">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@639.v6eca_cd8c04a_a_">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.BodyExecution.cancel(BodyExecution.java:59)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask$PlaceholderExecutable$1.lambda$interrupt$1(ExecutorStepExecution.java:972)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask$1.onSuccess(ExecutorStepExecution.java:375)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask$1.onSuccess(ExecutorStepExecution.java:371)</trace>
+          <trace>com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1138)</trace>
+          <trace>com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:31)</trace>
+          <trace>com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)</trace>
+          <trace>com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)</trace>
+          <trace>com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:783)</trace>
+          <trace>com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:49)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1034)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1012)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5$1.run(CpsFlowExecution.java:928)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:30)</trace>
+          <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:70)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:833)</trace>
+        </stackTrace>
+        <suppressedExceptions>
+          <java.lang.InterruptedException>
+            <stackTrace>
+              <trace>java.base/java.lang.Object.wait(Native Method)</trace>
+              <trace>hudson.remoting.Request.call(Request.java:177)</trace>
+              <trace>hudson.remoting.Channel.call(Channel.java:999)</trace>
+              <trace>hudson.FilePath.act(FilePath.java:1194)</trace>
+              <trace>hudson.FilePath.act(FilePath.java:1183)</trace>
+              <trace>hudson.FilePath.mkdirs(FilePath.java:1374)</trace>
+              <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:844)</trace>
+              <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1297)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:129)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:97)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:84)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+              <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)</trace>
+              <trace>java.base/java.lang.Thread.run(Thread.java:833)</trace>
+            </stackTrace>
+            <suppressedExceptions class="empty-list"/>
+          </java.lang.InterruptedException>
+        </suppressedExceptions>
+        <result>
+          <name>ABORTED</name>
+          <ordinal>4</ordinal>
+          <color>ABORTED</color>
+          <completeBuild>false</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <jenkins.model.CauseOfInterruption_-UserInterruption>
+              <user>omar</user>
+            </jenkins.model.CauseOfInterruption_-UserInterruption>
+          </a>
+        </causes>
+        <actualInterruption>true</actualInterruption>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.ErrorAction plugin="workflow-api@1200.v8005c684b_a_c6">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" reference="../../wf.a.ErrorAction/error"/>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

@@ -1,0 +1,11 @@
+commit 4c76b033bd30b722d887b59c7fa7c7a98c1586bc
+tree bf118d670c4781e224b10c53115270b4f7e4353c
+parent 4ad7a8e53844bfce1b610ada0a1939bb4212d815
+author o.elgendy <o.elgendy@res.inc> 2023-07-29 05:16:36 +0300
+committer o.elgendy <o.elgendy@res.inc> 2023-07-29 05:16:36 +0300
+
+    volum attach
+
+
+:100644 100644 eee442bf7fcdace1bf9b3ff7c085c180f5fea260 eee442bf7fcdace1bf9b3ff7c085c180f5fea260 R100	agent.jar	agent/agent.jar
+:100644 100644 4f1137fd5e37c96e56c344fdbe88dd23c9d98179 6815918d90559e4bbb61203f6b34177e9934fea5 M	docker-compose.yaml

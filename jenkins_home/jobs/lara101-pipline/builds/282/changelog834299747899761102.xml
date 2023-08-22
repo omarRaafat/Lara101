@@ -1,0 +1,10 @@
+commit f7e56f10ef3cf9c444d26616285123ae64180fc8
+tree 29b250e78f92bfe78fb040654021cf07082beb10
+parent f6956703aff91a6f32d5ccac00b99863ec8e0f67
+author omarRaafat <omarelgendy79@gmail.com> 2023-08-09 14:27:32 +0300
+committer omarRaafat <omarelgendy79@gmail.com> 2023-08-09 14:27:32 +0300
+
+    update cmd shell script in docker
+
+
+:100644 100644 81c65e6e4013186fd8a8d2ffc32a5bd888c28a37 0802109d8ae3f80aeb82cfd46b831d23074cc348 M	Dockerfile

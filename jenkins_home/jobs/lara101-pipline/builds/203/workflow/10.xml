@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@3536.vb_8a_6628079d5">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3536.vb_8a_6628079d5">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=origin/main</string>
+            <string>GIT_COMMIT=5be76d62e3cfc4b90ba9b4d3945c6d5308e796e3</string>
+            <string>GIT_PREVIOUS_COMMIT=93cb4f2100a5070b3d0d88c16bffd53e7581acc9</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=e5ff14a632456fbf4490f555057e52cdb2953dca</string>
+            <string>GIT_URL=https://github.com/omarRaafat/job101.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1200.v8005c684b_a_c6">
+      <startTime>1690338806931</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

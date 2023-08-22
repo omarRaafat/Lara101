@@ -1,0 +1,10 @@
+commit f460fa6ad4d484f0ba10a0b064199693c8dc04cd
+tree f835cc79fade0adade7556af0b4fa29c89bdd115
+parent e1b41f55a54958530d422375d3f29cd67d112458
+author root <root@res.inc> 2023-07-05 15:54:04 +0800
+committer root <root@res.inc> 2023-07-05 15:54:04 +0800
+
+    update jenkins file with postbuild stage
+
+
+:100644 100644 f5eeab0195befd1d79ad48d7956f1e0ed19ee924 4614d08e33eb48c9e30c0f5a476e420bff605e2f M	Jenkinsfile
