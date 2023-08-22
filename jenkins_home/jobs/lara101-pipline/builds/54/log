@@ -1,0 +1,172 @@
+Started by GitHub push by omarRaafat
+Obtained Jenkinsfile from git https://github.com/omarRaafat/job101.git
+[8mha:////4KdzMRC7uucU1BT3j7YQK7TeMQ1brxeBXSVLn3zyDatjAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4NV/jCZ49Dvjh32qhJJkSCxr/LZB9HJNoMTxNRawjuD6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PYW4IELOXRKIYdSOyUp5chxIsI8sfPq9iBpuuMbZ0rXAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZJ/eT83ILSktQi/ZLU4hKgGapGLrmJmTn6AFDn2+nOAAAA[0mtesting-mail in /home/ubuntu/jenkins/workspace/job101-pipline
+[8mha:////4Cjb7TLk+lmP1vt6lTTRZO0n/lJGZ0HzZPtgLqOp57MQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4LIlwARG8IL3rMtd1LEz8y7moCbhJV9HOANUzucJkAOuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4APl594OhlUn9cJ7Y0466NG7FjERHlh30OBpMAVB1QFqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4I2ehsxLLpnqmRhDgxEPGI3ZesqOo2MqmWD6Z3TALlpLAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 2214879b7565c39a063adf23e2eccb366c6780ae (origin/main)
+Commit message: "Update Dockerfile"
+ > git rev-parse --resolve-git-dir /home/ubuntu/jenkins/workspace/job101-pipline/.git # timeout=10
+ > git config remote.origin.url https://github.com/omarRaafat/job101.git # timeout=10
+Fetching upstream changes from https://github.com/omarRaafat/job101.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/omarRaafat/job101.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2214879b7565c39a063adf23e2eccb366c6780ae # timeout=10
+ > git rev-list --no-walk 0ddf052bbbfdaeae58532852d7834354552be918 # timeout=10
+[8mha:////4I6/sGZMKsJA8cBWIpF0zUgzNxA+4QQ8Y69WHjQ6+niaAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4AMBGlcjB0Ci6d0V57/EdL3tNkeM4CDIKSFPN2jNEajxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MkvA46ah+ogvAJF0bIRKKr1LC6qWrsm2LcO8/RzwsmBAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4EbqDOGSy9f/8O5/DyBZo8UhKcbI5P9uRlRijyf5tDthAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4BhnAFWAQQAaDqNKUbncyMDQiy5V67hk8KogN9ZZsjyIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4HOJg2Jraz50zhuxmu6XJAd+M5TDbDQj3/W3B0H782mKAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Clean Environment ....)
+[8mha:////4PzOpLSc/JVJU315o1RIukhzy3La8aV1OI/g/2O0JGbyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] echo
+Environment Cleaning Process.....
+[8mha:////4JiDUB7H3Xm/dptaHU3IXqOKXhh2M0Kjyr+z+oHt8njBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] sh
++ docker rm job101 -f
+Error response from daemon: No such container: job101
++ docker system prune -f
+Deleted build cache objects:
+97uxpyc6l481w46d7ytfucapv
+scx05pxzv5tezm8owaqi7icky
+sunrwtdh0hd14swog197v24nv
+cnurfiw6nlsaof93uvov8rx3o
+okc51wn2fifumi9g6yq3fhb3q
+7bzgpwjwu915re7jgdmbvvlt3
+4t6qpqbpf5dnm86db92j6p11c
+lvxe6ppsvy99wky3bkynk2tj3
+8jgzbpfz87c2asl6ozharlq3i
+ujy24lrdge8927vnzz1xzntwg
+
+Total reclaimed space: 5.363MB
+[8mha:////4Lplkljb/EcF5SWRE+OQDEPGOgxWI7YOaFKtYMuO5Xb5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEeFbpZvgAAAA==[0m[Pipeline] }
+[8mha:////4L0kUbEfIkUtqe07F/xPhJi4ciR73Za50nyggcUKYqpfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7Ny324eW+AAAA[0m[Pipeline] // stage
+[8mha:////4FafM/YlvSY7j5we1Oxf+mDoBdKXycHYyhJx09/BUE0LAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohU3ZAQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AAkvMTrCAAAA[0m[Pipeline] stage
+[8mha:////4JwATBzx7ybaMCONJcutx4GKNTtKYcNLpoiFnLFQ4XVqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (Building....)
+[8mha:////4K3GGongKSe110P7/ckuVJbmDVgv2E1Gz1OHxkRSPrDSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] echo
+Building...
+[8mha:////4CabSUI3y8K7yFMOKZD+qtsb+PClb//7cOlWhyKrMRhGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ sudo docker build /home/ubuntu/jenkins/workspace/job101-pipline -t job101
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 482B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:latest
+#3 DONE 1.4s
+
+#4 [1/6] FROM docker.io/library/nginx@sha256:08bc36ad52474e528cc1ea3426b5e3f4bad8a130318e3140d6cfe29c8892c7ef
+#4 resolve docker.io/library/nginx@sha256:08bc36ad52474e528cc1ea3426b5e3f4bad8a130318e3140d6cfe29c8892c7ef 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 5.40MB 0.1s done
+#5 DONE 0.1s
+
+#4 [1/6] FROM docker.io/library/nginx@sha256:08bc36ad52474e528cc1ea3426b5e3f4bad8a130318e3140d6cfe29c8892c7ef
+#4 sha256:1bb5c4b86cb7c1e9f0209611dc2135d8a2c1c3a6436163970c99193787d067ea 1.78kB / 1.78kB done
+#4 sha256:021283c8eb95be02b23db0de7f609d603553c6714785e7a673c6594a624ffbda 8.15kB / 8.15kB done
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 0B / 29.12MB 0.1s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 0B / 41.46MB 0.1s
+#4 sha256:08bc36ad52474e528cc1ea3426b5e3f4bad8a130318e3140d6cfe29c8892c7ef 1.86kB / 1.86kB done
+#4 sha256:cf707e2339551222cafe3bf835fddfb859f26bf59058b3487de2b7659309b6b7 0B / 625B 0.1s
+#4 sha256:cf707e2339551222cafe3bf835fddfb859f26bf59058b3487de2b7659309b6b7 625B / 625B 0.3s done
+#4 sha256:91bb7937700d7d3496cf43cb0012e5f818064fecb766bd01041db23c127ab219 0B / 959B 0.4s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 3.15MB / 29.12MB 0.5s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 8.39MB / 29.12MB 0.7s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 4.19MB / 41.46MB 0.7s
+#4 sha256:91bb7937700d7d3496cf43cb0012e5f818064fecb766bd01041db23c127ab219 959B / 959B 0.6s done
+#4 sha256:4b962717ba558b7dfabe88c40e20ac86844b132015b66002deac49010cc96be1 0B / 367B 0.7s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 11.53MB / 29.12MB 0.8s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 7.34MB / 41.46MB 0.9s
+#4 sha256:4b962717ba558b7dfabe88c40e20ac86844b132015b66002deac49010cc96be1 367B / 367B 0.8s done
+#4 sha256:f46d7b05649a846d7e24418b6ecea3b1efbdac88d361631e849e9c41917ba776 0B / 1.21kB 0.9s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 13.63MB / 29.12MB 1.3s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 9.44MB / 41.46MB 1.3s
+#4 sha256:f46d7b05649a846d7e24418b6ecea3b1efbdac88d361631e849e9c41917ba776 1.21kB / 1.21kB 1.1s done
+#4 sha256:103501419a0aecf94398ffcc7404f22931d9b89bbb6021391c2cd4a286f37ca9 0B / 1.41kB 1.3s
+#4 sha256:103501419a0aecf94398ffcc7404f22931d9b89bbb6021391c2cd4a286f37ca9 1.41kB / 1.41kB 1.4s done
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 11.53MB / 41.46MB 1.5s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 15.73MB / 29.12MB 1.7s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 17.83MB / 29.12MB 2.0s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 16.78MB / 41.46MB 2.0s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 19.92MB / 29.12MB 2.5s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 18.87MB / 41.46MB 2.5s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 20.97MB / 41.46MB 2.6s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 22.02MB / 29.12MB 2.8s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 23.07MB / 41.46MB 2.9s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 24.12MB / 29.12MB 3.1s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 25.17MB / 41.46MB 3.2s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 27.26MB / 29.12MB 3.6s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 27.26MB / 41.46MB 3.6s
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 29.12MB / 29.12MB 3.7s
+#4 extracting sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151
+#4 sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 29.12MB / 29.12MB 3.7s done
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 29.36MB / 41.46MB 3.8s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 31.46MB / 41.46MB 4.1s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 34.60MB / 41.46MB 4.5s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 36.70MB / 41.46MB 4.8s
+#4 extracting sha256:faef57eae888cbe4a5613eca6741b5e48d768b83f6088858aee9a5a2834f8151 1.2s done
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 38.80MB / 41.46MB 5.1s
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 40.89MB / 41.46MB 5.4s
+#4 extracting sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5
+#4 sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 41.46MB / 41.46MB 5.5s done
+#4 extracting sha256:76579e9ed380849b4d22696f292770963b5ea917a45ef77336a1a0a782b410b5 1.1s done
+#4 extracting sha256:cf707e2339551222cafe3bf835fddfb859f26bf59058b3487de2b7659309b6b7 done
+#4 extracting sha256:91bb7937700d7d3496cf43cb0012e5f818064fecb766bd01041db23c127ab219 done
+#4 extracting sha256:4b962717ba558b7dfabe88c40e20ac86844b132015b66002deac49010cc96be1 done
+#4 extracting sha256:f46d7b05649a846d7e24418b6ecea3b1efbdac88d361631e849e9c41917ba776 done
+#4 extracting sha256:103501419a0aecf94398ffcc7404f22931d9b89bbb6021391c2cd4a286f37ca9 done
+#4 DONE 6.8s
+
+#6 [2/6] RUN sudo apt-get update && sudo apt-get upgrade -y
+#6 0.181 /bin/sh: 1: sudo: not found
+#6 ERROR: process "/bin/sh -c sudo apt-get update && sudo apt-get upgrade -y" did not complete successfully: exit code: 127
+------
+ > [2/6] RUN sudo apt-get update && sudo apt-get upgrade -y:
+#6 0.181 /bin/sh: 1: sudo: not found
+------
+Dockerfile:2
+--------------------
+   1 |     FROM nginx
+   2 | >>> RUN sudo apt-get update && sudo apt-get upgrade -y 
+   3 |     RUN sudo apt-get install software-properties-common apt-transport-https -y
+   4 |     RUN sudo add-apt-repository ppa:ondrej/php -y
+--------------------
+ERROR: failed to solve: process "/bin/sh -c sudo apt-get update && sudo apt-get upgrade -y" did not complete successfully: exit code: 127
+[8mha:////4HaqryBN1hWavWoF6ztYOBxfSTcSK1VDf/PQNus0DJFTAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4JV/g4nXuVvr5cIrKBCKFUIKv1FsMQtdKpPvGihpImijAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // stage
+[8mha:////4KOBugpLwVMmlRB/oXt+8G4N5VrfH0kac8lM5r02/AYkAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohURWyIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5RNk223/zyrN+/1G3zCAAAA[0m[Pipeline] stage
+[8mha:////4N9UqpvuJ9aAheqqM5Pp117hfj64FxMZ7RyBIbieNQ4BAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (Post Build)
+Stage "Post Build" skipped due to earlier failure(s)
+[8mha:////4IIVaKGTL5cVzHYMn2N/502qWPq79+76ywYgd2/3yrSCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQF1+RyqvgAAAA==[0m[Pipeline] }
+[8mha:////4PYeXk3koHeth8k+Wue19bRGyOkwMmGQCQ2u6wrktibXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g1GGkcWvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Kfd0l9ApfcWuxzplLeSoeNrjCGWkcjgw1Iquu8hBv5YAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQGUNdkLwgAAAA==[0m[Pipeline] stage
+[8mha:////4EAsLvCLqQWm8CGY+jH8qlHd6+3XhzALFEtydtbNmaaGAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] { (Testing ....)
+Stage "Testing ...." skipped due to earlier failure(s)
+[8mha:////4AV4UUCSGd4gMfF3kB+9vWRqhe0iDXdH2Rl4CH+n/w3vAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AH3XYTTvgAAAA==[0m[Pipeline] }
+[8mha:////4Kx2G+ChaICytvGylrwIHhsm6S+xJ1mpWIAxuAyKvLn2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/Evt9vvgAAAA==[0m[Pipeline] // stage
+[8mha:////4CsqyrWwjiVBBJOVQlAuWqoatfNyVH4Ka/LoRLg5sP4HAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUhRExdY26cILQhJA0+r8kKenEibgadyBQiQkPlm3Jes8XVMHDkbxmVuFgMPSGjW7SObFEfrg4SszSmfWEgZxinUodSdUutaOoYFFRworDWmHvKBjUETbciruonUBdn6LP24FDaeQNHlDwTI7Cx2+ZPWyvkwyEP85fAMxjhLJpsu13n2f1BkYdNQzCAAAA[0m[Pipeline] stage
+[8mha:////4LStwwbQfvb3h2Q9e08Y5sblFoPMkvgiL++SVeg/+yRrAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (Deploying ...)
+Stage "Deploying ..." skipped due to earlier failure(s)
+[8mha:////4GblH+hV2yDhfXDUWo13+lRpcLwGnRVDAAQYgt/GIh41AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs/cJ6nb/qfYNvsfbsb4AAAA=[0m[Pipeline] }
+[8mha:////4GTTSkEcywVOL86fpdOwArvrflP3if0vKJzrwuqCbxc0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN40kgA2+AAAA[0m[Pipeline] // stage
+[8mha:////4Cwil2/uT4vmqBs2CeCAWTqoNjqeagwqLMptAYLoE6EMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCIkGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w8bZSsgvgAAAA==[0m[Pipeline] }
+[8mha:////4Kg0Z/w+u/yjNA+TUNmMV4BpNsgdgzuJMqNpOujln6R6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICoqBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w8ohnCcvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4BY6Hk0qF351V2fAq+sGhuY1CidgXpazfrM8KtyT6+nTAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AE/B/a+9AAAA[0m[Pipeline] }
+[8mha:////4KlLWTBY8dybvLzvdgPsA2T20x6Y5SePI9i0upTUZWSQAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUVI5jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAXH35DL0AAAA=[0m[Pipeline] // node
+[8mha:////4FUrQScSsmBIxoZo8RXO5Q0iKiqjGY7KIPVXc3Lp1csAAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBiA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77eCbPcBAx/ra70AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

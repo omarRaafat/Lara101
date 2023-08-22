@@ -1,0 +1,217 @@
+Started by GitHub push by omarRaafat
+Obtained Jenkinsfile from git https://github.com/omarRaafat/job101.git
+[8mha:////4KdzMRC7uucU1BT3j7YQK7TeMQ1brxeBXSVLn3zyDatjAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4NV/jCZ49Dvjh32qhJJkSCxr/LZB9HJNoMTxNRawjuD6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PYW4IELOXRKIYdSOyUp5chxIsI8sfPq9iBpuuMbZ0rXAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZJ/eT83ILSktQi/ZLU4hKgGapGLrmJmTn6AFDn2+nOAAAA[0mtesting-mail in /home/ubuntu/jenkins/workspace/job101-pipline
+[8mha:////4Cjb7TLk+lmP1vt6lTTRZO0n/lJGZ0HzZPtgLqOp57MQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4LIlwARG8IL3rMtd1LEz8y7moCbhJV9HOANUzucJkAOuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4APl594OhlUn9cJ7Y0466NG7FjERHlh30OBpMAVB1QFqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4I2ehsxLLpnqmRhDgxEPGI3ZesqOo2MqmWD6Z3TALlpLAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /home/ubuntu/jenkins/workspace/job101-pipline/.git # timeout=10
+ > git config remote.origin.url https://github.com/omarRaafat/job101.git # timeout=10
+Fetching upstream changes from https://github.com/omarRaafat/job101.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/omarRaafat/job101.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3c47a595690c97257f78ca1f0d3a55e65ff92eb6 (origin/main)
+Commit message: "Update Jenkinsfile"
+ > git rev-parse origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3c47a595690c97257f78ca1f0d3a55e65ff92eb6 # timeout=10
+ > git rev-list --no-walk d77dd5fc61e5e557ebee6d9533545e6d733fbe6c # timeout=10
+[8mha:////4I6/sGZMKsJA8cBWIpF0zUgzNxA+4QQ8Y69WHjQ6+niaAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4AMBGlcjB0Ci6d0V57/EdL3tNkeM4CDIKSFPN2jNEajxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MkvA46ah+ogvAJF0bIRKKr1LC6qWrsm2LcO8/RzwsmBAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4EbqDOGSy9f/8O5/DyBZo8UhKcbI5P9uRlRijyf5tDthAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4BhnAFWAQQAaDqNKUbncyMDQiy5V67hk8KogN9ZZsjyIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $registryCredential or $registryCredential_PSW
+[8mha:////4HOJg2Jraz50zhuxmu6XJAd+M5TDbDQj3/W3B0H782mKAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4GAjfEW9frlSJBIvX/BXHXje/93nFeQOH7jVDOUmsa/TAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] withEnv
+[8mha:////4MwC2iPa0Yj1MZ0z/mhLFUWTG9fg/Ydg4QCboj2w05atAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4KISQxz5eTFUJIqBPTeAHwW3iAAnguatRHpxL2KjAD9KAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4LydQVKzoizTDgSE2Im6J8dnoAyYSmaPpGefuTlB2wpeAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Setup parameters)
+[8mha:////4KK3a502ZgydoucjmOC3eSuCivJ0Vj1Cxs83l0T2sgp0AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] script
+[8mha:////4JwATBzx7ybaMCONJcutx4GKNTtKYcNLpoiFnLFQ4XVqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4K3GGongKSe110P7/ckuVJbmDVgv2E1Gz1OHxkRSPrDSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] properties
+[8mha:////4HVyRrXUUNxb/MzsFdYFex28KiEfKeVpmp6ESichoUylAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPiXWgpW+AAAA[0m[Pipeline] }
+[8mha:////4OxDy/Pb9WIfKqwaazXhEP/+/BEVtlj8vpkDRD0MCXMDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEdlBFkvgAAAA==[0m[Pipeline] // script
+[8mha:////4CQ1SU3vXqRFctwg9y2vOxFASSeKvAR1koR1G+N9BRsWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8pWvI/vgAAAA==[0m[Pipeline] }
+[8mha:////4MZTM07cH0MSxToTwI3CkuSEHcmlmVHfncODXRwPZm2jAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8HWvBVvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JdzjK/AFPspApycuV1T9e5dPx6VgSk7MVre+5j+ENEqAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIHVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdn2zedZvQHIVZ4HwgAAAA==[0m[Pipeline] stage
+[8mha:////4KGtUKAXSlu6bh6nfOmdY2v5Z0G1vKwlDIEiVSCR2fa1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] { (Building....)
+[8mha:////4DviUzU/n+11beIc24fwLTZCaGCujg3V5nzD10WalhnGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] echo
+Building...
+[8mha:////4BCIumFNPwLIjZkqTvSzikjLT5lbkjAzWv9jct6FDcW9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q0bbeqGvgAAAA==[0m[Pipeline] sh
++ docker build /home/ubuntu/jenkins/workspace/job101-pipline -t omar2023/job101:199-job101-pipline
+#1 [internal] load .dockerignore
+#1 transferring context: 68B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 523B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:latest
+#3 DONE 2.3s
+
+#4 [ 1/10] FROM docker.io/library/nginx@sha256:08bc36ad52474e528cc1ea3426b5e3f4bad8a130318e3140d6cfe29c8892c7ef
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 4.16MB 0.1s done
+#5 DONE 0.1s
+
+#6 [ 5/10] RUN apt-get update &&  apt-get install -y mariadb-server
+#6 CACHED
+
+#7 [ 8/10] RUN apt-get install -y composer unzip zip
+#7 CACHED
+
+#8 [ 2/10] WORKDIR /job101
+#8 CACHED
+
+#9 [ 3/10] COPY ./app.conf /etc/nginx/conf.d/default.conf
+#9 CACHED
+
+#10 [ 4/10] RUN apt-get update && apt-get install -y nano
+#10 CACHED
+
+#11 [ 6/10] RUN apt-get update && apt-get install -y php-fpm php-mysql php-common php-mbstring php-xmlrpc php-xml php-intl php-cli php-zip php-curl
+#11 CACHED
+
+#12 [ 7/10] RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
+#12 CACHED
+
+#13 [ 9/10] RUN apt-get clean
+#13 CACHED
+
+#14 [10/10] ADD . .
+#14 DONE 0.1s
+
+#15 exporting to image
+#15 exporting layers 0.0s done
+#15 writing image sha256:54fbf31bd72f22ff274e9f710dffaceb4abebd3c75f38509a073f7f29081e988 done
+#15 naming to docker.io/omar2023/job101:199-job101-pipline done
+#15 DONE 0.1s
+[8mha:////4MBUn/x5UzUchoNp2wogD+HBGKqXOEqU1GOD2XDByayLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0aGkPCvgAAAA==[0m[Pipeline] }
+[8mha:////4IHrErTgm2ldWSS4fed2THf9UZwDKF9PQ1ewGh/Vz+8KAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHcETLavgAAAA==[0m[Pipeline] // stage
+[8mha:////4O/6hyDHH/A1ck1g6NoOwwdwi3vEKro7Ln4QommX3Q5/AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFWJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQFqHHg6wgAAAA==[0m[Pipeline] stage
+[8mha:////4Ip16NYLLL16H/Lv7gWRvovofcQbYY9PXARudXJrDnfWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Post Build)
+[8mha:////4OxhOyNkw2q3WmFl/MmQsRc7xR6z91zRtugVKS4QYoI9AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] echo
+Post Buidl Proccessing ......
+[8mha:////4PoDPj7OdyEeopxJZU8AgXHDZtIXDrNeMdphfiSq/OJHAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBq1seBO+AAAA[0m[Pipeline] sh
++ docker rm job101 -f
+job101
++ sudo docker run --name job101 -it -p 82:80 -d omar2023/job101:199-job101-pipline
+8da3f488267c238af88d0ec511009a3724442800fdff135b7da893b9492c388b
+[8mha:////4GTTSkEcywVOL86fpdOwArvrflP3if0vKJzrwuqCbxc0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN40kgA2+AAAA[0m[Pipeline] }
+[8mha:////4K+f99sBClwXmL8vOx5oO9ixqRKoaq5MuYP1n4bcOsE+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGZBx0SvgAAAA==[0m[Pipeline] // stage
+[8mha:////4P7uC1ZLC0AI3iWT1I4T92peaNiCeigW1GNiaEEbnOnVAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCCEG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm93/yHswgAAAA==[0m[Pipeline] stage
+[8mha:////4OS4w6YxeODKMltrxfulbcJHAx08WR+egWNw19HuY4quAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Clean Environment ....)
+[8mha:////4FFpE7/iguADvkwLmxay+D2nrSF7h1d0DLtKSMRT6/iZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN65NpgK+AAAA[0m[Pipeline] echo
+Environment Cleaning Process.....
+[8mha:////4AzaLb5k/6QT5559ZLmzgks5+nIzlOZCDbACBq1QMNtYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAYuAr1r4AAAA=[0m[Pipeline] sh
++ docker system prune -f
+Deleted build cache objects:
+0jhyfa39zw6vspbih401r7kow
+yir7sopc3hxsz1tw7vaaoqa2c
+uqr5hc5xof5vz6ng8ntoeu3wz
+
+Total reclaimed space: 4.141MB
+[8mha:////4Nwf2IoHbSaSNBnmboVpR9o9VGjRKGCd7c0AxaltETabAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAC7Fjs74AAAA=[0m[Pipeline] }
+[8mha:////4BmpYOq/Pd98zQBuTsBctzgWOBJ8LLQ/FEu5FN4EU3ymAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiARIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wANN5Ipb4AAAA=[0m[Pipeline] // stage
+[8mha:////4ErJYMeZnOjGAhH1+uRGMCkPJqnDRz0XoauiCgan2qg3AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQHvgxeywgAAAA==[0m[Pipeline] stage
+[8mha:////4Bw1oYgXiLxINy6VXf7bkNGVYUubVvD29zVGztnmnkPbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] { (Testing ....)
+[8mha:////4M+tVhzDW10XeixT84wMVAu3E7z7fGrZrMeiaZoykfwOAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSxMqxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NSnc5Zr4AAAA=[0m[Pipeline] echo
+Testing..
+[8mha:////4ACvB/Tt7oDuAt32L48jWvv7H9BnoF8YxJQzYQjhci0NAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSZGwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fiSQUTb4AAAA=[0m[Pipeline] sh
++ docker exec job101 ls -a
+.
+..
+.dockerignore
+README.md
+README.md.backup
+agent.jar
+app.conf
+app2.conf
+index.html
+job101
+logo.png
+[8mha:////4Du7l+7K++hHZPcFInIS3/Den0Zgl3jPbGjgqvXaj9+RAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSZMbCsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DfqIzSO+AAAA[0m[Pipeline] }
+[8mha:////4OBKBzrLqwJ4mvmpqhbQ3CbIGMTEx0mpyY2WTnCLmPtqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGMr/9MvgAAAA==[0m[Pipeline] // stage
+[8mha:////4KDyjsaqHGi7BdDhW8Y3/ISmrLDyye1bthuB8+gQLLR/AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAg1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm+JoIwTwgAAAA==[0m[Pipeline] stage
+[8mha:////4MbDzVFvdS2vTAUyvRCsPxwBdOgyyqPvdECXiHY0YbPpAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAQaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0iH00AwgAAAA==[0m[Pipeline] { (Deploying ...)
+[8mha:////4E04fQ7yUAD/ZzddY3KsViOflAjIhUPIQAvcyzT2OnD7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBRWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvT8cju+AAAA[0m[Pipeline] echo
+Deliver....
+[8mha:////4Fc67vcpVFD0UF5TGk8v5ITZIsKrOQ9yW6XkDKiE2glKAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCkKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNzevXxC+AAAA[0m[Pipeline] sh
++ docker login -u omar2023 --password-stdin
++ echo ****
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
++ docker push omar2023/job101:199-job101-pipline
+The push refers to repository [docker.io/omar2023/job101]
+5ec27e508842: Preparing
+b78e95def998: Preparing
+168e4c53e1cc: Preparing
+41084a0ff964: Preparing
+29160929f617: Preparing
+0206987bc035: Preparing
+4d7adfc0d630: Preparing
+9f26ef45e188: Preparing
+1553a079bacd: Preparing
+3c9d04c9ebd5: Preparing
+434c6a715c30: Preparing
+9fdfd12bc85b: Preparing
+f36897eea34d: Preparing
+1998c5cd2230: Preparing
+b821d93f6666: Preparing
+24839d45ca45: Preparing
+0206987bc035: Waiting
+4d7adfc0d630: Waiting
+9f26ef45e188: Waiting
+1553a079bacd: Waiting
+3c9d04c9ebd5: Waiting
+434c6a715c30: Waiting
+9fdfd12bc85b: Waiting
+f36897eea34d: Waiting
+1998c5cd2230: Waiting
+b821d93f6666: Waiting
+24839d45ca45: Waiting
+41084a0ff964: Layer already exists
+168e4c53e1cc: Layer already exists
+b78e95def998: Layer already exists
+29160929f617: Layer already exists
+0206987bc035: Layer already exists
+9f26ef45e188: Layer already exists
+1553a079bacd: Layer already exists
+3c9d04c9ebd5: Layer already exists
+4d7adfc0d630: Layer already exists
+434c6a715c30: Layer already exists
+9fdfd12bc85b: Layer already exists
+f36897eea34d: Layer already exists
+1998c5cd2230: Layer already exists
+24839d45ca45: Layer already exists
+b821d93f6666: Layer already exists
+5ec27e508842: Pushed
+199-job101-pipline: digest: sha256:4844fb49c664f5d4c597dbeeca649a494eb04b04f3e24b6f3a3d3d67bc15b4b0 size: 3667
++ docker logout
+Removing login credentials for https://index.docker.io/v1/
+[8mha:////4AmhqeLXYg1UevONbkSWRcE4HyjaE9K17x7WuomsgKwxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKChKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbNwA0XQC+AAAA[0m[Pipeline] }
+[8mha:////4P3zWgSbR2YsKOa3FnIHx1MYxhOGmSjo9KFTFniM2f/VAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLShAIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AFdjZ99vgAAAA==[0m[Pipeline] // stage
+[8mha:////4KdkWkRbw9xigRMgjSDG2UeKHfAHSTLc2JFptBlIhqS7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRRSpERWu54QUmOYwT687YDk7Fi/gaf8AiEhVbrHa2mdcb1jHAkYMRA9JoKXZWeDeZskTmMF4dZzHwRXRMkR0KhVlxj6cFFSeEJVUNKwkbpM5xtGQSbOWgH7pxmkxzTqF8Bwm17e/whEoWc9IhfWEOsLtNfWT6ef4KYPY+Qd22pfbtB5bmAsK+AAAA[0m[Pipeline] }
+[8mha:////4Bhx9aQCQV7fPtkEXrwO/vTvkW5adDz8Hel1CpIbIhKAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw+upJEzvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4A7vniT8iFJOzfjBAR8OtEJucupyPzOKE4zt/iofTfoXAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i13X0AqOKpZr4AAAA=[0m[Pipeline] }
+[8mha:////4LPs46OlHUQ1NDWoODUHgm7baAfu0s/k7TFnSprDeBZKAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+0Ou7e4D62D44L4AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4EMKlN43NZkLSnd7pZU9CCL96952DQzVxh+PjrZCo7gJAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiFBQIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w/04q2yvgAAAA==[0m[Pipeline] }
+[8mha:////4GVqNy6dV+iSpeXQqYlc/YP/xNGYVkoEavk28DtwUkQaAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOISGhpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPzeZTdO+AAAA[0m[Pipeline] // withEnv
+[8mha:////4MHcFpOQwXoFT2PqTM4h8+yXyGvOIvRL39R3l8mPBeXOAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AI0yIPK9AAAA[0m[Pipeline] }
+[8mha:////4BEI+vdDtsoNltttVc0xW6Hlc7BdjnNaMQ+4jMOuvRvSAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AP7d5Cu9AAAA[0m[Pipeline] // node
+[8mha:////4LmC/GGsQ84lGWnscdgV8W76wqPRtUpt3M6TD60dYPE8AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+ANjEg2G9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

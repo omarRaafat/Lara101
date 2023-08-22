@@ -1,0 +1,1568 @@
+Started by an SCM change
+Obtained Jenkinsfile from git https://github.com/omarRaafat/job101.git
+[8mha:////4KdzMRC7uucU1BT3j7YQK7TeMQ1brxeBXSVLn3zyDatjAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4NV/jCZ49Dvjh32qhJJkSCxr/LZB9HJNoMTxNRawjuD6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PYW4IELOXRKIYdSOyUp5chxIsI8sfPq9iBpuuMbZ0rXAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZJ/eT83ILSktQi/ZLU4hKgGapGLrmJmTn6AFDn2+nOAAAA[0mtesting-mail in /home/ubuntu/jenkins/workspace/job101-pipline
+[8mha:////4Cjb7TLk+lmP1vt6lTTRZO0n/lJGZ0HzZPtgLqOp57MQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4LIlwARG8IL3rMtd1LEz8y7moCbhJV9HOANUzucJkAOuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4APl594OhlUn9cJ7Y0466NG7FjERHlh30OBpMAVB1QFqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4I2ehsxLLpnqmRhDgxEPGI3ZesqOo2MqmWD6Z3TALlpLAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 484f6567570bc42373bb0a8bc35955061be59415 (origin/main)
+Commit message: "Merge pull request #1 from omarRaafat/stg"
+ > git rev-parse --resolve-git-dir /home/ubuntu/jenkins/workspace/job101-pipline/.git # timeout=10
+ > git config remote.origin.url https://github.com/omarRaafat/job101.git # timeout=10
+Fetching upstream changes from https://github.com/omarRaafat/job101.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/omarRaafat/job101.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 484f6567570bc42373bb0a8bc35955061be59415 # timeout=10
+ > git rev-list --no-walk 380cc079e51266ca823442a2f9e8e32a63851565 # timeout=10
+[8mha:////4I6/sGZMKsJA8cBWIpF0zUgzNxA+4QQ8Y69WHjQ6+niaAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4AMBGlcjB0Ci6d0V57/EdL3tNkeM4CDIKSFPN2jNEajxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MkvA46ah+ogvAJF0bIRKKr1LC6qWrsm2LcO8/RzwsmBAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4EbqDOGSy9f/8O5/DyBZo8UhKcbI5P9uRlRijyf5tDthAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4BhnAFWAQQAaDqNKUbncyMDQiy5V67hk8KogN9ZZsjyIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $registryCredential or $registryCredential_PSW
+[8mha:////4HOJg2Jraz50zhuxmu6XJAd+M5TDbDQj3/W3B0H782mKAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4GAjfEW9frlSJBIvX/BXHXje/93nFeQOH7jVDOUmsa/TAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] withEnv
+[8mha:////4MwC2iPa0Yj1MZ0z/mhLFUWTG9fg/Ydg4QCboj2w05atAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4KISQxz5eTFUJIqBPTeAHwW3iAAnguatRHpxL2KjAD9KAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4LydQVKzoizTDgSE2Im6J8dnoAyYSmaPpGefuTlB2wpeAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Setup parameters)
+[8mha:////4KK3a502ZgydoucjmOC3eSuCivJ0Vj1Cxs83l0T2sgp0AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] script
+[8mha:////4JwATBzx7ybaMCONJcutx4GKNTtKYcNLpoiFnLFQ4XVqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4K3GGongKSe110P7/ckuVJbmDVgv2E1Gz1OHxkRSPrDSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] properties
+[8mha:////4HVyRrXUUNxb/MzsFdYFex28KiEfKeVpmp6ESichoUylAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPiXWgpW+AAAA[0m[Pipeline] }
+[8mha:////4OxDy/Pb9WIfKqwaazXhEP/+/BEVtlj8vpkDRD0MCXMDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEdlBFkvgAAAA==[0m[Pipeline] // script
+[8mha:////4CQ1SU3vXqRFctwg9y2vOxFASSeKvAR1koR1G+N9BRsWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8pWvI/vgAAAA==[0m[Pipeline] }
+[8mha:////4MZTM07cH0MSxToTwI3CkuSEHcmlmVHfncODXRwPZm2jAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8HWvBVvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JdzjK/AFPspApycuV1T9e5dPx6VgSk7MVre+5j+ENEqAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIHVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdn2zedZvQHIVZ4HwgAAAA==[0m[Pipeline] stage
+[8mha:////4KGtUKAXSlu6bh6nfOmdY2v5Z0G1vKwlDIEiVSCR2fa1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] { (Building....)
+[8mha:////4DviUzU/n+11beIc24fwLTZCaGCujg3V5nzD10WalhnGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] echo
+Building...
+[8mha:////4BCIumFNPwLIjZkqTvSzikjLT5lbkjAzWv9jct6FDcW9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q0bbeqGvgAAAA==[0m[Pipeline] sh
++ sed -i.bak s|dockerImage|omar2023/job101:260-job101-pipline|g docker-compose.yaml
++ docker-compose -f docker-compose.yaml down
+ Container job101  Stopping
+ Container job101  Stopped
+ Container job101  Removing
+ Container job101  Removed
+ Network job101-pipline_default  Removing
+ Network job101-pipline_default  Removed
++ docker-compose -f docker-compose.yaml up -d
+ app Pulling 
+ app Warning 
+#1 [app internal] load .dockerignore
+#1 transferring context: 68B done
+#1 DONE 0.0s
+
+#2 [app internal] load build definition from Dockerfile
+#2 transferring dockerfile: 530B done
+#2 DONE 0.0s
+
+#3 [app internal] load metadata for docker.io/library/nginx:latest
+#3 DONE 2.5s
+
+#4 [app internal] load build context
+#4 transferring context: 7.99kB done
+#4 DONE 0.0s
+
+#5 [app  1/10] FROM docker.io/library/nginx:latest@sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca
+#5 resolve docker.io/library/nginx:latest@sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca 0.0s done
+#5 sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca 1.86kB / 1.86kB done
+#5 sha256:89da1fb6dcb964dd35c3f41b7b93ffc35eaf20bc61f2e1335fea710a18424287 8.15kB / 8.15kB done
+#5 sha256:73e957703f1266530db0aeac1fd6a3f87c1e59943f4c13eb340bb8521c6041d7 1.78kB / 1.78kB done
+#5 DONE 0.1s
+
+#6 [app  2/10] WORKDIR /job101
+#6 DONE 0.0s
+
+#7 [app  3/10] COPY ./app.conf /etc/nginx/conf.d/default.conf
+#7 DONE 0.0s
+
+#8 [app  4/10] RUN apt-get update && apt-get install -y nano
+#8 0.605 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#8 0.808 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+#8 0.882 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#8 0.954 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8906 kB]
+#8 7.139 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [4732 B]
+#8 7.204 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [49.1 kB]
+#8 8.123 Fetched 9211 kB in 8s (1162 kB/s)
+#8 8.123 Reading package lists...
+#8 8.610 Reading package lists...
+#8 9.092 Building dependency tree...
+#8 9.189 Reading state information...
+#8 9.309 The following additional packages will be installed:
+#8 9.310   libgpm2 libncursesw6
+#8 9.311 Suggested packages:
+#8 9.311   gpm hunspell
+#8 9.357 The following NEW packages will be installed:
+#8 9.357   libgpm2 libncursesw6 nano
+#8 9.495 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+#8 9.495 Need to get 837 kB of archives.
+#8 9.495 After this operation, 3339 kB of additional disk space will be used.
+#8 9.495 Get:1 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+#8 9.690 Get:2 http://deb.debian.org/debian bookworm/main amd64 nano amd64 7.2-1 [689 kB]
+#8 9.832 Get:3 http://deb.debian.org/debian bookworm/main amd64 libgpm2 amd64 1.20.7-10+b1 [14.2 kB]
+#8 9.936 debconf: delaying package configuration, since apt-utils is not installed
+#8 9.958 Fetched 837 kB in 0s (1778 kB/s)
+#8 9.974 Selecting previously unselected package libncursesw6:amd64.
+#8 9.974 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7604 files and directories currently installed.)
+#8 9.982 Preparing to unpack .../libncursesw6_6.4-4_amd64.deb ...
+#8 9.986 Unpacking libncursesw6:amd64 (6.4-4) ...
+#8 10.02 Selecting previously unselected package nano.
+#8 10.02 Preparing to unpack .../archives/nano_7.2-1_amd64.deb ...
+#8 10.02 Unpacking nano (7.2-1) ...
+#8 10.10 Selecting previously unselected package libgpm2:amd64.
+#8 10.10 Preparing to unpack .../libgpm2_1.20.7-10+b1_amd64.deb ...
+#8 10.10 Unpacking libgpm2:amd64 (1.20.7-10+b1) ...
+#8 10.13 Setting up libgpm2:amd64 (1.20.7-10+b1) ...
+#8 10.13 Setting up libncursesw6:amd64 (6.4-4) ...
+#8 10.14 Setting up nano (7.2-1) ...
+#8 10.15 update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+#8 10.15 update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+#8 10.15 update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+#8 10.15 update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+#8 10.15 Processing triggers for libc-bin (2.36-9+deb12u1) ...
+#8 DONE 10.2s
+
+#9 [app  5/10] RUN apt-get update &&  apt-get install -y mariadb-server
+#9 0.656 Hit:1 http://deb.debian.org/debian bookworm InRelease
+#9 0.713 Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+#9 0.775 Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+#9 0.826 Reading package lists...
+#9 1.349 Reading package lists...
+#9 1.886 Building dependency tree...
+#9 2.033 Reading state information...
+#9 2.189 The following additional packages will be installed:
+#9 2.189   galera-4 gawk iproute2 libatm1 libbpf1 libcap2-bin libcgi-fast-perl
+#9 2.189   libcgi-pm-perl libclone-perl libconfig-inifiles-perl libdaxctl1
+#9 2.189   libdbd-mariadb-perl libdbi-perl libedit2 libelf1 libencode-locale-perl
+#9 2.189   libfcgi-bin libfcgi-perl libfcgi0ldbl libgdbm-compat4 libgdbm6
+#9 2.189   libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
+#9 2.189   libhttp-date-perl libhttp-message-perl libio-html-perl libkmod2
+#9 2.189   liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6
+#9 2.189   libndctl6 libnsl2 libpam-cap libperl5.36 libpmem1 libpopt0 libproc2-0
+#9 2.189   libregexp-ipv6-perl libsigsegv2 libsnappy1v5 libterm-readkey-perl
+#9 2.189   libtimedate-perl libtirpc-common libtirpc3 liburi-perl liburing2 libwrap0
+#9 2.189   libxtables12 lsof mariadb-client mariadb-client-core mariadb-common
+#9 2.189   mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+#9 2.189   mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo
+#9 2.190   mariadb-plugin-provider-snappy mariadb-server-core mysql-common netbase perl
+#9 2.190   perl-modules-5.36 procps psmisc pv rsync socat
+#9 2.192 Suggested packages:
+#9 2.192   gawk-doc iproute2-doc python3:any libmldbm-perl libnet-daemon-perl
+#9 2.192   libsql-statement-perl gdbm-l10n libdata-dump-perl libipc-sharedcache-perl
+#9 2.192   sensible-utils libbusiness-isbn-perl libwww-perl mailx mariadb-test
+#9 2.192   netcat-openbsd perl-doc libterm-readline-gnu-perl
+#9 2.192   | libterm-readline-perl-perl make libtap-harness-archive-perl doc-base
+#9 2.192   openssh-client openssh-server python3 python3-braceexpand
+#9 2.575 The following NEW packages will be installed:
+#9 2.575   galera-4 gawk iproute2 libatm1 libbpf1 libcap2-bin libcgi-fast-perl
+#9 2.575   libcgi-pm-perl libclone-perl libconfig-inifiles-perl libdaxctl1
+#9 2.575   libdbd-mariadb-perl libdbi-perl libedit2 libelf1 libencode-locale-perl
+#9 2.575   libfcgi-bin libfcgi-perl libfcgi0ldbl libgdbm-compat4 libgdbm6
+#9 2.575   libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
+#9 2.575   libhttp-date-perl libhttp-message-perl libio-html-perl libkmod2
+#9 2.575   liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6
+#9 2.575   libndctl6 libnsl2 libpam-cap libperl5.36 libpmem1 libpopt0 libproc2-0
+#9 2.576   libregexp-ipv6-perl libsigsegv2 libsnappy1v5 libterm-readkey-perl
+#9 2.576   libtimedate-perl libtirpc-common libtirpc3 liburi-perl liburing2 libwrap0
+#9 2.576   libxtables12 lsof mariadb-client mariadb-client-core mariadb-common
+#9 2.576   mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+#9 2.576   mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo
+#9 2.576   mariadb-plugin-provider-snappy mariadb-server mariadb-server-core
+#9 2.577   mysql-common netbase perl perl-modules-5.36 procps psmisc pv rsync socat
+#9 2.944 0 upgraded, 72 newly installed, 0 to remove and 0 not upgraded.
+#9 2.944 Need to get 30.8 MB of archives.
+#9 2.944 After this operation, 256 MB of additional disk space will be used.
+#9 2.944 Get:1 http://deb.debian.org/debian bookworm/main amd64 perl-modules-5.36 all 5.36.0-7 [2815 kB]
+#9 4.267 Get:2 http://deb.debian.org/debian bookworm/main amd64 libgdbm6 amd64 1.23-3 [72.2 kB]
+#9 4.270 Get:3 http://deb.debian.org/debian bookworm/main amd64 libgdbm-compat4 amd64 1.23-3 [48.2 kB]
+#9 4.271 Get:4 http://deb.debian.org/debian bookworm/main amd64 libperl5.36 amd64 5.36.0-7 [4218 kB]
+#9 7.609 Get:5 http://deb.debian.org/debian bookworm/main amd64 perl amd64 5.36.0-7 [239 kB]
+#9 7.838 Get:6 http://deb.debian.org/debian bookworm/main amd64 libmpfr6 amd64 4.2.0-1 [701 kB]
+#9 8.499 Get:7 http://deb.debian.org/debian bookworm/main amd64 libsigsegv2 amd64 2.14-1 [37.2 kB]
+#9 8.526 Get:8 http://deb.debian.org/debian bookworm/main amd64 gawk amd64 1:5.2.1-2 [673 kB]
+#9 9.105 Get:9 http://deb.debian.org/debian bookworm/main amd64 mysql-common all 5.8+1.1.0 [6636 B]
+#9 9.109 Get:10 http://deb.debian.org/debian bookworm/main amd64 mariadb-common all 1:10.11.3-1 [24.0 kB]
+#9 9.126 Get:11 http://deb.debian.org/debian bookworm/main amd64 galera-4 amd64 26.4.13-1 [825 kB]
+#9 9.759 Get:12 http://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB]
+#9 9.885 Get:13 http://deb.debian.org/debian bookworm/main amd64 libbpf1 amd64 1:1.1.0-1 [145 kB]
+#9 9.993 Get:14 http://deb.debian.org/debian bookworm/main amd64 libmnl0 amd64 1.0.4-3 [12.5 kB]
+#9 10.00 Get:15 http://deb.debian.org/debian bookworm/main amd64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+#9 10.01 Get:16 http://deb.debian.org/debian bookworm/main amd64 libtirpc3 amd64 1.3.3+ds-1 [85.2 kB]
+#9 10.07 Get:17 http://deb.debian.org/debian bookworm/main amd64 libxtables12 amd64 1.8.9-2 [30.8 kB]
+#9 10.09 Get:18 http://deb.debian.org/debian bookworm/main amd64 libcap2-bin amd64 1:2.66-4 [34.7 kB]
+#9 10.12 Get:19 http://deb.debian.org/debian bookworm/main amd64 iproute2 amd64 6.1.0-3 [1046 kB]
+#9 10.81 Get:20 http://deb.debian.org/debian bookworm/main amd64 libdbi-perl amd64 1.643-4 [773 kB]
+#9 11.43 Get:21 http://deb.debian.org/debian bookworm/main amd64 lsof amd64 4.95.0-1 [318 kB]
+#9 11.68 Get:22 http://deb.debian.org/debian bookworm/main amd64 libconfig-inifiles-perl all 3.000003-2 [45.9 kB]
+#9 11.70 Get:23 http://deb.debian.org/debian bookworm/main amd64 libmariadb3 amd64 1:10.11.3-1 [172 kB]
+#9 11.83 Get:24 http://deb.debian.org/debian bookworm/main amd64 libedit2 amd64 3.1-20221030-2 [93.0 kB]
+#9 11.95 Get:25 http://deb.debian.org/debian bookworm/main amd64 libncurses6 amd64 6.4-4 [103 kB]
+#9 12.01 Get:26 http://deb.debian.org/debian bookworm/main amd64 mariadb-client-core amd64 1:10.11.3-1 [870 kB]
+#9 12.83 Get:27 http://deb.debian.org/debian bookworm/main amd64 mariadb-client amd64 1:10.11.3-1 [2930 kB]
+#9 15.05 Get:28 http://deb.debian.org/debian bookworm/main amd64 libkmod2 amd64 30+20221128-1 [57.9 kB]
+#9 15.09 Get:29 http://deb.debian.org/debian bookworm/main amd64 libdaxctl1 amd64 76.1-1 [21.1 kB]
+#9 15.11 Get:30 http://deb.debian.org/debian bookworm/main amd64 libndctl6 amd64 76.1-1 [61.7 kB]
+#9 15.15 Get:31 http://deb.debian.org/debian bookworm/main amd64 libpmem1 amd64 1.12.1-2 [90.0 kB]
+#9 15.26 Get:32 http://deb.debian.org/debian bookworm/main amd64 liburing2 amd64 2.3-3 [12.6 kB]
+#9 15.28 Get:33 http://deb.debian.org/debian bookworm/main amd64 mariadb-server-core amd64 1:10.11.3-1 [7223 kB]
+#9 21.05 Get:34 http://deb.debian.org/debian bookworm/main amd64 libproc2-0 amd64 2:4.0.2-3 [62.8 kB]
+#9 21.09 Get:35 http://deb.debian.org/debian bookworm/main amd64 procps amd64 2:4.0.2-3 [709 kB]
+#9 21.71 Get:36 http://deb.debian.org/debian bookworm/main amd64 psmisc amd64 23.6-1 [259 kB]
+#9 21.94 Get:37 http://deb.debian.org/debian bookworm/main amd64 libpopt0 amd64 1.19+dfsg-1 [43.3 kB]
+#9 21.98 Get:38 http://deb.debian.org/debian bookworm/main amd64 rsync amd64 3.2.7-1 [417 kB]
+#9 22.34 Get:39 http://deb.debian.org/debian bookworm/main amd64 libnsl2 amd64 1.3.0-2 [39.5 kB]
+#9 22.37 Get:40 http://deb.debian.org/debian bookworm/main amd64 libwrap0 amd64 7.6.q-32 [54.9 kB]
+#9 22.42 Get:41 http://deb.debian.org/debian bookworm/main amd64 socat amd64 1.7.4.4-2 [375 kB]
+#9 22.72 Get:42 http://deb.debian.org/debian bookworm/main amd64 mariadb-server amd64 1:10.11.3-1 [3654 kB]
+#9 25.48 Get:43 http://deb.debian.org/debian bookworm/main amd64 netbase all 6.4 [12.8 kB]
+#9 25.48 Get:44 http://deb.debian.org/debian bookworm/main amd64 libatm1 amd64 1:2.5.1-4+b2 [68.3 kB]
+#9 25.58 Get:45 http://deb.debian.org/debian bookworm/main amd64 libhtml-tagset-perl all 3.20-6 [11.7 kB]
+#9 25.58 Get:46 http://deb.debian.org/debian bookworm/main amd64 libregexp-ipv6-perl all 0.03-3 [5212 B]
+#9 25.58 Get:47 http://deb.debian.org/debian bookworm/main amd64 liburi-perl all 5.17-1 [90.4 kB]
+#9 25.64 Get:48 http://deb.debian.org/debian bookworm/main amd64 libhtml-parser-perl amd64 3.81-1 [101 kB]
+#9 25.74 Get:49 http://deb.debian.org/debian bookworm/main amd64 libcgi-pm-perl all 4.55-1 [220 kB]
+#9 25.95 Get:50 http://deb.debian.org/debian bookworm/main amd64 libfcgi0ldbl amd64 2.4.2-2 [26.1 kB]
+#9 25.98 Get:51 http://deb.debian.org/debian bookworm/main amd64 libfcgi-perl amd64 0.82+ds-2 [25.2 kB]
+#9 26.00 Get:52 http://deb.debian.org/debian bookworm/main amd64 libcgi-fast-perl all 1:2.15-1 [12.1 kB]
+#9 26.01 Get:53 http://deb.debian.org/debian bookworm/main amd64 libclone-perl amd64 0.46-1 [13.7 kB]
+#9 26.02 Get:54 http://deb.debian.org/debian bookworm/main amd64 libdbd-mariadb-perl amd64 1.22-1+b1 [93.8 kB]
+#9 26.11 Get:55 http://deb.debian.org/debian bookworm/main amd64 libencode-locale-perl all 1.05-3 [12.9 kB]
+#9 26.13 Get:56 http://deb.debian.org/debian bookworm/main amd64 libfcgi-bin amd64 2.4.2-2 [12.9 kB]
+#9 26.14 Get:57 http://deb.debian.org/debian bookworm/main amd64 libhtml-template-perl all 2.97-2 [66.5 kB]
+#9 26.20 Get:58 http://deb.debian.org/debian bookworm/main amd64 libtimedate-perl all 2.3300-2 [39.3 kB]
+#9 26.24 Get:59 http://deb.debian.org/debian bookworm/main amd64 libhttp-date-perl all 6.05-2 [10.5 kB]
+#9 26.24 Get:60 http://deb.debian.org/debian bookworm/main amd64 libio-html-perl all 1.004-3 [16.2 kB]
+#9 26.26 Get:61 http://deb.debian.org/debian bookworm/main amd64 liblwp-mediatypes-perl all 6.04-2 [20.2 kB]
+#9 26.28 Get:62 http://deb.debian.org/debian bookworm/main amd64 libhttp-message-perl all 6.44-1 [81.7 kB]
+#9 26.36 Get:63 http://deb.debian.org/debian bookworm/main amd64 liblzo2-2 amd64 2.10-2 [56.9 kB]
+#9 26.40 Get:64 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4 [14.5 kB]
+#9 26.42 Get:65 http://deb.debian.org/debian bookworm/main amd64 libsnappy1v5 amd64 1.1.9-3 [26.0 kB]
+#9 26.44 Get:66 http://deb.debian.org/debian bookworm/main amd64 libterm-readkey-perl amd64 2.38-2+b1 [24.5 kB]
+#9 26.46 Get:67 http://deb.debian.org/debian bookworm/main amd64 mariadb-plugin-provider-bzip2 amd64 1:10.11.3-1 [24.4 kB]
+#9 26.49 Get:68 http://deb.debian.org/debian bookworm/main amd64 mariadb-plugin-provider-lz4 amd64 1:10.11.3-1 [24.3 kB]
+#9 26.51 Get:69 http://deb.debian.org/debian bookworm/main amd64 mariadb-plugin-provider-lzma amd64 1:10.11.3-1 [24.4 kB]
+#9 26.53 Get:70 http://deb.debian.org/debian bookworm/main amd64 mariadb-plugin-provider-lzo amd64 1:10.11.3-1 [24.3 kB]
+#9 26.55 Get:71 http://deb.debian.org/debian bookworm/main amd64 mariadb-plugin-provider-snappy amd64 1:10.11.3-1 [24.3 kB]
+#9 26.57 Get:72 http://deb.debian.org/debian bookworm/main amd64 pv amd64 1.6.20-1 [53.5 kB]
+#9 26.73 debconf: delaying package configuration, since apt-utils is not installed
+#9 26.75 Fetched 30.8 MB in 24s (1283 kB/s)
+#9 26.78 Selecting previously unselected package perl-modules-5.36.
+#9 26.78 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7731 files and directories currently installed.)
+#9 26.78 Preparing to unpack .../0-perl-modules-5.36_5.36.0-7_all.deb ...
+#9 26.78 Unpacking perl-modules-5.36 (5.36.0-7) ...
+#9 27.11 Selecting previously unselected package libgdbm6:amd64.
+#9 27.11 Preparing to unpack .../1-libgdbm6_1.23-3_amd64.deb ...
+#9 27.11 Unpacking libgdbm6:amd64 (1.23-3) ...
+#9 27.14 Selecting previously unselected package libgdbm-compat4:amd64.
+#9 27.14 Preparing to unpack .../2-libgdbm-compat4_1.23-3_amd64.deb ...
+#9 27.14 Unpacking libgdbm-compat4:amd64 (1.23-3) ...
+#9 27.17 Selecting previously unselected package libperl5.36:amd64.
+#9 27.17 Preparing to unpack .../3-libperl5.36_5.36.0-7_amd64.deb ...
+#9 27.17 Unpacking libperl5.36:amd64 (5.36.0-7) ...
+#9 27.58 Selecting previously unselected package perl.
+#9 27.58 Preparing to unpack .../4-perl_5.36.0-7_amd64.deb ...
+#9 27.59 Unpacking perl (5.36.0-7) ...
+#9 27.63 Selecting previously unselected package libmpfr6:amd64.
+#9 27.63 Preparing to unpack .../5-libmpfr6_4.2.0-1_amd64.deb ...
+#9 27.64 Unpacking libmpfr6:amd64 (4.2.0-1) ...
+#9 27.69 Selecting previously unselected package libsigsegv2:amd64.
+#9 27.69 Preparing to unpack .../6-libsigsegv2_2.14-1_amd64.deb ...
+#9 27.69 Unpacking libsigsegv2:amd64 (2.14-1) ...
+#9 27.72 Setting up libmpfr6:amd64 (4.2.0-1) ...
+#9 27.73 Setting up libsigsegv2:amd64 (2.14-1) ...
+#9 27.75 Selecting previously unselected package gawk.
+#9 27.75 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9755 files and directories currently installed.)
+#9 27.76 Preparing to unpack .../00-gawk_1%3a5.2.1-2_amd64.deb ...
+#9 27.76 Unpacking gawk (1:5.2.1-2) ...
+#9 27.85 Selecting previously unselected package mysql-common.
+#9 27.85 Preparing to unpack .../01-mysql-common_5.8+1.1.0_all.deb ...
+#9 27.86 Unpacking mysql-common (5.8+1.1.0) ...
+#9 27.88 Selecting previously unselected package mariadb-common.
+#9 27.88 Preparing to unpack .../02-mariadb-common_1%3a10.11.3-1_all.deb ...
+#9 27.88 Unpacking mariadb-common (1:10.11.3-1) ...
+#9 27.90 Selecting previously unselected package galera-4.
+#9 27.91 Preparing to unpack .../03-galera-4_26.4.13-1_amd64.deb ...
+#9 27.91 Unpacking galera-4 (26.4.13-1) ...
+#9 28.00 Selecting previously unselected package libelf1:amd64.
+#9 28.00 Preparing to unpack .../04-libelf1_0.188-2.1_amd64.deb ...
+#9 28.00 Unpacking libelf1:amd64 (0.188-2.1) ...
+#9 28.03 Selecting previously unselected package libbpf1:amd64.
+#9 28.03 Preparing to unpack .../05-libbpf1_1%3a1.1.0-1_amd64.deb ...
+#9 28.04 Unpacking libbpf1:amd64 (1:1.1.0-1) ...
+#9 28.07 Selecting previously unselected package libmnl0:amd64.
+#9 28.07 Preparing to unpack .../06-libmnl0_1.0.4-3_amd64.deb ...
+#9 28.07 Unpacking libmnl0:amd64 (1.0.4-3) ...
+#9 28.09 Selecting previously unselected package libtirpc-common.
+#9 28.09 Preparing to unpack .../07-libtirpc-common_1.3.3+ds-1_all.deb ...
+#9 28.09 Unpacking libtirpc-common (1.3.3+ds-1) ...
+#9 28.12 Selecting previously unselected package libtirpc3:amd64.
+#9 28.12 Preparing to unpack .../08-libtirpc3_1.3.3+ds-1_amd64.deb ...
+#9 28.12 Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+#9 28.15 Selecting previously unselected package libxtables12:amd64.
+#9 28.15 Preparing to unpack .../09-libxtables12_1.8.9-2_amd64.deb ...
+#9 28.15 Unpacking libxtables12:amd64 (1.8.9-2) ...
+#9 28.17 Selecting previously unselected package libcap2-bin.
+#9 28.17 Preparing to unpack .../10-libcap2-bin_1%3a2.66-4_amd64.deb ...
+#9 28.17 Unpacking libcap2-bin (1:2.66-4) ...
+#9 28.20 Selecting previously unselected package iproute2.
+#9 28.20 Preparing to unpack .../11-iproute2_6.1.0-3_amd64.deb ...
+#9 28.20 Unpacking iproute2 (6.1.0-3) ...
+#9 28.32 Selecting previously unselected package libdbi-perl:amd64.
+#9 28.33 Preparing to unpack .../12-libdbi-perl_1.643-4_amd64.deb ...
+#9 28.33 Unpacking libdbi-perl:amd64 (1.643-4) ...
+#9 28.40 Selecting previously unselected package lsof.
+#9 28.40 Preparing to unpack .../13-lsof_4.95.0-1_amd64.deb ...
+#9 28.40 Unpacking lsof (4.95.0-1) ...
+#9 28.44 Selecting previously unselected package libconfig-inifiles-perl.
+#9 28.45 Preparing to unpack .../14-libconfig-inifiles-perl_3.000003-2_all.deb ...
+#9 28.45 Unpacking libconfig-inifiles-perl (3.000003-2) ...
+#9 28.47 Selecting previously unselected package libmariadb3:amd64.
+#9 28.48 Preparing to unpack .../15-libmariadb3_1%3a10.11.3-1_amd64.deb ...
+#9 28.48 Unpacking libmariadb3:amd64 (1:10.11.3-1) ...
+#9 28.52 Selecting previously unselected package libedit2:amd64.
+#9 28.52 Preparing to unpack .../16-libedit2_3.1-20221030-2_amd64.deb ...
+#9 28.52 Unpacking libedit2:amd64 (3.1-20221030-2) ...
+#9 28.55 Selecting previously unselected package libncurses6:amd64.
+#9 28.55 Preparing to unpack .../17-libncurses6_6.4-4_amd64.deb ...
+#9 28.55 Unpacking libncurses6:amd64 (6.4-4) ...
+#9 28.58 Selecting previously unselected package mariadb-client-core.
+#9 28.58 Preparing to unpack .../18-mariadb-client-core_1%3a10.11.3-1_amd64.deb ...
+#9 28.58 Unpacking mariadb-client-core (1:10.11.3-1) ...
+#9 28.71 Selecting previously unselected package mariadb-client.
+#9 28.71 Preparing to unpack .../19-mariadb-client_1%3a10.11.3-1_amd64.deb ...
+#9 28.71 Unpacking mariadb-client (1:10.11.3-1) ...
+#9 29.09 Selecting previously unselected package libkmod2:amd64.
+#9 29.10 Preparing to unpack .../20-libkmod2_30+20221128-1_amd64.deb ...
+#9 29.10 Unpacking libkmod2:amd64 (30+20221128-1) ...
+#9 29.12 Selecting previously unselected package libdaxctl1:amd64.
+#9 29.13 Preparing to unpack .../21-libdaxctl1_76.1-1_amd64.deb ...
+#9 29.13 Unpacking libdaxctl1:amd64 (76.1-1) ...
+#9 29.15 Selecting previously unselected package libndctl6:amd64.
+#9 29.15 Preparing to unpack .../22-libndctl6_76.1-1_amd64.deb ...
+#9 29.16 Unpacking libndctl6:amd64 (76.1-1) ...
+#9 29.18 Selecting previously unselected package libpmem1:amd64.
+#9 29.18 Preparing to unpack .../23-libpmem1_1.12.1-2_amd64.deb ...
+#9 29.19 Unpacking libpmem1:amd64 (1.12.1-2) ...
+#9 29.21 Selecting previously unselected package liburing2:amd64.
+#9 29.22 Preparing to unpack .../24-liburing2_2.3-3_amd64.deb ...
+#9 29.22 Unpacking liburing2:amd64 (2.3-3) ...
+#9 29.24 Selecting previously unselected package mariadb-server-core.
+#9 29.24 Preparing to unpack .../25-mariadb-server-core_1%3a10.11.3-1_amd64.deb ...
+#9 29.24 Unpacking mariadb-server-core (1:10.11.3-1) ...
+#9 29.78 Selecting previously unselected package libproc2-0:amd64.
+#9 29.78 Preparing to unpack .../26-libproc2-0_2%3a4.0.2-3_amd64.deb ...
+#9 29.78 Unpacking libproc2-0:amd64 (2:4.0.2-3) ...
+#9 29.81 Selecting previously unselected package procps.
+#9 29.81 Preparing to unpack .../27-procps_2%3a4.0.2-3_amd64.deb ...
+#9 29.82 Unpacking procps (2:4.0.2-3) ...
+#9 29.90 Selecting previously unselected package psmisc.
+#9 29.90 Preparing to unpack .../28-psmisc_23.6-1_amd64.deb ...
+#9 29.90 Unpacking psmisc (23.6-1) ...
+#9 29.94 Selecting previously unselected package libpopt0:amd64.
+#9 29.94 Preparing to unpack .../29-libpopt0_1.19+dfsg-1_amd64.deb ...
+#9 29.95 Unpacking libpopt0:amd64 (1.19+dfsg-1) ...
+#9 29.98 Selecting previously unselected package rsync.
+#9 29.98 Preparing to unpack .../30-rsync_3.2.7-1_amd64.deb ...
+#9 29.99 Unpacking rsync (3.2.7-1) ...
+#9 30.04 Selecting previously unselected package libnsl2:amd64.
+#9 30.04 Preparing to unpack .../31-libnsl2_1.3.0-2_amd64.deb ...
+#9 30.04 Unpacking libnsl2:amd64 (1.3.0-2) ...
+#9 30.07 Selecting previously unselected package libwrap0:amd64.
+#9 30.07 Preparing to unpack .../32-libwrap0_7.6.q-32_amd64.deb ...
+#9 30.07 Unpacking libwrap0:amd64 (7.6.q-32) ...
+#9 30.09 Selecting previously unselected package socat.
+#9 30.09 Preparing to unpack .../33-socat_1.7.4.4-2_amd64.deb ...
+#9 30.10 Unpacking socat (1.7.4.4-2) ...
+#9 30.15 Setting up mysql-common (5.8+1.1.0) ...
+#9 30.17 update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+#9 30.17 Setting up mariadb-common (1:10.11.3-1) ...
+#9 30.18 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+#9 30.21 Selecting previously unselected package mariadb-server.
+#9 30.21 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11117 files and directories currently installed.)
+#9 30.22 Preparing to unpack .../00-mariadb-server_1%3a10.11.3-1_amd64.deb ...
+#9 30.29 debconf: unable to initialize frontend: Dialog
+#9 30.29 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 30.29 debconf: falling back to frontend: Readline
+#9 30.29 debconf: unable to initialize frontend: Readline
+#9 30.29 debconf: (This frontend requires a controlling tty.)
+#9 30.29 debconf: falling back to frontend: Teletype
+#9 30.43 Unpacking mariadb-server (1:10.11.3-1) ...
+#9 30.81 Selecting previously unselected package netbase.
+#9 30.81 Preparing to unpack .../01-netbase_6.4_all.deb ...
+#9 30.82 Unpacking netbase (6.4) ...
+#9 30.85 Selecting previously unselected package libatm1:amd64.
+#9 30.85 Preparing to unpack .../02-libatm1_1%3a2.5.1-4+b2_amd64.deb ...
+#9 30.85 Unpacking libatm1:amd64 (1:2.5.1-4+b2) ...
+#9 30.87 Selecting previously unselected package libhtml-tagset-perl.
+#9 30.87 Preparing to unpack .../03-libhtml-tagset-perl_3.20-6_all.deb ...
+#9 30.87 Unpacking libhtml-tagset-perl (3.20-6) ...
+#9 30.89 Selecting previously unselected package libregexp-ipv6-perl.
+#9 30.89 Preparing to unpack .../04-libregexp-ipv6-perl_0.03-3_all.deb ...
+#9 30.89 Unpacking libregexp-ipv6-perl (0.03-3) ...
+#9 30.91 Selecting previously unselected package liburi-perl.
+#9 30.91 Preparing to unpack .../05-liburi-perl_5.17-1_all.deb ...
+#9 30.92 Unpacking liburi-perl (5.17-1) ...
+#9 30.94 Selecting previously unselected package libhtml-parser-perl:amd64.
+#9 30.95 Preparing to unpack .../06-libhtml-parser-perl_3.81-1_amd64.deb ...
+#9 30.95 Unpacking libhtml-parser-perl:amd64 (3.81-1) ...
+#9 30.97 Selecting previously unselected package libcgi-pm-perl.
+#9 30.97 Preparing to unpack .../07-libcgi-pm-perl_4.55-1_all.deb ...
+#9 30.98 Unpacking libcgi-pm-perl (4.55-1) ...
+#9 31.01 Selecting previously unselected package libfcgi0ldbl:amd64.
+#9 31.01 Preparing to unpack .../08-libfcgi0ldbl_2.4.2-2_amd64.deb ...
+#9 31.02 Unpacking libfcgi0ldbl:amd64 (2.4.2-2) ...
+#9 31.04 Selecting previously unselected package libfcgi-perl.
+#9 31.04 Preparing to unpack .../09-libfcgi-perl_0.82+ds-2_amd64.deb ...
+#9 31.04 Unpacking libfcgi-perl (0.82+ds-2) ...
+#9 31.06 Selecting previously unselected package libcgi-fast-perl.
+#9 31.06 Preparing to unpack .../10-libcgi-fast-perl_1%3a2.15-1_all.deb ...
+#9 31.06 Unpacking libcgi-fast-perl (1:2.15-1) ...
+#9 31.09 Selecting previously unselected package libclone-perl:amd64.
+#9 31.09 Preparing to unpack .../11-libclone-perl_0.46-1_amd64.deb ...
+#9 31.09 Unpacking libclone-perl:amd64 (0.46-1) ...
+#9 31.11 Selecting previously unselected package libdbd-mariadb-perl.
+#9 31.11 Preparing to unpack .../12-libdbd-mariadb-perl_1.22-1+b1_amd64.deb ...
+#9 31.12 Unpacking libdbd-mariadb-perl (1.22-1+b1) ...
+#9 31.14 Selecting previously unselected package libencode-locale-perl.
+#9 31.14 Preparing to unpack .../13-libencode-locale-perl_1.05-3_all.deb ...
+#9 31.14 Unpacking libencode-locale-perl (1.05-3) ...
+#9 31.16 Selecting previously unselected package libfcgi-bin.
+#9 31.16 Preparing to unpack .../14-libfcgi-bin_2.4.2-2_amd64.deb ...
+#9 31.17 Unpacking libfcgi-bin (2.4.2-2) ...
+#9 31.19 Selecting previously unselected package libhtml-template-perl.
+#9 31.19 Preparing to unpack .../15-libhtml-template-perl_2.97-2_all.deb ...
+#9 31.19 Unpacking libhtml-template-perl (2.97-2) ...
+#9 31.21 Selecting previously unselected package libtimedate-perl.
+#9 31.21 Preparing to unpack .../16-libtimedate-perl_2.3300-2_all.deb ...
+#9 31.21 Unpacking libtimedate-perl (2.3300-2) ...
+#9 31.24 Selecting previously unselected package libhttp-date-perl.
+#9 31.24 Preparing to unpack .../17-libhttp-date-perl_6.05-2_all.deb ...
+#9 31.24 Unpacking libhttp-date-perl (6.05-2) ...
+#9 31.27 Selecting previously unselected package libio-html-perl.
+#9 31.27 Preparing to unpack .../18-libio-html-perl_1.004-3_all.deb ...
+#9 31.27 Unpacking libio-html-perl (1.004-3) ...
+#9 31.29 Selecting previously unselected package liblwp-mediatypes-perl.
+#9 31.29 Preparing to unpack .../19-liblwp-mediatypes-perl_6.04-2_all.deb ...
+#9 31.29 Unpacking liblwp-mediatypes-perl (6.04-2) ...
+#9 31.31 Selecting previously unselected package libhttp-message-perl.
+#9 31.31 Preparing to unpack .../20-libhttp-message-perl_6.44-1_all.deb ...
+#9 31.31 Unpacking libhttp-message-perl (6.44-1) ...
+#9 31.34 Selecting previously unselected package liblzo2-2:amd64.
+#9 31.34 Preparing to unpack .../21-liblzo2-2_2.10-2_amd64.deb ...
+#9 31.35 Unpacking liblzo2-2:amd64 (2.10-2) ...
+#9 31.37 Selecting previously unselected package libpam-cap:amd64.
+#9 31.37 Preparing to unpack .../22-libpam-cap_1%3a2.66-4_amd64.deb ...
+#9 31.37 Unpacking libpam-cap:amd64 (1:2.66-4) ...
+#9 31.40 Selecting previously unselected package libsnappy1v5:amd64.
+#9 31.40 Preparing to unpack .../23-libsnappy1v5_1.1.9-3_amd64.deb ...
+#9 31.40 Unpacking libsnappy1v5:amd64 (1.1.9-3) ...
+#9 31.42 Selecting previously unselected package libterm-readkey-perl.
+#9 31.42 Preparing to unpack .../24-libterm-readkey-perl_2.38-2+b1_amd64.deb ...
+#9 31.42 Unpacking libterm-readkey-perl (2.38-2+b1) ...
+#9 31.45 Selecting previously unselected package mariadb-plugin-provider-bzip2.
+#9 31.45 Preparing to unpack .../25-mariadb-plugin-provider-bzip2_1%3a10.11.3-1_amd64.deb ...
+#9 31.45 Unpacking mariadb-plugin-provider-bzip2 (1:10.11.3-1) ...
+#9 31.47 Selecting previously unselected package mariadb-plugin-provider-lz4.
+#9 31.47 Preparing to unpack .../26-mariadb-plugin-provider-lz4_1%3a10.11.3-1_amd64.deb ...
+#9 31.48 Unpacking mariadb-plugin-provider-lz4 (1:10.11.3-1) ...
+#9 31.50 Selecting previously unselected package mariadb-plugin-provider-lzma.
+#9 31.50 Preparing to unpack .../27-mariadb-plugin-provider-lzma_1%3a10.11.3-1_amd64.deb ...
+#9 31.50 Unpacking mariadb-plugin-provider-lzma (1:10.11.3-1) ...
+#9 31.53 Selecting previously unselected package mariadb-plugin-provider-lzo.
+#9 31.53 Preparing to unpack .../28-mariadb-plugin-provider-lzo_1%3a10.11.3-1_amd64.deb ...
+#9 31.53 Unpacking mariadb-plugin-provider-lzo (1:10.11.3-1) ...
+#9 31.55 Selecting previously unselected package mariadb-plugin-provider-snappy.
+#9 31.55 Preparing to unpack .../29-mariadb-plugin-provider-snappy_1%3a10.11.3-1_amd64.deb ...
+#9 31.55 Unpacking mariadb-plugin-provider-snappy (1:10.11.3-1) ...
+#9 31.57 Selecting previously unselected package pv.
+#9 31.57 Preparing to unpack .../30-pv_1.6.20-1_amd64.deb ...
+#9 31.58 Unpacking pv (1.6.20-1) ...
+#9 31.60 Setting up libconfig-inifiles-perl (3.000003-2) ...
+#9 31.61 Setting up galera-4 (26.4.13-1) ...
+#9 31.62 Setting up libfcgi0ldbl:amd64 (2.4.2-2) ...
+#9 31.62 Setting up gawk (1:5.2.1-2) ...
+#9 31.64 Setting up psmisc (23.6-1) ...
+#9 31.64 Setting up libtirpc-common (1.3.3+ds-1) ...
+#9 31.65 Setting up libedit2:amd64 (3.1-20221030-2) ...
+#9 31.66 Setting up libfcgi-bin (2.4.2-2) ...
+#9 31.67 Setting up liblzo2-2:amd64 (2.10-2) ...
+#9 31.67 Setting up libatm1:amd64 (1:2.5.1-4+b2) ...
+#9 31.68 Setting up libsnappy1v5:amd64 (1.1.9-3) ...
+#9 31.69 Setting up libcap2-bin (1:2.66-4) ...
+#9 31.69 Setting up perl-modules-5.36 (5.36.0-7) ...
+#9 31.70 Setting up libncurses6:amd64 (6.4-4) ...
+#9 31.71 Setting up libproc2-0:amd64 (2:4.0.2-3) ...
+#9 31.71 Setting up libmnl0:amd64 (1.0.4-3) ...
+#9 31.72 Setting up libmariadb3:amd64 (1:10.11.3-1) ...
+#9 31.73 Setting up libxtables12:amd64 (1.8.9-2) ...
+#9 31.73 Setting up pv (1.6.20-1) ...
+#9 31.74 Setting up procps (2:4.0.2-3) ...
+#9 31.77 Setting up netbase (6.4) ...
+#9 31.78 Setting up liburing2:amd64 (2.3-3) ...
+#9 31.79 Setting up libelf1:amd64 (0.188-2.1) ...
+#9 31.79 Setting up libpam-cap:amd64 (1:2.66-4) ...
+#9 31.87 debconf: unable to initialize frontend: Dialog
+#9 31.87 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 31.87 debconf: falling back to frontend: Readline
+#9 31.87 debconf: unable to initialize frontend: Readline
+#9 31.87 debconf: (This frontend requires a controlling tty.)
+#9 31.87 debconf: falling back to frontend: Teletype
+#9 31.93 Setting up libbpf1:amd64 (1:1.1.0-1) ...
+#9 31.93 Setting up libkmod2:amd64 (30+20221128-1) ...
+#9 31.94 Setting up libgdbm6:amd64 (1.23-3) ...
+#9 31.94 Setting up libpopt0:amd64 (1.19+dfsg-1) ...
+#9 31.95 Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+#9 31.96 Setting up iproute2 (6.1.0-3) ...
+#9 32.05 debconf: unable to initialize frontend: Dialog
+#9 32.05 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 32.05 debconf: falling back to frontend: Readline
+#9 32.06 debconf: unable to initialize frontend: Readline
+#9 32.06 debconf: (This frontend requires a controlling tty.)
+#9 32.06 debconf: falling back to frontend: Teletype
+#9 32.08 Setting up mariadb-client-core (1:10.11.3-1) ...
+#9 32.09 Setting up libgdbm-compat4:amd64 (1.23-3) ...
+#9 32.09 Setting up libdaxctl1:amd64 (76.1-1) ...
+#9 32.10 Setting up lsof (4.95.0-1) ...
+#9 32.10 Setting up libnsl2:amd64 (1.3.0-2) ...
+#9 32.11 Setting up libndctl6:amd64 (76.1-1) ...
+#9 32.12 Setting up libpmem1:amd64 (1.12.1-2) ...
+#9 32.13 Setting up libperl5.36:amd64 (5.36.0-7) ...
+#9 32.13 Setting up rsync (3.2.7-1) ...
+#9 32.15 invoke-rc.d: could not determine current runlevel
+#9 32.15 invoke-rc.d: policy-rc.d denied execution of start.
+#9 32.23 Setting up perl (5.36.0-7) ...
+#9 32.25 Setting up libwrap0:amd64 (7.6.q-32) ...
+#9 32.26 Setting up socat (1.7.4.4-2) ...
+#9 32.26 Setting up libio-html-perl (1.004-3) ...
+#9 32.27 Setting up libtimedate-perl (2.3300-2) ...
+#9 32.28 Setting up libregexp-ipv6-perl (0.03-3) ...
+#9 32.28 Setting up libfcgi-perl (0.82+ds-2) ...
+#9 32.29 Setting up mariadb-server-core (1:10.11.3-1) ...
+#9 32.30 Setting up libterm-readkey-perl (2.38-2+b1) ...
+#9 32.30 Setting up liburi-perl (5.17-1) ...
+#9 32.31 Setting up libdbi-perl:amd64 (1.643-4) ...
+#9 32.31 Setting up libhttp-date-perl (6.05-2) ...
+#9 32.32 Setting up mariadb-client (1:10.11.3-1) ...
+#9 32.33 Setting up libclone-perl:amd64 (0.46-1) ...
+#9 32.34 Setting up libhtml-tagset-perl (3.20-6) ...
+#9 32.35 Setting up liblwp-mediatypes-perl (6.04-2) ...
+#9 32.35 Setting up libencode-locale-perl (1.05-3) ...
+#9 32.36 Setting up mariadb-server (1:10.11.3-1) ...
+#9 32.45 debconf: unable to initialize frontend: Dialog
+#9 32.45 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 32.45 debconf: falling back to frontend: Readline
+#9 32.45 debconf: unable to initialize frontend: Readline
+#9 32.45 debconf: (This frontend requires a controlling tty.)
+#9 32.45 debconf: falling back to frontend: Teletype
+#9 32.47 invoke-rc.d: could not determine current runlevel
+#9 32.47 invoke-rc.d: policy-rc.d denied execution of stop.
+#9 34.02 invoke-rc.d: could not determine current runlevel
+#9 34.03 invoke-rc.d: policy-rc.d denied execution of start.
+#9 34.04 Setting up libdbd-mariadb-perl (1.22-1+b1) ...
+#9 34.04 Setting up mariadb-plugin-provider-bzip2 (1:10.11.3-1) ...
+#9 34.05 Setting up mariadb-plugin-provider-lzma (1:10.11.3-1) ...
+#9 34.06 Setting up libhtml-parser-perl:amd64 (3.81-1) ...
+#9 34.07 Setting up mariadb-plugin-provider-lzo (1:10.11.3-1) ...
+#9 34.08 Setting up libhttp-message-perl (6.44-1) ...
+#9 34.08 Setting up mariadb-plugin-provider-lz4 (1:10.11.3-1) ...
+#9 34.09 Setting up mariadb-plugin-provider-snappy (1:10.11.3-1) ...
+#9 34.10 Setting up libcgi-pm-perl (4.55-1) ...
+#9 34.11 Setting up libhtml-template-perl (2.97-2) ...
+#9 34.11 Setting up libcgi-fast-perl (1:2.15-1) ...
+#9 34.12 Processing triggers for libc-bin (2.36-9+deb12u1) ...
+#9 34.13 Processing triggers for mariadb-server (1:10.11.3-1) ...
+#9 34.21 debconf: unable to initialize frontend: Dialog
+#9 34.21 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 34.21 debconf: falling back to frontend: Readline
+#9 34.21 debconf: unable to initialize frontend: Readline
+#9 34.21 debconf: (This frontend requires a controlling tty.)
+#9 34.21 debconf: falling back to frontend: Teletype
+#9 34.23 invoke-rc.d: could not determine current runlevel
+#9 34.23 invoke-rc.d: policy-rc.d denied execution of restart.
+#9 DONE 35.4s
+
+#10 [app  6/10] RUN apt-get update && apt-get install -y php-fpm php-mysql php-common php-mbstring php-xmlrpc php-xml php-intl php-cli php-zip php-curl
+#10 0.513 Hit:1 http://deb.debian.org/debian bookworm InRelease
+#10 0.573 Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+#10 0.640 Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+#10 0.682 Reading package lists...
+#10 1.186 Reading package lists...
+#10 1.670 Building dependency tree...
+#10 1.770 Reading state information...
+#10 1.892 The following additional packages will be installed:
+#10 1.892   dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+#10 1.892   dmsetup libapparmor1 libargon2-1 libcryptsetup12 libdbus-1-3
+#10 1.892   libdevmapper1.02.1 libfdisk1 libip4tc2 libjson-c5 libmagic-mgc libmagic1
+#10 1.893   libonig5 libsodium23 libsystemd-shared libxmlrpc-epi0 libzip4 media-types
+#10 1.893   php8.2-cli php8.2-common php8.2-curl php8.2-fpm php8.2-intl php8.2-mbstring
+#10 1.893   php8.2-mysql php8.2-opcache php8.2-readline php8.2-xml php8.2-xmlrpc
+#10 1.893   php8.2-zip sensible-utils systemd systemd-timesyncd ucf
+#10 1.894 Suggested packages:
+#10 1.894   default-dbus-session-bus | dbus-session-bus file php-pear systemd-container
+#10 1.894   systemd-homed systemd-userdbd systemd-boot systemd-resolved libfido2-1
+#10 1.894   libqrencode4 libtss2-esys-3.0.2-0 libtss2-mu0 libtss2-rc0 polkitd
+#10 1.894   | policykit-1
+#10 2.164 The following NEW packages will be installed:
+#10 2.164   dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+#10 2.165   dmsetup libapparmor1 libargon2-1 libcryptsetup12 libdbus-1-3
+#10 2.165   libdevmapper1.02.1 libfdisk1 libip4tc2 libjson-c5 libmagic-mgc libmagic1
+#10 2.166   libonig5 libsodium23 libsystemd-shared libxmlrpc-epi0 libzip4 media-types
+#10 2.166   php-cli php-common php-curl php-fpm php-intl php-mbstring php-mysql php-xml
+#10 2.166   php-xmlrpc php-zip php8.2-cli php8.2-common php8.2-curl php8.2-fpm
+#10 2.166   php8.2-intl php8.2-mbstring php8.2-mysql php8.2-opcache php8.2-readline
+#10 2.166   php8.2-xml php8.2-xmlrpc php8.2-zip sensible-utils systemd systemd-timesyncd
+#10 2.166   ucf
+#10 2.572 0 upgraded, 48 newly installed, 0 to remove and 0 not upgraded.
+#10 2.572 Need to get 12.7 MB of archives.
+#10 2.572 After this operation, 54.0 MB of additional disk space will be used.
+#10 2.572 Get:1 http://deb.debian.org/debian bookworm/main amd64 libargon2-1 amd64 0~20171227-0.3+deb12u1 [19.4 kB]
+#10 2.639 Get:2 http://deb.debian.org/debian bookworm/main amd64 dmsetup amd64 2:1.02.185-2 [82.0 kB]
+#10 2.723 Get:3 http://deb.debian.org/debian bookworm/main amd64 libdevmapper1.02.1 amd64 2:1.02.185-2 [133 kB]
+#10 2.795 Get:4 http://deb.debian.org/debian bookworm/main amd64 libjson-c5 amd64 0.16-2 [44.1 kB]
+#10 2.827 Get:5 http://deb.debian.org/debian bookworm/main amd64 libcryptsetup12 amd64 2:2.6.1-4~deb12u1 [223 kB]
+#10 2.861 Get:6 http://deb.debian.org/debian bookworm/main amd64 libfdisk1 amd64 2.38.1-5+b1 [194 kB]
+#10 2.901 Get:7 http://deb.debian.org/debian bookworm/main amd64 libapparmor1 amd64 3.0.8-3 [41.2 kB]
+#10 2.904 Get:8 http://deb.debian.org/debian bookworm/main amd64 libip4tc2 amd64 1.8.9-2 [19.0 kB]
+#10 2.906 Get:9 http://deb.debian.org/debian bookworm/main amd64 libsystemd-shared amd64 252.12-1~deb12u1 [1690 kB]
+#10 3.622 Get:10 http://deb.debian.org/debian bookworm/main amd64 systemd amd64 252.12-1~deb12u1 [3027 kB]
+#10 6.038 Get:11 http://deb.debian.org/debian bookworm/main amd64 libdbus-1-3 amd64 1.14.8-2~deb12u1 [201 kB]
+#10 6.219 Get:12 http://deb.debian.org/debian bookworm/main amd64 dbus-bin amd64 1.14.8-2~deb12u1 [105 kB]
+#10 6.307 Get:13 http://deb.debian.org/debian bookworm/main amd64 dbus-session-bus-common all 1.14.8-2~deb12u1 [77.5 kB]
+#10 6.375 Get:14 http://deb.debian.org/debian bookworm/main amd64 dbus-daemon amd64 1.14.8-2~deb12u1 [183 kB]
+#10 6.534 Get:15 http://deb.debian.org/debian bookworm/main amd64 dbus-system-bus-common all 1.14.8-2~deb12u1 [78.5 kB]
+#10 6.602 Get:16 http://deb.debian.org/debian bookworm/main amd64 dbus amd64 1.14.8-2~deb12u1 [96.6 kB]
+#10 6.679 Get:17 http://deb.debian.org/debian bookworm/main amd64 php-common all 2:93 [13.1 kB]
+#10 6.690 Get:18 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+#10 6.711 Get:19 http://deb.debian.org/debian bookworm/main amd64 ucf all 3.0043+nmu1 [55.2 kB]
+#10 6.753 Get:20 http://deb.debian.org/debian bookworm/main amd64 php8.2-common amd64 8.2.7-1~deb12u1 [668 kB]
+#10 7.292 Get:21 http://deb.debian.org/debian bookworm/main amd64 libmagic-mgc amd64 1:5.44-3 [305 kB]
+#10 7.515 Get:22 http://deb.debian.org/debian bookworm/main amd64 libmagic1 amd64 1:5.44-3 [104 kB]
+#10 7.599 Get:23 http://deb.debian.org/debian bookworm/main amd64 media-types all 10.0.0 [26.1 kB]
+#10 7.616 Get:24 http://deb.debian.org/debian bookworm/main amd64 php8.2-opcache amd64 8.2.7-1~deb12u1 [344 kB]
+#10 7.863 Get:25 http://deb.debian.org/debian bookworm/main amd64 php8.2-readline amd64 8.2.7-1~deb12u1 [12.4 kB]
+#10 7.871 Get:26 http://deb.debian.org/debian bookworm/main amd64 libsodium23 amd64 1.0.18-1 [161 kB]
+#10 7.986 Get:27 http://deb.debian.org/debian bookworm/main amd64 php8.2-cli amd64 8.2.7-1~deb12u1 [1732 kB]
+#10 9.398 Get:28 http://deb.debian.org/debian bookworm/main amd64 php8.2-fpm amd64 8.2.7-1~deb12u1 [1743 kB]
+#10 10.88 Get:29 http://deb.debian.org/debian bookworm/main amd64 libxmlrpc-epi0 amd64 0.54.2-1.3+b1 [34.8 kB]
+#10 10.91 Get:30 http://deb.debian.org/debian bookworm/main amd64 php8.2-xmlrpc amd64 3:1.0.0~rc3-6 [15.4 kB]
+#10 10.92 Get:31 http://deb.debian.org/debian bookworm/main amd64 php-xmlrpc amd64 3:1.0.0~rc3-6 [3624 B]
+#10 10.93 Get:32 http://deb.debian.org/debian bookworm/main amd64 systemd-timesyncd amd64 252.12-1~deb12u1 [62.6 kB]
+#10 10.98 Get:33 http://deb.debian.org/debian bookworm/main amd64 libonig5 amd64 6.9.8-1 [188 kB]
+#10 11.14 Get:34 http://deb.debian.org/debian bookworm/main amd64 libzip4 amd64 1.7.3-1+b1 [55.5 kB]
+#10 11.19 Get:35 http://deb.debian.org/debian bookworm/main amd64 php-cli all 2:8.2+93 [4108 B]
+#10 11.20 Get:36 http://deb.debian.org/debian bookworm/main amd64 php8.2-curl amd64 8.2.7-1~deb12u1 [35.7 kB]
+#10 11.23 Get:37 http://deb.debian.org/debian bookworm/main amd64 php-curl all 2:8.2+93 [3656 B]
+#10 11.23 Get:38 http://deb.debian.org/debian bookworm/main amd64 php-fpm all 2:8.2+93 [3712 B]
+#10 11.23 Get:39 http://deb.debian.org/debian bookworm/main amd64 php8.2-intl amd64 8.2.7-1~deb12u1 [138 kB]
+#10 11.35 Get:40 http://deb.debian.org/debian bookworm/main amd64 php-intl all 2:8.2+93 [3664 B]
+#10 11.35 Get:41 http://deb.debian.org/debian bookworm/main amd64 php8.2-mbstring amd64 8.2.7-1~deb12u1 [444 kB]
+#10 11.71 Get:42 http://deb.debian.org/debian bookworm/main amd64 php-mbstring all 2:8.2+93 [3664 B]
+#10 11.71 Get:43 http://deb.debian.org/debian bookworm/main amd64 php8.2-mysql amd64 8.2.7-1~deb12u1 [116 kB]
+#10 11.80 Get:44 http://deb.debian.org/debian bookworm/main amd64 php-mysql all 2:8.2+93 [3660 B]
+#10 11.81 Get:45 http://deb.debian.org/debian bookworm/main amd64 php8.2-xml amd64 8.2.7-1~deb12u1 [108 kB]
+#10 11.89 Get:46 http://deb.debian.org/debian bookworm/main amd64 php-xml all 2:8.2+93 [3672 B]
+#10 11.90 Get:47 http://deb.debian.org/debian bookworm/main amd64 php8.2-zip amd64 8.2.7-1~deb12u1 [26.1 kB]
+#10 11.91 Get:48 http://deb.debian.org/debian bookworm/main amd64 php-zip all 2:8.2+93 [3656 B]
+#10 12.03 debconf: delaying package configuration, since apt-utils is not installed
+#10 12.06 Fetched 12.7 MB in 10s (1299 kB/s)
+#10 12.07 Selecting previously unselected package libargon2-1:amd64.
+#10 12.07 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11657 files and directories currently installed.)
+#10 12.09 Preparing to unpack .../00-libargon2-1_0~20171227-0.3+deb12u1_amd64.deb ...
+#10 12.09 Unpacking libargon2-1:amd64 (0~20171227-0.3+deb12u1) ...
+#10 12.11 Selecting previously unselected package dmsetup.
+#10 12.11 Preparing to unpack .../01-dmsetup_2%3a1.02.185-2_amd64.deb ...
+#10 12.12 Unpacking dmsetup (2:1.02.185-2) ...
+#10 12.14 Selecting previously unselected package libdevmapper1.02.1:amd64.
+#10 12.14 Preparing to unpack .../02-libdevmapper1.02.1_2%3a1.02.185-2_amd64.deb ...
+#10 12.15 Unpacking libdevmapper1.02.1:amd64 (2:1.02.185-2) ...
+#10 12.18 Selecting previously unselected package libjson-c5:amd64.
+#10 12.18 Preparing to unpack .../03-libjson-c5_0.16-2_amd64.deb ...
+#10 12.18 Unpacking libjson-c5:amd64 (0.16-2) ...
+#10 12.21 Selecting previously unselected package libcryptsetup12:amd64.
+#10 12.21 Preparing to unpack .../04-libcryptsetup12_2%3a2.6.1-4~deb12u1_amd64.deb ...
+#10 12.21 Unpacking libcryptsetup12:amd64 (2:2.6.1-4~deb12u1) ...
+#10 12.25 Selecting previously unselected package libfdisk1:amd64.
+#10 12.25 Preparing to unpack .../05-libfdisk1_2.38.1-5+b1_amd64.deb ...
+#10 12.25 Unpacking libfdisk1:amd64 (2.38.1-5+b1) ...
+#10 12.29 Selecting previously unselected package libapparmor1:amd64.
+#10 12.29 Preparing to unpack .../06-libapparmor1_3.0.8-3_amd64.deb ...
+#10 12.29 Unpacking libapparmor1:amd64 (3.0.8-3) ...
+#10 12.32 Selecting previously unselected package libip4tc2:amd64.
+#10 12.32 Preparing to unpack .../07-libip4tc2_1.8.9-2_amd64.deb ...
+#10 12.32 Unpacking libip4tc2:amd64 (1.8.9-2) ...
+#10 12.35 Selecting previously unselected package libsystemd-shared:amd64.
+#10 12.35 Preparing to unpack .../08-libsystemd-shared_252.12-1~deb12u1_amd64.deb ...
+#10 12.35 Unpacking libsystemd-shared:amd64 (252.12-1~deb12u1) ...
+#10 12.51 Selecting previously unselected package systemd.
+#10 12.51 Preparing to unpack .../09-systemd_252.12-1~deb12u1_amd64.deb ...
+#10 12.52 Unpacking systemd (252.12-1~deb12u1) ...
+#10 12.80 Selecting previously unselected package libdbus-1-3:amd64.
+#10 12.80 Preparing to unpack .../10-libdbus-1-3_1.14.8-2~deb12u1_amd64.deb ...
+#10 12.80 Unpacking libdbus-1-3:amd64 (1.14.8-2~deb12u1) ...
+#10 12.83 Selecting previously unselected package dbus-bin.
+#10 12.84 Preparing to unpack .../11-dbus-bin_1.14.8-2~deb12u1_amd64.deb ...
+#10 12.84 Unpacking dbus-bin (1.14.8-2~deb12u1) ...
+#10 12.86 Selecting previously unselected package dbus-session-bus-common.
+#10 12.87 Preparing to unpack .../12-dbus-session-bus-common_1.14.8-2~deb12u1_all.deb ...
+#10 12.87 Unpacking dbus-session-bus-common (1.14.8-2~deb12u1) ...
+#10 12.89 Selecting previously unselected package dbus-daemon.
+#10 12.90 Preparing to unpack .../13-dbus-daemon_1.14.8-2~deb12u1_amd64.deb ...
+#10 12.90 Unpacking dbus-daemon (1.14.8-2~deb12u1) ...
+#10 12.93 Selecting previously unselected package dbus-system-bus-common.
+#10 12.93 Preparing to unpack .../14-dbus-system-bus-common_1.14.8-2~deb12u1_all.deb ...
+#10 12.93 Unpacking dbus-system-bus-common (1.14.8-2~deb12u1) ...
+#10 12.96 Selecting previously unselected package dbus.
+#10 12.97 Preparing to unpack .../15-dbus_1.14.8-2~deb12u1_amd64.deb ...
+#10 12.97 Unpacking dbus (1.14.8-2~deb12u1) ...
+#10 13.00 Selecting previously unselected package php-common.
+#10 13.00 Preparing to unpack .../16-php-common_2%3a93_all.deb ...
+#10 13.01 Unpacking php-common (2:93) ...
+#10 13.03 Selecting previously unselected package sensible-utils.
+#10 13.03 Preparing to unpack .../17-sensible-utils_0.0.17+nmu1_all.deb ...
+#10 13.04 Unpacking sensible-utils (0.0.17+nmu1) ...
+#10 13.06 Selecting previously unselected package ucf.
+#10 13.06 Preparing to unpack .../18-ucf_3.0043+nmu1_all.deb ...
+#10 13.07 Moving old data out of the way
+#10 13.07 Unpacking ucf (3.0043+nmu1) ...
+#10 13.10 Selecting previously unselected package php8.2-common.
+#10 13.10 Preparing to unpack .../19-php8.2-common_8.2.7-1~deb12u1_amd64.deb ...
+#10 13.10 Unpacking php8.2-common (8.2.7-1~deb12u1) ...
+#10 13.19 Selecting previously unselected package libmagic-mgc.
+#10 13.19 Preparing to unpack .../20-libmagic-mgc_1%3a5.44-3_amd64.deb ...
+#10 13.20 Unpacking libmagic-mgc (1:5.44-3) ...
+#10 13.26 Selecting previously unselected package libmagic1:amd64.
+#10 13.26 Preparing to unpack .../21-libmagic1_1%3a5.44-3_amd64.deb ...
+#10 13.27 Unpacking libmagic1:amd64 (1:5.44-3) ...
+#10 13.29 Selecting previously unselected package media-types.
+#10 13.29 Preparing to unpack .../22-media-types_10.0.0_all.deb ...
+#10 13.30 Unpacking media-types (10.0.0) ...
+#10 13.32 Selecting previously unselected package php8.2-opcache.
+#10 13.33 Preparing to unpack .../23-php8.2-opcache_8.2.7-1~deb12u1_amd64.deb ...
+#10 13.33 Unpacking php8.2-opcache (8.2.7-1~deb12u1) ...
+#10 13.38 Selecting previously unselected package php8.2-readline.
+#10 13.38 Preparing to unpack .../24-php8.2-readline_8.2.7-1~deb12u1_amd64.deb ...
+#10 13.39 Unpacking php8.2-readline (8.2.7-1~deb12u1) ...
+#10 13.41 Selecting previously unselected package libsodium23:amd64.
+#10 13.41 Preparing to unpack .../25-libsodium23_1.0.18-1_amd64.deb ...
+#10 13.41 Unpacking libsodium23:amd64 (1.0.18-1) ...
+#10 13.45 Selecting previously unselected package php8.2-cli.
+#10 13.45 Preparing to unpack .../26-php8.2-cli_8.2.7-1~deb12u1_amd64.deb ...
+#10 13.45 Unpacking php8.2-cli (8.2.7-1~deb12u1) ...
+#10 13.63 Selecting previously unselected package php8.2-fpm.
+#10 13.63 Preparing to unpack .../27-php8.2-fpm_8.2.7-1~deb12u1_amd64.deb ...
+#10 13.63 Unpacking php8.2-fpm (8.2.7-1~deb12u1) ...
+#10 13.80 Selecting previously unselected package libxmlrpc-epi0:amd64.
+#10 13.80 Preparing to unpack .../28-libxmlrpc-epi0_0.54.2-1.3+b1_amd64.deb ...
+#10 13.80 Unpacking libxmlrpc-epi0:amd64 (0.54.2-1.3+b1) ...
+#10 13.83 Setting up php-common (2:93) ...
+#10 13.95 Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+#10 13.98 Selecting previously unselected package php8.2-xmlrpc.
+#10 13.98 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 12901 files and directories currently installed.)
+#10 13.99 Preparing to unpack .../00-php8.2-xmlrpc_3%3a1.0.0~rc3-6_amd64.deb ...
+#10 14.00 Unpacking php8.2-xmlrpc (3:1.0.0~rc3-6) ...
+#10 14.02 Selecting previously unselected package php-xmlrpc.
+#10 14.02 Preparing to unpack .../01-php-xmlrpc_3%3a1.0.0~rc3-6_amd64.deb ...
+#10 14.02 Unpacking php-xmlrpc (3:1.0.0~rc3-6) ...
+#10 14.05 Selecting previously unselected package systemd-timesyncd.
+#10 14.05 Preparing to unpack .../02-systemd-timesyncd_252.12-1~deb12u1_amd64.deb ...
+#10 14.05 Unpacking systemd-timesyncd (252.12-1~deb12u1) ...
+#10 14.08 Selecting previously unselected package libonig5:amd64.
+#10 14.08 Preparing to unpack .../03-libonig5_6.9.8-1_amd64.deb ...
+#10 14.08 Unpacking libonig5:amd64 (6.9.8-1) ...
+#10 14.12 Selecting previously unselected package libzip4:amd64.
+#10 14.12 Preparing to unpack .../04-libzip4_1.7.3-1+b1_amd64.deb ...
+#10 14.12 Unpacking libzip4:amd64 (1.7.3-1+b1) ...
+#10 14.14 Selecting previously unselected package php-cli.
+#10 14.15 Preparing to unpack .../05-php-cli_2%3a8.2+93_all.deb ...
+#10 14.15 Unpacking php-cli (2:8.2+93) ...
+#10 14.17 Selecting previously unselected package php8.2-curl.
+#10 14.17 Preparing to unpack .../06-php8.2-curl_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.18 Unpacking php8.2-curl (8.2.7-1~deb12u1) ...
+#10 14.20 Selecting previously unselected package php-curl.
+#10 14.20 Preparing to unpack .../07-php-curl_2%3a8.2+93_all.deb ...
+#10 14.21 Unpacking php-curl (2:8.2+93) ...
+#10 14.23 Selecting previously unselected package php-fpm.
+#10 14.23 Preparing to unpack .../08-php-fpm_2%3a8.2+93_all.deb ...
+#10 14.23 Unpacking php-fpm (2:8.2+93) ...
+#10 14.25 Selecting previously unselected package php8.2-intl.
+#10 14.26 Preparing to unpack .../09-php8.2-intl_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.26 Unpacking php8.2-intl (8.2.7-1~deb12u1) ...
+#10 14.29 Selecting previously unselected package php-intl.
+#10 14.29 Preparing to unpack .../10-php-intl_2%3a8.2+93_all.deb ...
+#10 14.29 Unpacking php-intl (2:8.2+93) ...
+#10 14.32 Selecting previously unselected package php8.2-mbstring.
+#10 14.32 Preparing to unpack .../11-php8.2-mbstring_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.32 Unpacking php8.2-mbstring (8.2.7-1~deb12u1) ...
+#10 14.38 Selecting previously unselected package php-mbstring.
+#10 14.38 Preparing to unpack .../12-php-mbstring_2%3a8.2+93_all.deb ...
+#10 14.38 Unpacking php-mbstring (2:8.2+93) ...
+#10 14.40 Selecting previously unselected package php8.2-mysql.
+#10 14.40 Preparing to unpack .../13-php8.2-mysql_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.41 Unpacking php8.2-mysql (8.2.7-1~deb12u1) ...
+#10 14.43 Selecting previously unselected package php-mysql.
+#10 14.43 Preparing to unpack .../14-php-mysql_2%3a8.2+93_all.deb ...
+#10 14.44 Unpacking php-mysql (2:8.2+93) ...
+#10 14.46 Selecting previously unselected package php8.2-xml.
+#10 14.46 Preparing to unpack .../15-php8.2-xml_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.47 Unpacking php8.2-xml (8.2.7-1~deb12u1) ...
+#10 14.49 Selecting previously unselected package php-xml.
+#10 14.49 Preparing to unpack .../16-php-xml_2%3a8.2+93_all.deb ...
+#10 14.50 Unpacking php-xml (2:8.2+93) ...
+#10 14.52 Selecting previously unselected package php8.2-zip.
+#10 14.52 Preparing to unpack .../17-php8.2-zip_8.2.7-1~deb12u1_amd64.deb ...
+#10 14.52 Unpacking php8.2-zip (8.2.7-1~deb12u1) ...
+#10 14.55 Selecting previously unselected package php-zip.
+#10 14.55 Preparing to unpack .../18-php-zip_2%3a8.2+93_all.deb ...
+#10 14.55 Unpacking php-zip (2:8.2+93) ...
+#10 14.58 Setting up libip4tc2:amd64 (1.8.9-2) ...
+#10 14.58 Setting up media-types (10.0.0) ...
+#10 14.59 Setting up libapparmor1:amd64 (3.0.8-3) ...
+#10 14.60 Setting up libsodium23:amd64 (1.0.18-1) ...
+#10 14.61 Setting up libmagic-mgc (1:5.44-3) ...
+#10 14.61 Setting up libargon2-1:amd64 (0~20171227-0.3+deb12u1) ...
+#10 14.62 Setting up libzip4:amd64 (1.7.3-1+b1) ...
+#10 14.63 Setting up libxmlrpc-epi0:amd64 (0.54.2-1.3+b1) ...
+#10 14.63 Setting up libmagic1:amd64 (1:5.44-3) ...
+#10 14.64 Setting up libdbus-1-3:amd64 (1.14.8-2~deb12u1) ...
+#10 14.65 Setting up libsystemd-shared:amd64 (252.12-1~deb12u1) ...
+#10 14.66 Setting up libfdisk1:amd64 (2.38.1-5+b1) ...
+#10 14.66 Setting up sensible-utils (0.0.17+nmu1) ...
+#10 14.67 Setting up dbus-session-bus-common (1.14.8-2~deb12u1) ...
+#10 14.67 Setting up dbus-system-bus-common (1.14.8-2~deb12u1) ...
+#10 14.74 Setting up libjson-c5:amd64 (0.16-2) ...
+#10 14.75 Setting up dbus-bin (1.14.8-2~deb12u1) ...
+#10 14.76 Setting up libonig5:amd64 (6.9.8-1) ...
+#10 14.76 Setting up dbus-daemon (1.14.8-2~deb12u1) ...
+#10 14.78 Setting up dbus (1.14.8-2~deb12u1) ...
+#10 14.80 invoke-rc.d: could not determine current runlevel
+#10 14.81 invoke-rc.d: policy-rc.d denied execution of start.
+#10 14.81 Setting up ucf (3.0043+nmu1) ...
+#10 14.87 debconf: unable to initialize frontend: Dialog
+#10 14.87 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 14.87 debconf: falling back to frontend: Readline
+#10 14.88 debconf: unable to initialize frontend: Readline
+#10 14.88 debconf: (This frontend requires a controlling tty.)
+#10 14.88 debconf: falling back to frontend: Teletype
+#10 14.90 Setting up php8.2-common (8.2.7-1~deb12u1) ...
+#10 14.99 debconf: unable to initialize frontend: Dialog
+#10 14.99 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 14.99 debconf: falling back to frontend: Readline
+#10 15.00 debconf: unable to initialize frontend: Readline
+#10 15.00 debconf: (This frontend requires a controlling tty.)
+#10 15.00 debconf: falling back to frontend: Teletype
+#10 15.04 
+#10 15.04 Creating config file /etc/php/8.2/mods-available/calendar.ini with new version
+#10 15.20 debconf: unable to initialize frontend: Dialog
+#10 15.20 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 15.20 debconf: falling back to frontend: Readline
+#10 15.21 debconf: unable to initialize frontend: Readline
+#10 15.21 debconf: (This frontend requires a controlling tty.)
+#10 15.21 debconf: falling back to frontend: Teletype
+#10 15.25 
+#10 15.25 Creating config file /etc/php/8.2/mods-available/ctype.ini with new version
+#10 15.42 debconf: unable to initialize frontend: Dialog
+#10 15.42 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 15.42 debconf: falling back to frontend: Readline
+#10 15.42 debconf: unable to initialize frontend: Readline
+#10 15.42 debconf: (This frontend requires a controlling tty.)
+#10 15.42 debconf: falling back to frontend: Teletype
+#10 15.45 
+#10 15.45 Creating config file /etc/php/8.2/mods-available/exif.ini with new version
+#10 15.63 debconf: unable to initialize frontend: Dialog
+#10 15.63 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 15.63 debconf: falling back to frontend: Readline
+#10 15.63 debconf: unable to initialize frontend: Readline
+#10 15.63 debconf: (This frontend requires a controlling tty.)
+#10 15.63 debconf: falling back to frontend: Teletype
+#10 15.67 
+#10 15.67 Creating config file /etc/php/8.2/mods-available/fileinfo.ini with new version
+#10 15.85 debconf: unable to initialize frontend: Dialog
+#10 15.85 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 15.85 debconf: falling back to frontend: Readline
+#10 15.85 debconf: unable to initialize frontend: Readline
+#10 15.85 debconf: (This frontend requires a controlling tty.)
+#10 15.85 debconf: falling back to frontend: Teletype
+#10 15.88 
+#10 15.88 Creating config file /etc/php/8.2/mods-available/ffi.ini with new version
+#10 16.06 debconf: unable to initialize frontend: Dialog
+#10 16.06 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 16.06 debconf: falling back to frontend: Readline
+#10 16.07 debconf: unable to initialize frontend: Readline
+#10 16.07 debconf: (This frontend requires a controlling tty.)
+#10 16.07 debconf: falling back to frontend: Teletype
+#10 16.10 
+#10 16.10 Creating config file /etc/php/8.2/mods-available/ftp.ini with new version
+#10 16.28 debconf: unable to initialize frontend: Dialog
+#10 16.28 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 16.28 debconf: falling back to frontend: Readline
+#10 16.28 debconf: unable to initialize frontend: Readline
+#10 16.28 debconf: (This frontend requires a controlling tty.)
+#10 16.28 debconf: falling back to frontend: Teletype
+#10 16.32 
+#10 16.32 Creating config file /etc/php/8.2/mods-available/gettext.ini with new version
+#10 16.50 debconf: unable to initialize frontend: Dialog
+#10 16.50 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 16.50 debconf: falling back to frontend: Readline
+#10 16.51 debconf: unable to initialize frontend: Readline
+#10 16.51 debconf: (This frontend requires a controlling tty.)
+#10 16.51 debconf: falling back to frontend: Teletype
+#10 16.54 
+#10 16.54 Creating config file /etc/php/8.2/mods-available/iconv.ini with new version
+#10 16.72 debconf: unable to initialize frontend: Dialog
+#10 16.72 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 16.72 debconf: falling back to frontend: Readline
+#10 16.73 debconf: unable to initialize frontend: Readline
+#10 16.73 debconf: (This frontend requires a controlling tty.)
+#10 16.73 debconf: falling back to frontend: Teletype
+#10 16.76 
+#10 16.76 Creating config file /etc/php/8.2/mods-available/pdo.ini with new version
+#10 16.95 debconf: unable to initialize frontend: Dialog
+#10 16.95 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 16.95 debconf: falling back to frontend: Readline
+#10 16.95 debconf: unable to initialize frontend: Readline
+#10 16.95 debconf: (This frontend requires a controlling tty.)
+#10 16.95 debconf: falling back to frontend: Teletype
+#10 16.98 
+#10 16.98 Creating config file /etc/php/8.2/mods-available/phar.ini with new version
+#10 17.16 debconf: unable to initialize frontend: Dialog
+#10 17.16 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 17.16 debconf: falling back to frontend: Readline
+#10 17.17 debconf: unable to initialize frontend: Readline
+#10 17.17 debconf: (This frontend requires a controlling tty.)
+#10 17.17 debconf: falling back to frontend: Teletype
+#10 17.21 
+#10 17.21 Creating config file /etc/php/8.2/mods-available/posix.ini with new version
+#10 17.38 debconf: unable to initialize frontend: Dialog
+#10 17.38 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 17.38 debconf: falling back to frontend: Readline
+#10 17.39 debconf: unable to initialize frontend: Readline
+#10 17.39 debconf: (This frontend requires a controlling tty.)
+#10 17.39 debconf: falling back to frontend: Teletype
+#10 17.43 
+#10 17.43 Creating config file /etc/php/8.2/mods-available/shmop.ini with new version
+#10 17.61 debconf: unable to initialize frontend: Dialog
+#10 17.61 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 17.61 debconf: falling back to frontend: Readline
+#10 17.61 debconf: unable to initialize frontend: Readline
+#10 17.61 debconf: (This frontend requires a controlling tty.)
+#10 17.61 debconf: falling back to frontend: Teletype
+#10 17.64 
+#10 17.64 Creating config file /etc/php/8.2/mods-available/sockets.ini with new version
+#10 17.83 debconf: unable to initialize frontend: Dialog
+#10 17.83 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 17.83 debconf: falling back to frontend: Readline
+#10 17.83 debconf: unable to initialize frontend: Readline
+#10 17.83 debconf: (This frontend requires a controlling tty.)
+#10 17.83 debconf: falling back to frontend: Teletype
+#10 17.87 
+#10 17.87 Creating config file /etc/php/8.2/mods-available/sysvmsg.ini with new version
+#10 18.05 debconf: unable to initialize frontend: Dialog
+#10 18.05 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 18.05 debconf: falling back to frontend: Readline
+#10 18.05 debconf: unable to initialize frontend: Readline
+#10 18.05 debconf: (This frontend requires a controlling tty.)
+#10 18.05 debconf: falling back to frontend: Teletype
+#10 18.08 
+#10 18.08 Creating config file /etc/php/8.2/mods-available/sysvsem.ini with new version
+#10 18.27 debconf: unable to initialize frontend: Dialog
+#10 18.27 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 18.27 debconf: falling back to frontend: Readline
+#10 18.28 debconf: unable to initialize frontend: Readline
+#10 18.28 debconf: (This frontend requires a controlling tty.)
+#10 18.28 debconf: falling back to frontend: Teletype
+#10 18.31 
+#10 18.31 Creating config file /etc/php/8.2/mods-available/sysvshm.ini with new version
+#10 18.49 debconf: unable to initialize frontend: Dialog
+#10 18.49 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 18.49 debconf: falling back to frontend: Readline
+#10 18.50 debconf: unable to initialize frontend: Readline
+#10 18.50 debconf: (This frontend requires a controlling tty.)
+#10 18.50 debconf: falling back to frontend: Teletype
+#10 18.54 
+#10 18.54 Creating config file /etc/php/8.2/mods-available/tokenizer.ini with new version
+#10 18.64 Setting up php8.2-mysql (8.2.7-1~deb12u1) ...
+#10 18.73 debconf: unable to initialize frontend: Dialog
+#10 18.73 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 18.73 debconf: falling back to frontend: Readline
+#10 18.74 debconf: unable to initialize frontend: Readline
+#10 18.74 debconf: (This frontend requires a controlling tty.)
+#10 18.74 debconf: falling back to frontend: Teletype
+#10 18.77 
+#10 18.77 Creating config file /etc/php/8.2/mods-available/mysqlnd.ini with new version
+#10 18.95 debconf: unable to initialize frontend: Dialog
+#10 18.95 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 18.95 debconf: falling back to frontend: Readline
+#10 18.95 debconf: unable to initialize frontend: Readline
+#10 18.95 debconf: (This frontend requires a controlling tty.)
+#10 18.95 debconf: falling back to frontend: Teletype
+#10 18.99 
+#10 18.99 Creating config file /etc/php/8.2/mods-available/mysqli.ini with new version
+#10 19.17 debconf: unable to initialize frontend: Dialog
+#10 19.17 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 19.17 debconf: falling back to frontend: Readline
+#10 19.17 debconf: unable to initialize frontend: Readline
+#10 19.17 debconf: (This frontend requires a controlling tty.)
+#10 19.17 debconf: falling back to frontend: Teletype
+#10 19.21 
+#10 19.21 Creating config file /etc/php/8.2/mods-available/pdo_mysql.ini with new version
+#10 19.32 Setting up php8.2-zip (8.2.7-1~deb12u1) ...
+#10 19.40 debconf: unable to initialize frontend: Dialog
+#10 19.40 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 19.40 debconf: falling back to frontend: Readline
+#10 19.41 debconf: unable to initialize frontend: Readline
+#10 19.41 debconf: (This frontend requires a controlling tty.)
+#10 19.41 debconf: falling back to frontend: Teletype
+#10 19.44 
+#10 19.44 Creating config file /etc/php/8.2/mods-available/zip.ini with new version
+#10 19.55 Setting up php8.2-opcache (8.2.7-1~deb12u1) ...
+#10 19.64 debconf: unable to initialize frontend: Dialog
+#10 19.64 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 19.64 debconf: falling back to frontend: Readline
+#10 19.64 debconf: unable to initialize frontend: Readline
+#10 19.64 debconf: (This frontend requires a controlling tty.)
+#10 19.64 debconf: falling back to frontend: Teletype
+#10 19.67 
+#10 19.67 Creating config file /etc/php/8.2/mods-available/opcache.ini with new version
+#10 19.78 Setting up php8.2-readline (8.2.7-1~deb12u1) ...
+#10 19.87 debconf: unable to initialize frontend: Dialog
+#10 19.87 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 19.87 debconf: falling back to frontend: Readline
+#10 19.87 debconf: unable to initialize frontend: Readline
+#10 19.87 debconf: (This frontend requires a controlling tty.)
+#10 19.87 debconf: falling back to frontend: Teletype
+#10 19.91 
+#10 19.91 Creating config file /etc/php/8.2/mods-available/readline.ini with new version
+#10 20.01 Setting up php8.2-mbstring (8.2.7-1~deb12u1) ...
+#10 20.09 debconf: unable to initialize frontend: Dialog
+#10 20.09 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 20.09 debconf: falling back to frontend: Readline
+#10 20.10 debconf: unable to initialize frontend: Readline
+#10 20.10 debconf: (This frontend requires a controlling tty.)
+#10 20.10 debconf: falling back to frontend: Teletype
+#10 20.13 
+#10 20.13 Creating config file /etc/php/8.2/mods-available/mbstring.ini with new version
+#10 20.24 Setting up php-mbstring (2:8.2+93) ...
+#10 20.25 Setting up php8.2-intl (8.2.7-1~deb12u1) ...
+#10 20.33 debconf: unable to initialize frontend: Dialog
+#10 20.33 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 20.33 debconf: falling back to frontend: Readline
+#10 20.34 debconf: unable to initialize frontend: Readline
+#10 20.34 debconf: (This frontend requires a controlling tty.)
+#10 20.34 debconf: falling back to frontend: Teletype
+#10 20.37 
+#10 20.37 Creating config file /etc/php/8.2/mods-available/intl.ini with new version
+#10 20.47 Setting up php-intl (2:8.2+93) ...
+#10 20.48 Setting up php8.2-curl (8.2.7-1~deb12u1) ...
+#10 20.57 debconf: unable to initialize frontend: Dialog
+#10 20.57 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 20.57 debconf: falling back to frontend: Readline
+#10 20.58 debconf: unable to initialize frontend: Readline
+#10 20.58 debconf: (This frontend requires a controlling tty.)
+#10 20.58 debconf: falling back to frontend: Teletype
+#10 20.61 
+#10 20.61 Creating config file /etc/php/8.2/mods-available/curl.ini with new version
+#10 20.71 Setting up php8.2-xml (8.2.7-1~deb12u1) ...
+#10 20.80 debconf: unable to initialize frontend: Dialog
+#10 20.80 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 20.80 debconf: falling back to frontend: Readline
+#10 20.81 debconf: unable to initialize frontend: Readline
+#10 20.81 debconf: (This frontend requires a controlling tty.)
+#10 20.81 debconf: falling back to frontend: Teletype
+#10 20.84 
+#10 20.84 Creating config file /etc/php/8.2/mods-available/dom.ini with new version
+#10 21.02 debconf: unable to initialize frontend: Dialog
+#10 21.02 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 21.02 debconf: falling back to frontend: Readline
+#10 21.02 debconf: unable to initialize frontend: Readline
+#10 21.02 debconf: (This frontend requires a controlling tty.)
+#10 21.03 debconf: falling back to frontend: Teletype
+#10 21.06 
+#10 21.06 Creating config file /etc/php/8.2/mods-available/simplexml.ini with new version
+#10 21.24 debconf: unable to initialize frontend: Dialog
+#10 21.24 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 21.24 debconf: falling back to frontend: Readline
+#10 21.25 debconf: unable to initialize frontend: Readline
+#10 21.25 debconf: (This frontend requires a controlling tty.)
+#10 21.25 debconf: falling back to frontend: Teletype
+#10 21.28 
+#10 21.28 Creating config file /etc/php/8.2/mods-available/xml.ini with new version
+#10 21.46 debconf: unable to initialize frontend: Dialog
+#10 21.46 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 21.46 debconf: falling back to frontend: Readline
+#10 21.47 debconf: unable to initialize frontend: Readline
+#10 21.47 debconf: (This frontend requires a controlling tty.)
+#10 21.47 debconf: falling back to frontend: Teletype
+#10 21.51 
+#10 21.51 Creating config file /etc/php/8.2/mods-available/xmlreader.ini with new version
+#10 21.69 debconf: unable to initialize frontend: Dialog
+#10 21.69 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 21.69 debconf: falling back to frontend: Readline
+#10 21.69 debconf: unable to initialize frontend: Readline
+#10 21.69 debconf: (This frontend requires a controlling tty.)
+#10 21.69 debconf: falling back to frontend: Teletype
+#10 21.73 
+#10 21.73 Creating config file /etc/php/8.2/mods-available/xmlwriter.ini with new version
+#10 21.91 debconf: unable to initialize frontend: Dialog
+#10 21.91 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 21.91 debconf: falling back to frontend: Readline
+#10 21.92 debconf: unable to initialize frontend: Readline
+#10 21.92 debconf: (This frontend requires a controlling tty.)
+#10 21.92 debconf: falling back to frontend: Teletype
+#10 21.95 
+#10 21.95 Creating config file /etc/php/8.2/mods-available/xsl.ini with new version
+#10 22.05 Setting up php-zip (2:8.2+93) ...
+#10 22.06 Setting up php8.2-cli (8.2.7-1~deb12u1) ...
+#10 22.06 update-alternatives: using /usr/bin/php8.2 to provide /usr/bin/php (php) in auto mode
+#10 22.06 update-alternatives: warning: skip creation of /usr/share/man/man1/php.1.gz because associated file /usr/share/man/man1/php8.2.1.gz (of link group php) doesn't exist
+#10 22.07 update-alternatives: using /usr/bin/phar8.2 to provide /usr/bin/phar (phar) in auto mode
+#10 22.07 update-alternatives: warning: skip creation of /usr/share/man/man1/phar.1.gz because associated file /usr/share/man/man1/phar8.2.1.gz (of link group phar) doesn't exist
+#10 22.07 update-alternatives: using /usr/bin/phar.phar8.2 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+#10 22.07 update-alternatives: warning: skip creation of /usr/share/man/man1/phar.phar.1.gz because associated file /usr/share/man/man1/phar.phar8.2.1.gz (of link group phar.phar) doesn't exist
+#10 22.15 debconf: unable to initialize frontend: Dialog
+#10 22.15 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 22.15 debconf: falling back to frontend: Readline
+#10 22.16 debconf: unable to initialize frontend: Readline
+#10 22.16 debconf: (This frontend requires a controlling tty.)
+#10 22.16 debconf: falling back to frontend: Teletype
+#10 22.19 
+#10 22.19 Creating config file /etc/php/8.2/cli/php.ini with new version
+#10 22.76 Setting up php-xml (2:8.2+93) ...
+#10 22.76 Setting up php-curl (2:8.2+93) ...
+#10 22.77 Setting up php-mysql (2:8.2+93) ...
+#10 22.78 Setting up php8.2-xmlrpc (3:1.0.0~rc3-6) ...
+#10 22.85 Setting up php-xmlrpc (3:1.0.0~rc3-6) ...
+#10 22.85 Setting up php-cli (2:8.2+93) ...
+#10 22.86 update-alternatives: using /usr/bin/php.default to provide /usr/bin/php (php) in auto mode
+#10 22.86 update-alternatives: warning: skip creation of /usr/share/man/man1/php.1.gz because associated file /usr/share/man/man1/php.default.1.gz (of link group php) doesn't exist
+#10 22.86 update-alternatives: using /usr/bin/phar.default to provide /usr/bin/phar (phar) in auto mode
+#10 22.86 update-alternatives: warning: skip creation of /usr/share/man/man1/phar.1.gz because associated file /usr/share/man/man1/phar.default.1.gz (of link group phar) doesn't exist
+#10 22.86 update-alternatives: using /usr/bin/phar.phar.default to provide /usr/bin/phar.phar (phar.phar) in auto mode
+#10 22.86 update-alternatives: warning: skip creation of /usr/share/man/man1/phar.phar.1.gz because associated file /usr/share/man/man1/phar.phar.default.1.gz (of link group phar.phar) doesn't exist
+#10 22.87 Setting up libdevmapper1.02.1:amd64 (2:1.02.185-2) ...
+#10 22.88 Setting up dmsetup (2:1.02.185-2) ...
+#10 22.89 Setting up libcryptsetup12:amd64 (2:2.6.1-4~deb12u1) ...
+#10 22.89 Setting up systemd (252.12-1~deb12u1) ...
+#10 22.92 Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /lib/systemd/system/getty@.service.
+#10 22.92 Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /lib/systemd/system/remote-fs.target.
+#10 22.93 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-pstore.service → /lib/systemd/system/systemd-pstore.service.
+#10 22.93 Initializing machine ID from D-Bus machine ID.
+#10 22.95 Creating group 'systemd-journal' with GID 999.
+#10 22.96 Creating group 'systemd-network' with GID 998.
+#10 22.96 Creating user 'systemd-network' (systemd Network Management) with UID 998 and GID 998.
+#10 22.99 Setting up php8.2-fpm (8.2.7-1~deb12u1) ...
+#10 23.09 debconf: unable to initialize frontend: Dialog
+#10 23.09 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#10 23.09 debconf: falling back to frontend: Readline
+#10 23.09 debconf: unable to initialize frontend: Readline
+#10 23.09 debconf: (This frontend requires a controlling tty.)
+#10 23.09 debconf: falling back to frontend: Teletype
+#10 23.14 
+#10 23.14 Creating config file /etc/php/8.2/fpm/php.ini with new version
+#10 23.82 Created symlink /etc/systemd/system/multi-user.target.wants/php8.2-fpm.service → /lib/systemd/system/php8.2-fpm.service.
+#10 23.84 invoke-rc.d: could not determine current runlevel
+#10 23.84 invoke-rc.d: policy-rc.d denied execution of start.
+#10 23.85 Setting up systemd-timesyncd (252.12-1~deb12u1) ...
+#10 23.86 Creating group 'systemd-timesync' with GID 997.
+#10 23.86 Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 997 and GID 997.
+#10 23.99 Created symlink /etc/systemd/system/dbus-org.freedesktop.timesync1.service → /lib/systemd/system/systemd-timesyncd.service.
+#10 23.99 Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /lib/systemd/system/systemd-timesyncd.service.
+#10 23.99 Setting up php-fpm (2:8.2+93) ...
+#10 24.00 Processing triggers for libc-bin (2.36-9+deb12u1) ...
+#10 24.02 Processing triggers for php8.2-cli (8.2.7-1~deb12u1) ...
+#10 24.02 Processing triggers for php8.2-fpm (8.2.7-1~deb12u1) ...
+#10 24.03 invoke-rc.d: could not determine current runlevel
+#10 24.03 invoke-rc.d: policy-rc.d denied execution of restart.
+#10 DONE 24.1s
+
+#11 [app  7/10] RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.2/fpm/php.ini
+#11 DONE 0.3s
+
+#12 [app  8/10] RUN apt-get install -y composer unzip zip
+#12 0.309 Reading package lists...
+#12 0.815 Building dependency tree...
+#12 0.930 Reading state information...
+#12 1.047 The following additional packages will be installed:
+#12 1.048   git git-man jsonlint less libcbor0.8 libcurl3-gnutls liberror-perl
+#12 1.048   libfido2-1 libxext6 libxmuu1 openssh-client patch php-composer-ca-bundle
+#12 1.048   php-composer-class-map-generator php-composer-metadata-minifier
+#12 1.048   php-composer-pcre php-composer-semver php-composer-spdx-licenses
+#12 1.049   php-composer-xdebug-handler php-json-schema php-psr-container php-psr-log
+#12 1.049   php-react-promise php-seld-signal-handler php-symfony-console
+#12 1.049   php-symfony-deprecation-contracts php-symfony-filesystem php-symfony-finder
+#12 1.049   php-symfony-process php-symfony-service-contracts php-symfony-string
+#12 1.049   sgml-base xauth
+#12 1.050 Suggested packages:
+#12 1.050   fossil mercurial subversion git-daemon-run | git-daemon-sysvinit git-doc
+#12 1.050   git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn keychain
+#12 1.050   libpam-ssh monkeysphere ssh-askpass ed diffutils-doc
+#12 1.050   php-symfony-event-dispatcher php-symfony-lock
+#12 1.050   php-symfony-service-implementation sgml-base-doc
+#12 1.237 The following NEW packages will be installed:
+#12 1.237   composer git git-man jsonlint less libcbor0.8 libcurl3-gnutls liberror-perl
+#12 1.238   libfido2-1 libxext6 libxmuu1 openssh-client patch php-composer-ca-bundle
+#12 1.238   php-composer-class-map-generator php-composer-metadata-minifier
+#12 1.238   php-composer-pcre php-composer-semver php-composer-spdx-licenses
+#12 1.239   php-composer-xdebug-handler php-json-schema php-psr-container php-psr-log
+#12 1.239   php-react-promise php-seld-signal-handler php-symfony-console
+#12 1.239   php-symfony-deprecation-contracts php-symfony-filesystem php-symfony-finder
+#12 1.239   php-symfony-process php-symfony-service-contracts php-symfony-string
+#12 1.239   sgml-base unzip xauth zip
+#12 1.514 0 upgraded, 36 newly installed, 0 to remove and 0 not upgraded.
+#12 1.514 Need to get 12.4 MB of archives.
+#12 1.514 After this operation, 61.8 MB of additional disk space will be used.
+#12 1.514 Get:1 http://deb.debian.org/debian bookworm/main amd64 sgml-base all 1.31 [15.4 kB]
+#12 1.583 Get:2 http://deb.debian.org/debian bookworm/main amd64 less amd64 590-2 [131 kB]
+#12 1.723 Get:3 http://deb.debian.org/debian bookworm/main amd64 libcbor0.8 amd64 0.8.0-2+b1 [27.4 kB]
+#12 1.732 Get:4 http://deb.debian.org/debian bookworm/main amd64 libfido2-1 amd64 1.12.0-2+b1 [77.2 kB]
+#12 1.751 Get:5 http://deb.debian.org/debian bookworm/main amd64 openssh-client amd64 1:9.2p1-2 [988 kB]
+#12 1.916 Get:6 http://deb.debian.org/debian bookworm/main amd64 php-composer-ca-bundle all 1.3.5-1 [11.5 kB]
+#12 1.917 Get:7 http://deb.debian.org/debian bookworm/main amd64 php-symfony-deprecation-contracts all 2.5.2-1 [6160 B]
+#12 1.917 Get:8 http://deb.debian.org/debian bookworm/main amd64 php-symfony-finder all 5.4.23+dfsg-1 [29.0 kB]
+#12 1.918 Get:9 http://deb.debian.org/debian bookworm/main amd64 php-composer-pcre all 3.1.0-1 [9960 B]
+#12 1.919 Get:10 http://deb.debian.org/debian bookworm/main amd64 php-composer-class-map-generator all 1.0.0-2 [10.1 kB]
+#12 1.920 Get:11 http://deb.debian.org/debian bookworm/main amd64 php-composer-metadata-minifier all 1.0.0-2 [3632 B]
+#12 1.920 Get:12 http://deb.debian.org/debian bookworm/main amd64 php-composer-semver all 3.3.2-1 [21.9 kB]
+#12 1.921 Get:13 http://deb.debian.org/debian bookworm/main amd64 php-composer-spdx-licenses all 1.5.7-1 [14.5 kB]
+#12 1.922 Get:14 http://deb.debian.org/debian bookworm/main amd64 php-psr-log all 1.1.4-2 [9560 B]
+#12 1.983 Get:15 http://deb.debian.org/debian bookworm/main amd64 php-composer-xdebug-handler all 3.0.3-2 [18.6 kB]
+#12 2.048 Get:16 http://deb.debian.org/debian bookworm/main amd64 php-json-schema all 5.2.12-2 [38.3 kB]
+#12 2.050 Get:17 http://deb.debian.org/debian bookworm/main amd64 jsonlint all 1.9.0-1 [14.2 kB]
+#12 2.051 Get:18 http://deb.debian.org/debian bookworm/main amd64 php-psr-container all 1.1.2-1 [4324 B]
+#12 2.052 Get:19 http://deb.debian.org/debian bookworm/main amd64 php-symfony-service-contracts all 2.5.2-1 [10.1 kB]
+#12 2.053 Get:20 http://deb.debian.org/debian bookworm/main amd64 php-symfony-string all 5.4.23+dfsg-1 [38.3 kB]
+#12 2.055 Get:21 http://deb.debian.org/debian bookworm/main amd64 php-symfony-console all 5.4.23+dfsg-1 [92.6 kB]
+#12 2.057 Get:22 http://deb.debian.org/debian bookworm/main amd64 php-symfony-filesystem all 5.4.23+dfsg-1 [27.8 kB]
+#12 2.058 Get:23 http://deb.debian.org/debian bookworm/main amd64 php-symfony-process all 5.4.23+dfsg-1 [33.0 kB]
+#12 2.059 Get:24 http://deb.debian.org/debian bookworm/main amd64 php-react-promise all 2.9.0-3 [22.4 kB]
+#12 2.114 Get:25 http://deb.debian.org/debian bookworm/main amd64 php-seld-signal-handler all 2.0.1-2 [9604 B]
+#12 2.180 Get:26 http://deb.debian.org/debian bookworm/main amd64 composer all 2.5.5-1 [492 kB]
+#12 2.381 Get:27 http://deb.debian.org/debian-security bookworm-security/main amd64 libcurl3-gnutls amd64 7.88.1-10+deb12u1 [381 kB]
+#12 2.718 Get:28 http://deb.debian.org/debian bookworm/main amd64 liberror-perl all 0.17029-2 [29.0 kB]
+#12 2.731 Get:29 http://deb.debian.org/debian bookworm/main amd64 git-man all 1:2.39.2-1.1 [2049 kB]
+#12 4.326 Get:30 http://deb.debian.org/debian bookworm/main amd64 git amd64 1:2.39.2-1.1 [7171 kB]
+#12 10.48 Get:31 http://deb.debian.org/debian bookworm/main amd64 libxext6 amd64 2:1.3.4-1+b1 [52.9 kB]
+#12 10.51 Get:32 http://deb.debian.org/debian bookworm/main amd64 libxmuu1 amd64 2:1.1.3-3 [23.9 kB]
+#12 10.52 Get:33 http://deb.debian.org/debian bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
+#12 10.62 Get:34 http://deb.debian.org/debian bookworm/main amd64 unzip amd64 6.0-28 [166 kB]
+#12 10.71 Get:35 http://deb.debian.org/debian bookworm/main amd64 xauth amd64 1:1.1.2-1 [36.0 kB]
+#12 10.73 Get:36 http://deb.debian.org/debian bookworm/main amd64 zip amd64 3.0-13 [230 kB]
+#12 11.01 debconf: delaying package configuration, since apt-utils is not installed
+#12 11.03 Fetched 12.4 MB in 10s (1289 kB/s)
+#12 11.05 Selecting previously unselected package sgml-base.
+#12 11.05 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13041 files and directories currently installed.)
+#12 11.07 Preparing to unpack .../00-sgml-base_1.31_all.deb ...
+#12 11.07 Unpacking sgml-base (1.31) ...
+#12 11.10 Selecting previously unselected package less.
+#12 11.10 Preparing to unpack .../01-less_590-2_amd64.deb ...
+#12 11.10 Unpacking less (590-2) ...
+#12 11.14 Selecting previously unselected package libcbor0.8:amd64.
+#12 11.14 Preparing to unpack .../02-libcbor0.8_0.8.0-2+b1_amd64.deb ...
+#12 11.15 Unpacking libcbor0.8:amd64 (0.8.0-2+b1) ...
+#12 11.17 Selecting previously unselected package libfido2-1:amd64.
+#12 11.17 Preparing to unpack .../03-libfido2-1_1.12.0-2+b1_amd64.deb ...
+#12 11.17 Unpacking libfido2-1:amd64 (1.12.0-2+b1) ...
+#12 11.20 Selecting previously unselected package openssh-client.
+#12 11.20 Preparing to unpack .../04-openssh-client_1%3a9.2p1-2_amd64.deb ...
+#12 11.21 Unpacking openssh-client (1:9.2p1-2) ...
+#12 11.32 Selecting previously unselected package php-composer-ca-bundle.
+#12 11.32 Preparing to unpack .../05-php-composer-ca-bundle_1.3.5-1_all.deb ...
+#12 11.32 Unpacking php-composer-ca-bundle (1.3.5-1) ...
+#12 11.35 Selecting previously unselected package php-symfony-deprecation-contracts.
+#12 11.35 Preparing to unpack .../06-php-symfony-deprecation-contracts_2.5.2-1_all.deb ...
+#12 11.35 Unpacking php-symfony-deprecation-contracts (2.5.2-1) ...
+#12 11.37 Selecting previously unselected package php-symfony-finder.
+#12 11.37 Preparing to unpack .../07-php-symfony-finder_5.4.23+dfsg-1_all.deb ...
+#12 11.37 Unpacking php-symfony-finder (5.4.23+dfsg-1) ...
+#12 11.39 Selecting previously unselected package php-composer-pcre.
+#12 11.39 Preparing to unpack .../08-php-composer-pcre_3.1.0-1_all.deb ...
+#12 11.40 Unpacking php-composer-pcre (3.1.0-1) ...
+#12 11.42 Selecting previously unselected package php-composer-class-map-generator.
+#12 11.42 Preparing to unpack .../09-php-composer-class-map-generator_1.0.0-2_all.deb ...
+#12 11.42 Unpacking php-composer-class-map-generator (1.0.0-2) ...
+#12 11.45 Selecting previously unselected package php-composer-metadata-minifier.
+#12 11.45 Preparing to unpack .../10-php-composer-metadata-minifier_1.0.0-2_all.deb ...
+#12 11.45 Unpacking php-composer-metadata-minifier (1.0.0-2) ...
+#12 11.47 Selecting previously unselected package php-composer-semver.
+#12 11.47 Preparing to unpack .../11-php-composer-semver_3.3.2-1_all.deb ...
+#12 11.47 Unpacking php-composer-semver (3.3.2-1) ...
+#12 11.49 Selecting previously unselected package php-composer-spdx-licenses.
+#12 11.49 Preparing to unpack .../12-php-composer-spdx-licenses_1.5.7-1_all.deb ...
+#12 11.49 Unpacking php-composer-spdx-licenses (1.5.7-1) ...
+#12 11.51 Selecting previously unselected package php-psr-log.
+#12 11.51 Preparing to unpack .../13-php-psr-log_1.1.4-2_all.deb ...
+#12 11.52 Unpacking php-psr-log (1.1.4-2) ...
+#12 11.54 Selecting previously unselected package php-composer-xdebug-handler.
+#12 11.54 Preparing to unpack .../14-php-composer-xdebug-handler_3.0.3-2_all.deb ...
+#12 11.54 Unpacking php-composer-xdebug-handler (3.0.3-2) ...
+#12 11.56 Selecting previously unselected package php-json-schema.
+#12 11.56 Preparing to unpack .../15-php-json-schema_5.2.12-2_all.deb ...
+#12 11.56 Unpacking php-json-schema (5.2.12-2) ...
+#12 11.59 Selecting previously unselected package jsonlint.
+#12 11.59 Preparing to unpack .../16-jsonlint_1.9.0-1_all.deb ...
+#12 11.59 Unpacking jsonlint (1.9.0-1) ...
+#12 11.62 Selecting previously unselected package php-psr-container.
+#12 11.62 Preparing to unpack .../17-php-psr-container_1.1.2-1_all.deb ...
+#12 11.62 Unpacking php-psr-container (1.1.2-1) ...
+#12 11.64 Selecting previously unselected package php-symfony-service-contracts.
+#12 11.64 Preparing to unpack .../18-php-symfony-service-contracts_2.5.2-1_all.deb ...
+#12 11.64 Unpacking php-symfony-service-contracts (2.5.2-1) ...
+#12 11.66 Selecting previously unselected package php-symfony-string.
+#12 11.66 Preparing to unpack .../19-php-symfony-string_5.4.23+dfsg-1_all.deb ...
+#12 11.66 Unpacking php-symfony-string (5.4.23+dfsg-1) ...
+#12 11.69 Selecting previously unselected package php-symfony-console.
+#12 11.69 Preparing to unpack .../20-php-symfony-console_5.4.23+dfsg-1_all.deb ...
+#12 11.70 Unpacking php-symfony-console (5.4.23+dfsg-1) ...
+#12 11.74 Selecting previously unselected package php-symfony-filesystem.
+#12 11.74 Preparing to unpack .../21-php-symfony-filesystem_5.4.23+dfsg-1_all.deb ...
+#12 11.74 Unpacking php-symfony-filesystem (5.4.23+dfsg-1) ...
+#12 11.76 Selecting previously unselected package php-symfony-process.
+#12 11.76 Preparing to unpack .../22-php-symfony-process_5.4.23+dfsg-1_all.deb ...
+#12 11.76 Unpacking php-symfony-process (5.4.23+dfsg-1) ...
+#12 11.79 Selecting previously unselected package php-react-promise.
+#12 11.79 Preparing to unpack .../23-php-react-promise_2.9.0-3_all.deb ...
+#12 11.79 Unpacking php-react-promise (2.9.0-3) ...
+#12 11.82 Selecting previously unselected package php-seld-signal-handler.
+#12 11.82 Preparing to unpack .../24-php-seld-signal-handler_2.0.1-2_all.deb ...
+#12 11.82 Unpacking php-seld-signal-handler (2.0.1-2) ...
+#12 11.84 Selecting previously unselected package composer.
+#12 11.84 Preparing to unpack .../25-composer_2.5.5-1_all.deb ...
+#12 11.84 Unpacking composer (2.5.5-1) ...
+#12 11.93 Selecting previously unselected package libcurl3-gnutls:amd64.
+#12 11.93 Preparing to unpack .../26-libcurl3-gnutls_7.88.1-10+deb12u1_amd64.deb ...
+#12 11.93 Unpacking libcurl3-gnutls:amd64 (7.88.1-10+deb12u1) ...
+#12 11.98 Selecting previously unselected package liberror-perl.
+#12 11.98 Preparing to unpack .../27-liberror-perl_0.17029-2_all.deb ...
+#12 11.98 Unpacking liberror-perl (0.17029-2) ...
+#12 12.00 Selecting previously unselected package git-man.
+#12 12.00 Preparing to unpack .../28-git-man_1%3a2.39.2-1.1_all.deb ...
+#12 12.00 Unpacking git-man (1:2.39.2-1.1) ...
+#12 12.11 Selecting previously unselected package git.
+#12 12.11 Preparing to unpack .../29-git_1%3a2.39.2-1.1_amd64.deb ...
+#12 12.12 Unpacking git (1:2.39.2-1.1) ...
+#12 12.64 Selecting previously unselected package libxext6:amd64.
+#12 12.64 Preparing to unpack .../30-libxext6_2%3a1.3.4-1+b1_amd64.deb ...
+#12 12.64 Unpacking libxext6:amd64 (2:1.3.4-1+b1) ...
+#12 12.67 Selecting previously unselected package libxmuu1:amd64.
+#12 12.68 Preparing to unpack .../31-libxmuu1_2%3a1.1.3-3_amd64.deb ...
+#12 12.68 Unpacking libxmuu1:amd64 (2:1.1.3-3) ...
+#12 12.70 Selecting previously unselected package patch.
+#12 12.70 Preparing to unpack .../32-patch_2.7.6-7_amd64.deb ...
+#12 12.70 Unpacking patch (2.7.6-7) ...
+#12 12.74 Selecting previously unselected package unzip.
+#12 12.74 Preparing to unpack .../33-unzip_6.0-28_amd64.deb ...
+#12 12.74 Unpacking unzip (6.0-28) ...
+#12 12.77 Selecting previously unselected package xauth.
+#12 12.77 Preparing to unpack .../34-xauth_1%3a1.1.2-1_amd64.deb ...
+#12 12.77 Unpacking xauth (1:1.1.2-1) ...
+#12 12.80 Selecting previously unselected package zip.
+#12 12.80 Preparing to unpack .../35-zip_3.0-13_amd64.deb ...
+#12 12.80 Unpacking zip (3.0-13) ...
+#12 12.84 Setting up jsonlint (1.9.0-1) ...
+#12 12.85 Setting up unzip (6.0-28) ...
+#12 12.86 Setting up libcbor0.8:amd64 (0.8.0-2+b1) ...
+#12 12.86 Setting up php-psr-container (1.1.2-1) ...
+#12 12.87 Setting up php-composer-pcre (3.1.0-1) ...
+#12 12.87 Setting up less (590-2) ...
+#12 12.88 Setting up libxext6:amd64 (2:1.3.4-1+b1) ...
+#12 12.89 Setting up libcurl3-gnutls:amd64 (7.88.1-10+deb12u1) ...
+#12 12.90 Setting up php-seld-signal-handler (2.0.1-2) ...
+#12 12.90 Setting up liberror-perl (0.17029-2) ...
+#12 12.91 Setting up php-composer-ca-bundle (1.3.5-1) ...
+#12 12.92 Setting up zip (3.0-13) ...
+#12 12.92 Setting up php-symfony-process (5.4.23+dfsg-1) ...
+#12 12.93 Setting up php-symfony-filesystem (5.4.23+dfsg-1) ...
+#12 12.94 Setting up patch (2.7.6-7) ...
+#12 12.94 Setting up php-react-promise (2.9.0-3) ...
+#12 12.95 Setting up php-psr-log (1.1.4-2) ...
+#12 12.96 Setting up php-symfony-string (5.4.23+dfsg-1) ...
+#12 12.96 Setting up php-composer-metadata-minifier (1.0.0-2) ...
+#12 12.97 Setting up php-composer-semver (3.3.2-1) ...
+#12 12.98 Setting up git-man (1:2.39.2-1.1) ...
+#12 12.98 Setting up sgml-base (1.31) ...
+#12 13.01 Setting up php-json-schema (5.2.12-2) ...
+#12 13.01 Setting up libfido2-1:amd64 (1.12.0-2+b1) ...
+#12 13.02 Setting up php-composer-spdx-licenses (1.5.7-1) ...
+#12 13.03 Setting up libxmuu1:amd64 (2:1.1.3-3) ...
+#12 13.04 Setting up php-symfony-deprecation-contracts (2.5.2-1) ...
+#12 13.04 Setting up php-symfony-finder (5.4.23+dfsg-1) ...
+#12 13.05 Setting up php-composer-xdebug-handler (3.0.3-2) ...
+#12 13.06 Setting up openssh-client (1:9.2p1-2) ...
+#12 13.11 Setting up php-symfony-service-contracts (2.5.2-1) ...
+#12 13.12 Setting up php-composer-class-map-generator (1.0.0-2) ...
+#12 13.13 Setting up git (1:2.39.2-1.1) ...
+#12 13.14 Setting up xauth (1:1.1.2-1) ...
+#12 13.15 Setting up php-symfony-console (5.4.23+dfsg-1) ...
+#12 13.15 Setting up composer (2.5.5-1) ...
+#12 13.16 Processing triggers for libc-bin (2.36-9+deb12u1) ...
+#12 DONE 13.3s
+
+#13 [app  9/10] RUN apt-get clean
+#13 DONE 0.3s
+
+#14 [app 10/10] ADD . .
+#14 DONE 0.1s
+
+#15 [app] exporting to image
+#15 exporting layers
+#15 exporting layers 2.3s done
+#15 writing image sha256:ef9e29c743b4aaef07bc6b8f24f4f28750e2afd5780b4608fd8d56d591d70c8a done
+#15 naming to docker.io/omar2023/job101:260-job101-pipline done
+#15 DONE 2.3s
+ Network job101-pipline_default  Creating
+ Network job101-pipline_default  Created
+ Container job101  Creating
+ Container job101  Created
+ Container job101  Starting
+ Container job101  Started
+[8mha:////4MBUn/x5UzUchoNp2wogD+HBGKqXOEqU1GOD2XDByayLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0aGkPCvgAAAA==[0m[Pipeline] }
+[8mha:////4IHrErTgm2ldWSS4fed2THf9UZwDKF9PQ1ewGh/Vz+8KAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHcETLavgAAAA==[0m[Pipeline] // stage
+[8mha:////4O/6hyDHH/A1ck1g6NoOwwdwi3vEKro7Ln4QommX3Q5/AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFWJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQFqHHg6wgAAAA==[0m[Pipeline] stage
+[8mha:////4Ip16NYLLL16H/Lv7gWRvovofcQbYY9PXARudXJrDnfWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Post Build)
+[8mha:////4OxhOyNkw2q3WmFl/MmQsRc7xR6z91zRtugVKS4QYoI9AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] echo
+Post Buidl Proccessing ......
+[8mha:////4PoDPj7OdyEeopxJZU8AgXHDZtIXDrNeMdphfiSq/OJHAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBq1seBO+AAAA[0m[Pipeline] sh
++ docker exec job101 ls -a
+.
+..
+.dockerignore
+README.md
+app
+app.conf
+app2.conf
+docker-compose.yaml
+docker-compose.yaml.bak
+index.html
+logo.png
+[8mha:////4GTTSkEcywVOL86fpdOwArvrflP3if0vKJzrwuqCbxc0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN40kgA2+AAAA[0m[Pipeline] }
+[8mha:////4K+f99sBClwXmL8vOx5oO9ixqRKoaq5MuYP1n4bcOsE+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGZBx0SvgAAAA==[0m[Pipeline] // stage
+[8mha:////4P7uC1ZLC0AI3iWT1I4T92peaNiCeigW1GNiaEEbnOnVAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCCEG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm93/yHswgAAAA==[0m[Pipeline] stage
+[8mha:////4OS4w6YxeODKMltrxfulbcJHAx08WR+egWNw19HuY4quAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Clean Environment ....)
+[8mha:////4FFpE7/iguADvkwLmxay+D2nrSF7h1d0DLtKSMRT6/iZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN65NpgK+AAAA[0m[Pipeline] echo
+Environment Cleaning Process.....
+[8mha:////4AzaLb5k/6QT5559ZLmzgks5+nIzlOZCDbACBq1QMNtYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAYuAr1r4AAAA=[0m[Pipeline] sh
++ docker system prune -a -f
+Deleted Images:
+untagged: omar2023/job101:256-job101-pipline
+untagged: omar2023/job101@sha256:0759b2f418278c883ca333afe1b90f408611bac3c4f68172cca01f8a7590af90
+deleted: sha256:bd7fb5b810fecccc893ad6fe093d0c9086f2209e41a67eea48c830dbe53656fb
+deleted: sha256:577cbf8a871bb732bf60f6e4cbe77238d6617a83b27f138e0c2d276a84d00f7a
+deleted: sha256:9107b3d2ba781a5d62a0ac1a15e8206479212bf7be9d1dbd2507d60f1e290df9
+deleted: sha256:aa66f7ad695bd0d1aa3243666b7ad7c3e6c3e3d02d1bd399f3058882ef5dec93
+deleted: sha256:0eae70e932b26abc2b198b3845f3b6b86cf743d6d6ddaab87c407941e4f475b0
+deleted: sha256:7263dbd551d793855ee9981f7cebe295b23add226496460c26f5d4cf2dc90170
+deleted: sha256:b7f23cdcb9bbc40d0f499f3060d3411585f7093a182299018b940fe4f82ff107
+deleted: sha256:66517293a3bb62f7f27e33a6e41fceccf3cb32c1eb44c703f247be35c8f38d86
+deleted: sha256:cecb74601ffc506bad0b9cb71bee48a4526c2e5dc9c104cd813dbe3e4e236fa9
+deleted: sha256:952f46930e15e0b45ecab464143e18ab402222eb70dbf9ae7108994b045fe9c6
+
+Deleted build cache objects:
+ktgctd0fkuvb8lh93h5pbqy00
+3estkewo5s3jml9v5m4uc5gju
+bog81kltn157ktdwfhzo5jsut
+qeo47hs8oi3gukapuvn7y0i68
+jufvckiq4upbo2wsbnjiheq5t
+jenkdzrfxgs9g1f0lvngipf26
+vhu5ju3nsj5ty9zgdwoyf3e4f
+udkbj6du08lziolc8qhrgbqm8
+u95o50fps1oxvxdn3xz84m9tl
+3hdd52e0k98h994leihw7mr5t
+x1avzlz8wqkn5js0vj0arvmft
+qxyhm6bk9csvbfp798lwg9nlk
+tkhlvpifqqb437n8vy97rt9vc
+i4bbcec5v26z152jdgis3awbv
+3pdt1toa4gn8unhiv1mnw3260
+awread64r3rptrx08000zozjh
+dzi60kanp69quosdjexqpy4gx
+639fxcjb0juaz9c4vb4mee1x9
+g0ejwxeinq17fqpaw1h51v7ku
+
+Total reclaimed space: 968.2MB
+[8mha:////4Nwf2IoHbSaSNBnmboVpR9o9VGjRKGCd7c0AxaltETabAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAC7Fjs74AAAA=[0m[Pipeline] }
+[8mha:////4BmpYOq/Pd98zQBuTsBctzgWOBJ8LLQ/FEu5FN4EU3ymAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiARIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wANN5Ipb4AAAA=[0m[Pipeline] // stage
+[8mha:////4ErJYMeZnOjGAhH1+uRGMCkPJqnDRz0XoauiCgan2qg3AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQHvgxeywgAAAA==[0m[Pipeline] stage
+[8mha:////4Bw1oYgXiLxINy6VXf7bkNGVYUubVvD29zVGztnmnkPbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] { (Testing ....)
+[8mha:////4M+tVhzDW10XeixT84wMVAu3E7z7fGrZrMeiaZoykfwOAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSxMqxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NSnc5Zr4AAAA=[0m[Pipeline] echo
+Testing..
+[8mha:////4CWx1jBAemCukUb1teupnYJArZ+y3aRwiFv8zY18S5oUAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSZGwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfX1uR6L4AAAA=[0m[Pipeline] }
+[8mha:////4A+g9e/Sf48hyf2bfe9jWV4gIpHejLQSfreRPycIh2oKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFZHam9vgAAAA==[0m[Pipeline] // stage
+[8mha:////4JZ3h7YljWQpmxC1D2EPTl3EKDOTRKUu2VOH+67yOTRUAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSBAVBunIbuvEEsYkxafi/JqnpyhN5Ne9gtODKWQwzA8N7vqAKHhrymlmFvcHQGTa4UefEEvn+4igxS2fWEQZyirUqtSTVca4tRQWzihIWHJYKO0fBoI6w4lbcRe0E6voUfd4OHEojb/CAgmdyFD5+y+RhfR1lIPxx/gJgGiKUm1227f7zrN4sc9DYwgAAAA==[0m[Pipeline] stage
+[8mha:////4ERDFxF59MUEBLxnl3E7C/EJuHncWpkqbv9AajRkzxSAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] { (Deploying ...)
+[8mha:////4FwfHlz42U8gN49brlbkX3uV3yzyFjaUjTeaAslFID0QAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/4iFt7vgAAAA==[0m[Pipeline] echo
+Deliver....
+[8mha:////4PkqPX4R0/r6wfEaMhZyTLF76mnnW2B6RyhTgzCedBZSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAublAYr4AAAA=[0m[Pipeline] sh
++ + echo ****
+docker login -u omar2023 --password-stdin
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
++ docker push omar2023/job101:260-job101-pipline
+The push refers to repository [docker.io/omar2023/job101]
+6be2b0d66906: Preparing
+43e2c71cff56: Preparing
+deeb4a07c113: Preparing
+09f2b58fc607: Preparing
+efefff8fa0fd: Preparing
+45f8a5fe0330: Preparing
+df799537991a: Preparing
+50d315b3867b: Preparing
+538ebebea8b9: Preparing
+922d16116201: Preparing
+abc3beec4b30: Preparing
+c88d3a8ff009: Preparing
+8aedfcd777c7: Preparing
+4deafab383fa: Preparing
+24ee1d7d6a62: Preparing
+c6e34807c2d5: Preparing
+45f8a5fe0330: Waiting
+df799537991a: Waiting
+50d315b3867b: Waiting
+538ebebea8b9: Waiting
+922d16116201: Waiting
+abc3beec4b30: Waiting
+c88d3a8ff009: Waiting
+8aedfcd777c7: Waiting
+4deafab383fa: Waiting
+24ee1d7d6a62: Waiting
+c6e34807c2d5: Waiting
+6be2b0d66906: Pushed
+43e2c71cff56: Pushed
+09f2b58fc607: Pushed
+50d315b3867b: Pushed
+538ebebea8b9: Pushed
+922d16116201: Layer already exists
+abc3beec4b30: Layer already exists
+c88d3a8ff009: Layer already exists
+8aedfcd777c7: Layer already exists
+4deafab383fa: Layer already exists
+24ee1d7d6a62: Layer already exists
+c6e34807c2d5: Layer already exists
+df799537991a: Pushed
+efefff8fa0fd: Pushed
+deeb4a07c113: Pushed
+45f8a5fe0330: Pushed
+260-job101-pipline: digest: sha256:ccc3fefc728df8e2f373dc74fb8e1a653ed9f244ac37e246e8a9df08d9527d63 size: 3663
++ docker logout
+Removing login credentials for https://index.docker.io/v1/
+[8mha:////4Ckn+wMQLjLCQMxvKLtWoE+NfWoo2oRNv+/bRW1KLYiSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAQG7Gq74AAAA=[0m[Pipeline] }
+[8mha:////4EBZeQW5uqOEMKBNgHB1YgUP9oKOqegYa0Ei1ZxbpLZnAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAc42dF74AAAA=[0m[Pipeline] // stage
+[8mha:////4LQA8Nf2dkXKx4ypi2XVLPpBKpezU0BuUlp9S3wyQQkQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrQ659/QEzNV4JvgAAAA==[0m[Pipeline] }
+[8mha:////4PP6mzbSkvaXbWUFyXbQXDEz89L2XUxMt5RfuzUPrccmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrOtf+8AEA1gW1vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4M8YQI2sFlponwq4lG+xjSw9KxCd7arrTFG+sP6hTLzyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw8NMfWtvgAAAA==[0m[Pipeline] }
+[8mha:////4BBpTKjiBh9jI++DhycT9lLDTnZ6TdwDxdBzu1pfOeowAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i13X0APtKuEb4AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4L8AwiBFsNiyvQG2Bqv7duAxbWQDDgwzUI+oSDb/KSEiAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiFEhIiCqtlYYXmNgYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHg72mwVLsLHo3mrxw4jBcHU/Y8wU7pshOY6unlpVuFmw5aVhSlLASsNHUOY6WTIKt6OVDVk6Sqc4p5O8ooLTqDk8oRDYnGdIX5gC726gi08/zVwCz9wnK/SFXXX8AUTHxeb4AAAA=[0m[Pipeline] }
+[8mha:////4AKEDB1v5QMeMFQwC7KgV2AKeNVk58nrv/VxJSbrLCA5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w9i0qrFvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4EmclVvq7dhOnf+lPFTXWFb0i2pNwZBJF1xLdgUIIMZUAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPPRtAz70AAAA=[0m[Pipeline] }
+[8mha:////4Gh10D5D4gNiTs/fC2xGPVEaxuFh5WCjxTB+NZLohtPYAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AC6nRGy9AAAA[0m[Pipeline] // node
+[8mha:////4PaFdPKZGRPD0VJmScQ7+qAXsuj1ksWZKGmpkbhGWJANAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHaO3jXL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

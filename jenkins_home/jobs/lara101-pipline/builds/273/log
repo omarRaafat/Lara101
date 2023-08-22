@@ -1,0 +1,3 @@
+Started by an SCM change
+ERROR: Unable to find Jenkinsfile from git https://github.com/omarRaafat/job101.git
+Finished: FAILURE

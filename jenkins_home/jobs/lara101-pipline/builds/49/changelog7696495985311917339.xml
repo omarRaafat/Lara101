@@ -1,0 +1,10 @@
+commit cebb5b55d2c143b3dbe5e858e2133706582d78b7
+tree c2db1e2d0ba5fdd8b41efaefec116108b3893f7a
+parent 5de9aea9f1219132b6876f208099a2137e86544e
+author root <root@res.inc> 2023-07-06 18:27:52 +0800
+committer root <root@res.inc> 2023-07-06 18:27:52 +0800
+
+    update dockerfile
+
+
+:100644 100644 16408774934a57c3d95d0614b086a6c8260f11de a8616a0c6f34473fdc9bbf94d7b8fa0034188054 M	Dockerfile

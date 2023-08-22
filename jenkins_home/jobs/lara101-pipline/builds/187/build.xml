@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1207.1209.v69351208a_5a_7">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.cloudbees.jenkins.GitHubPushCause plugin="github@1.34.5">
+            <pushedBy>omarRaafat</pushedBy>
+          </com.cloudbees.jenkins.GitHubPushCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+  </actions>
+  <queueId>477</queueId>
+  <timestamp>1689635487776</timestamp>
+  <startTime>1689635487778</startTime>
+  <result>FAILURE</result>
+  <duration>1048</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

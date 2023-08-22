@@ -1,0 +1,9 @@
+commit 21b3ef954b4c5814f2efa508686afb514f03afda
+tree 379a429d4e529c18d5099010ac1606613089b4e0
+parent a3bf88dad1cd018d9477d86e93c935bfc7eb4aff
+author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-06 20:17:55 +0300
+committer GitHub <noreply@github.com> 2023-07-06 20:17:55 +0300
+
+    Create app2.conf
+
+:000000 100644 0000000000000000000000000000000000000000 2c39cd9e0769860d08dcaef2bd36e616283ebd0a A	app2.conf

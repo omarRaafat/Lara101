@@ -1,0 +1,14 @@
+Started on Jul 17, 2023, 11:31:27 PM
+Started by event from 140.82.115.122 ⇒ http://8.213.24.177:8080/github-webhook/ on Mon Jul 17 23:31:27 UTC 2023
+Using strategy: Default
+[poll] Last Built Revision: Revision 4d02d68f2e92b68e365ae672d86eefd1c153b168 (origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/omarRaafat/job101.git # timeout=10
+Found 1 remote heads on https://github.com/omarRaafat/job101.git
+[poll] Latest remote head revision on refs/heads/main is: 44a80fe5234b850238870e853bcdf466adb015b8
+Done. Took 0.87 sec
+Changes found

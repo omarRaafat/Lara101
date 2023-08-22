@@ -1,0 +1,11 @@
+commit 6a52a8386040b11613b84aebbf927da0aeb47503
+tree d6df3240b2678fafdb8c5276bff8d7d5073dd132
+parent 5843a041995671c768df358bb18e0d938325a91b
+author omarRaafat <omarelgendy79@gmail.com> 2023-08-09 00:55:36 +0300
+committer omarRaafat <omarelgendy79@gmail.com> 2023-08-09 00:55:36 +0300
+
+    skip dkh push
+
+
+:100644 100644 11edfa90731dc1aaef3b7fd34352bbcf509dbe65 6ff6bb767e3898e4f0afb0437618a3e8049fdc8d M	Jenkinsfile
+:100644 100644 8d6b72a162809930e2d71e648a360ca050c6ca4f 09b0b8d3a2b1ea73705ec39ebc0a3ecc003bc9e5 M	docker-compose.yml
