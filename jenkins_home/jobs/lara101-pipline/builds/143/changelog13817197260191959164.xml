@@ -1,9 +1,0 @@
-commit b9e3ddd077fce5d6f2978924c580b8904d33b89d
-tree 6bdd6e930eada8ec2b1ad14502f8d8e73dcf2a9e
-parent 71487b1d5f1a7b49ed3422019c202022f91206b1
-author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-10 15:57:52 +0300
-committer GitHub <noreply@github.com> 2023-07-10 15:57:52 +0300
-
-    Update Jenkinsfile
-
-:100644 100644 93f14c055486389a56259f15d44a3e19ba2767ff 85b60ec42e95c0f6eb846ebdf3d8d4f8f65881d9 M	Jenkinsfile

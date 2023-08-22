@@ -1,9 +1,0 @@
-commit 67d7c3cfba72ac223d47820ff1dfba1141625e3f
-tree edcfae1aae00999b4d5060ff49c9f98a0fda3d20
-parent a92ae6c8a8c3dd82dc34489c13122945ce1f95a0
-author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-06 19:13:41 +0300
-committer GitHub <noreply@github.com> 2023-07-06 19:13:41 +0300
-
-    Update Dockerfile
-
-:100644 100644 faa9cf14ccb2688dc3c49be4702dbe015edb40bf 4998817ef49126f2896eeab4a27177f0e0807477 M	Dockerfile

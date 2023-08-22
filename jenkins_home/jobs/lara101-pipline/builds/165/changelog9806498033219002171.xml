@@ -1,9 +1,0 @@
-commit 3c0db39d3805bcad05006f7bbdd93c4303878608
-tree 60a07de944c5caebd73ee9a3841012742db58001
-parent 4c08dcc231b49cc74d0fd91a9f0b59cc6003058d
-author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-18 00:00:47 +0300
-committer GitHub <noreply@github.com> 2023-07-18 00:00:47 +0300
-
-    Update main.yml
-
-:100644 100644 146917d07a80a8b41ed1575bad4e801009af0865 57f8458dd66ee98c1c6d27e54b3c1ac1259ce7a0 M	.github/workflows/main.yml

@@ -1,9 +1,0 @@
-commit 39f323e0e3f64329f1ecf842ac24897e48646cea
-tree ab67678f2888fa19ef3dbe4e9c039913bae8befd
-parent fa6267a09e6095f0cb2f8ec19a1f975ed59efa70
-author Omar Raafat <38934180+omarRaafat@users.noreply.github.com> 2023-07-06 19:37:14 +0300
-committer GitHub <noreply@github.com> 2023-07-06 19:37:14 +0300
-
-    Delete Dockerfile
-
-:100644 000000 1919ff7485cebf2a616bf8ea1ce8e9e847275764 0000000000000000000000000000000000000000 D	Dockerfile
