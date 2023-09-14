@@ -65,7 +65,7 @@ pipeline {
                    
                   sh '''
                   docker-compose -f docker-compose.yml up -d
-                 docker-compose exec lara101 ${params.COMMAND}
+                  
                   '''
 		}
         }
@@ -76,7 +76,7 @@ pipeline {
 
 		    //Delete all unnecessary resources 
             sh '''
-             
+            
                docker system prune -a -f
             '''
             }
@@ -85,7 +85,7 @@ pipeline {
             steps {
                 echo "Testing.."
 		    //Open the running application container and execute this command  
-               
+              sh "docker-compose exec lara101 ${params.COMMAND}"  
             }
         }
         stage('Delivering ...') {
@@ -102,6 +102,7 @@ pipeline {
                 echo $registryCredential_PSW | docker login -u $registryCredential_USR --password-stdin
                 docker push ${dockerImage}
                 docker logout
+                
   		'''
             }
         }
