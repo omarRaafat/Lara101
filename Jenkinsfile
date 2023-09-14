@@ -65,7 +65,7 @@ pipeline {
                    
                   sh '''
                   docker-compose -f docker-compose.yml up -d
-                  docker-compose exec lara101 ${params.COMMAND}
+                 
                   '''
 		}
         }
