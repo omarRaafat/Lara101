@@ -15,12 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $omar = [];
- 
-    for($i=1 ; $i<=10 ; $i++){
-          array_push($omar , $i);
-    }
-
-    return $omar;
+   return view('welcome');
      
 });
