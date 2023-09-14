@@ -88,7 +88,7 @@ pipeline {
                
             }
         }
-        stage('Deploying ...') {
+        stage('Delivering ...') {
 		//Push the new tag image to the docker hub
           when{
           expression{
