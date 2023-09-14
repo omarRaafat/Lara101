@@ -58,7 +58,7 @@ pipeline {
         stage('Deploying App Container ... '){
     //create a new image from the current one (job101:latest) to push it to the docker hub
     // add checker to check whether need to run this command or not
-     
+      //  docker-compose exec lara101 ${params.COMMAND}
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
@@ -76,7 +76,7 @@ pipeline {
 
 		    //Delete all unnecessary resources 
             sh '''
-               docker-compose -f docker-compose.yml down 
+             
                docker system prune -a -f
             '''
             }
