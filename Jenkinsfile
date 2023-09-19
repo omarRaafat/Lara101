@@ -86,7 +86,7 @@ pipeline {
             steps {
                 echo "Testing.."
 		    //Open the running application container and execute this command  
-              sh "docker-compose exec lara101 ${params.COMMAND}"  
+              sh "docker exec ${BUILD_NUMBER}-lara101-app ${params.COMMAND}"  
             }
         }
         stage('Delivering ...') {
