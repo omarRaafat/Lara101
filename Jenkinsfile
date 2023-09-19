@@ -29,8 +29,8 @@ pipeline {
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:false,
-                                name:'executeCommand',
+                                defaultValue:true,
+                                name:'DKH_PUSH',
                                 description:''
                             )
                         ])
@@ -93,7 +93,7 @@ pipeline {
 		//Push the new tag image to the docker hub
           when{
           expression{
-            params.executeCommand
+            params.DKH_PUSH
           }
        }
             steps {
