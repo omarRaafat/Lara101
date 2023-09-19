@@ -21,7 +21,7 @@ pipeline {
                 script { 
                     properties([
 			    // predefined Jenkins pipeline parameters (string type )
-                        pipelineTriggers([cron('* * * * *')]),
+                       
                         parameters([
                             string(
                                 defaultValue: 'service nginx start', 
