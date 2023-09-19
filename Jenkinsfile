@@ -9,7 +9,7 @@ pipeline {
     agent { 
 	    // which server to deploy on
          node {
-            label 'remote-node'
+            label 'worker-remote-node'
          }
       }
     triggers {
