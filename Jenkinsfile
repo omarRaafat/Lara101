@@ -54,7 +54,7 @@ pipeline {
                 #get kubectl for this demo
                 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
                 chmod +x ./kubectl
-                ./kubectl apply -f  deployment.yaml
+                ./kubectl apply -f  ./deployment.yaml
                 #cat ./kubernetes/deployments/deployment.yaml | sed s/1.0.0/${BUILD_NUMBER}/g | ./kubectl apply -f -
                 
                 '''
