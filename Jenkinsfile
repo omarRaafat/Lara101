@@ -86,7 +86,7 @@ pipeline {
                    
                   sh "sed -i 's,IMAGE_TAG,${dockerImage},' deployment.yaml"
                   sh "kubectl apply -f deployment.yaml"
-                  sh "kubectl exec -it k8sapp-deployment-0 -- service nginx status"
+                //   sh "kubectl exec  k8sapp-deployment-0 -- service nginx status"
 		}
         }
         
