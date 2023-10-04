@@ -26,7 +26,7 @@ pipeline {
                                 trim: false
                             ),
                              string(
-                                defaultValue: ${dockerImage} , 
+                                defaultValue: '${dockerImage}' , 
                                 name: 'IMAGE_TAG', 
                                 trim: false
                             ),
@@ -67,7 +67,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    
                   sh '''
-                    sed -i 's|image: .*|image: "params.IMAGE_TAG"|' deployment.yaml
+                    sed -i 's|image: .*|image: params.IMAGE_TAG|' deployment.yaml
                     kubectl apply -f deployment.yaml
                   
                   '''
