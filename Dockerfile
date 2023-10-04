@@ -56,12 +56,13 @@ ADD . .
 
 # fix 301 forbidden permission to laravel storage and caches for read and write
 RUN  chgrp -R www-data storage bootstrap/cache &&  chmod -R ug+rwx storage bootstrap/cache
+# make shell script (cmd.sh) excutable
 RUN chmod 777 /usr/bin/cmd.sh
 
 # generates new key for laravel env file
 RUN php artisan key:generate
 
-# CMD [ "/usr/bin/cmd.sh" ]
+RUN bash -c "/usr/bin/cmd.sh"
 
 
 
