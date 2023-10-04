@@ -95,16 +95,16 @@ pipeline {
             }
         }
 
-         stage('Clean Environment ....'){
-            steps {
-          echo "Environment Cleaning Process....."
+        //  stage('Clean Environment ....'){
+        //     steps {
+        //   echo "Environment Cleaning Process....."
 
-		    //Delete all unnecessary resources 
-            sh '''
+		//     //Delete all unnecessary resources 
+        //     sh '''
             
-               docker system prune -a -f
-            '''
-            }
-        }
+        //        docker system prune -a -f
+        //     '''
+        //     }
+        // }
     }
 }
