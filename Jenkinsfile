@@ -31,7 +31,7 @@ pipeline {
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:false,
+                                defaultValue:true,
                                 name:'DKH_PUSH',
                                 description:''
                             )
@@ -74,17 +74,7 @@ pipeline {
 		}
         }
         
-	 stage('Clean Environment ....'){
-            steps {
-          echo "Environment Cleaning Process....."
-
-		    //Delete all unnecessary resources 
-            sh '''
-            
-               docker system prune -a -f
-            '''
-            }
-        }
+	
       
         stage('push to DKH ...') {
 		//Push the new tag image to the docker hub
@@ -102,6 +92,18 @@ pipeline {
                 docker logout
                 
   		'''
+            }
+        }
+
+         stage('Clean Environment ....'){
+            steps {
+          echo "Environment Cleaning Process....."
+
+		    //Delete all unnecessary resources 
+            sh '''
+            
+               docker system prune -a -f
+            '''
             }
         }
     }
