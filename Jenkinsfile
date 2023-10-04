@@ -29,7 +29,7 @@ pipeline {
                                 defaultValue:false,
                                 name:'CLEAN_ENV',
                                 description:''
-                            )
+                            ),
                             booleanParam(
                                 defaultValue:true,
                                 name:'DKH_PUSH',
