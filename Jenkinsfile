@@ -25,11 +25,11 @@ pipeline {
                                 name: 'COMMAND', 
                                 trim: false
                             ),
-                             string(
-                                defaultValue: '${dockerImage}' , 
-                                name: 'IMAGE_TAG', 
-                                trim: false
-                            ),
+                            booleanParam(
+                                defaultValue:false,
+                                name:'CLEAN_ENV',
+                                description:''
+                            )
                             booleanParam(
                                 defaultValue:true,
                                 name:'DKH_PUSH',
@@ -95,16 +95,21 @@ pipeline {
             }
         }
 
-        //  stage('Clean Environment ....'){
-        //     steps {
-        //   echo "Environment Cleaning Process....."
+         stage('Clean Environment ....'){
+             when{
+          expression{
+            params.CLEAN_ENV
+          }
+       }
+            steps {
+          echo "Environment Cleaning Process....."
 
-		//     //Delete all unnecessary resources 
-        //     sh '''
+		    //Delete all unnecessary resources 
+            sh '''
             
-        //        docker system prune -a -f
-        //     '''
-        //     }
-        // }
+               docker system prune -a -f
+            '''
+            }
+        }
     }
 }
