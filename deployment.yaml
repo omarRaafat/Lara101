@@ -23,7 +23,7 @@ spec:
   selector:
     matchLabels:
       app: k8sapp-deployment
-  serviceName: "k8sapp-deployment"      
+  # serviceName: "k8sapp-deployment"      
   template:
     metadata:
       labels:
