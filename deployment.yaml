@@ -1,3 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8sapp-internal-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: k8sapp-deployment
+
+--- 
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -40,17 +53,4 @@ spec:
 
      
                          
-      
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: k8sapp-internal-service
-spec:
-  ports:
-    - port: 80
-      targetPort: 80
-      protocol: TCP
-  selector:
-    app: k8sapp-deployment
+    
