@@ -58,22 +58,6 @@ pipeline {
             }
         }
 
-        stage('Deploying App Container (K8S) ... '){
-    //create a new image from the current one (job101:latest) to push it to the docker hub
-    // add checker to check whether need to run this command or not
-      //  docker-compose -f docker-compose.yml up -d
-           steps{
-                     
-                   echo 'Post Buidl Proccessing ......'
-                   
-                  sh "sed -i 's,IMAGE_TAG,${dockerImage},' deployment.yaml"
-                  sh "kubectl apply -f deployment.yaml"
-                  sh "kubectl exec k8sapp-deployment-0 ${params.COMMAND}"
-		}
-        }
-        
-	
-      
         stage('push to DKH ...') {
 		//Push the new tag image to the docker hub
           when{
@@ -92,6 +76,23 @@ pipeline {
   		'''
             }
         }
+        stage('Deploying App Container (K8S) ... '){
+    //create a new image from the current one (job101:latest) to push it to the docker hub
+    // add checker to check whether need to run this command or not
+      //  docker-compose -f docker-compose.yml up -d
+           steps{
+                     
+                   echo 'Post Buidl Proccessing ......'
+                   
+                  sh "sed -i 's,IMAGE_TAG,${dockerImage},' deployment.yaml"
+                  sh "kubectl apply -f deployment.yaml"
+                  sh "kubectl exec k8sapp-deployment-0 ${params.COMMAND}"
+		}
+        }
+        
+	
+      
+       
 
          stage('Clean Environment ....'){
              when{
