@@ -62,7 +62,7 @@ pipeline {
                    echo 'Post Buidl Proccessing ......'
                    
                   sh '''
-                    sed -i 's|image: .*|image: "${dockerImage}"|g' deployment.yaml
+                    sed -i 's|image: .*|image: ${dockerImage}|g' deployment.yaml
                     kubectl apply -f deployment.yaml
                   
                   '''
