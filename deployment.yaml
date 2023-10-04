@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       app: k8sapp-deployment
-  serviceName: "k8s_lara101_nginx"      
+  serviceName: "k8sapp-deployment"      
   template:
     metadata:
       labels:
