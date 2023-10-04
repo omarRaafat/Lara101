@@ -24,7 +24,7 @@ spec:
             
       containers:
         - name: k8sapp-deployment
-          image: omar2023/lara101:1424b5c6ac7cc133f7376c036b21f1858ed99506-nginx-worker
+          image: IMAGE_TAG
           resources:
             limits:
               memory: "128Mi"
