@@ -86,7 +86,7 @@ pipeline {
                    
                   sh "sed -i 's,IMAGE_TAG,${dockerImage},' deployment.yaml"
                   sh "kubectl apply -f deployment.yaml"
-                  sh "kubectl exec k8sapp-deployment -c k8sapp-deployment ${params.COMMAND}"
+                  sh "kubectl exec k8sapp-deployment-0 -c k8sapp-deployment ${params.COMMAND}"
 		}
         }
         
