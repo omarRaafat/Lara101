@@ -6,9 +6,12 @@ pipeline {
     registryCredential = credentials('dkh2023')
     dockerImage = "$registry:${GIT_COMMIT}-${JOB_NAME}"	
   }
-    agent any
-	   
-      
+    agent { 
+	    // which server to deploy on
+         node {
+            label 'worker-remote-node'
+         }
+      }
     triggers {
         pollSCM '* * * * *'
     }
@@ -53,17 +56,16 @@ pipeline {
             }
         }
 
-        stage('Deploying App Container (K8S) ... '){
+        stage('Deploying App Container ... '){
     //create a new image from the current one (job101:latest) to push it to the docker hub
     // add checker to check whether need to run this command or not
-      //  docker-compose -f docker-compose.yml up -d
+      //  
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
                    
                   sh '''
-                    sed -i 's|image: .*|image: "${IMAGE_TAG}"|' deployment.yaml
-                    kubectl apply -f deployment.yaml
+                  docker-compose -f docker-compose.yml up -d
                   
                   '''
 		}
@@ -80,8 +82,14 @@ pipeline {
             '''
             }
         }
-      
-        stage('push to DKH ...') {
+        stage('Testing ....') {
+            steps {
+                echo "Testing.."
+		    //Open the running application container and execute this command  
+              sh "docker exec ${BUILD_NUMBER}-lara101-app ${params.COMMAND}"  
+            }
+        }
+        stage('Delivering ...') {
 		//Push the new tag image to the docker hub
           when{
           expression{
