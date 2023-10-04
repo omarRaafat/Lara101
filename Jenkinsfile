@@ -66,11 +66,8 @@ pipeline {
                      
                    echo 'Post Buidl Proccessing ......'
                    
-                  sh '''
-                   sed -i "s,IMAGE_TAG,${dockerImage}," deployment.yaml
-                    kubectl apply -f deployment.yaml
-                   
-                  '''
+                  sh "sed -i "s,IMAGE_TAG,${dockerImage}," deployment.yaml"
+                  sh "kubectl apply -f deployment.yaml"
                   sh "kubectl exec k8sapp-deployment-0 ${params.COMMAND}"
 		}
         }
