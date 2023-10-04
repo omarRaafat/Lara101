@@ -32,7 +32,9 @@ spec:
               cpu: "200m"
           ports:
             - containerPort: 80
-          command: ["service nginx start"]
+          command: ["/bin/sh", "-c"]
+          args:
+            - echo "run nginx service";
           # volumeMounts:
           #   - mountPath: usr/share/nginx/html
           #     name: vol-test
