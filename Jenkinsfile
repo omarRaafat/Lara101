@@ -6,9 +6,12 @@ pipeline {
     registryCredential = credentials('dkh2023')
     dockerImage = "$registry:${GIT_COMMIT}-${JOB_NAME}"	
   }
-    agent any
-	   
-      
+    agent { 
+	    // which server to deploy on
+         node {
+            label 'worker-remote-node'
+         }
+      }
     triggers {
         pollSCM '* * * * *'
     }
@@ -24,11 +27,6 @@ pipeline {
                                 defaultValue: 'service nginx start', 
                                 name: 'COMMAND', 
                                 trim: false
-                            ),
-                            booleanParam(
-                                defaultValue:false,
-                                name:'CLEAN_ENV',
-                                description:''
                             ),
                             booleanParam(
                                 defaultValue:true,
@@ -58,7 +56,40 @@ pipeline {
             }
         }
 
-        stage('push to DKH ...') {
+        stage('Deploying App Container ... '){
+    //create a new image from the current one (job101:latest) to push it to the docker hub
+    // add checker to check whether need to run this command or not
+      //  
+           steps{
+                     
+                   echo 'Post Buidl Proccessing ......'
+                   
+                  sh '''
+                  docker-compose -f docker-compose.yml up -d
+                  
+                  '''
+		}
+        }
+        
+	 stage('Clean Environment ....'){
+            steps {
+          echo "Environment Cleaning Process....."
+
+		    //Delete all unnecessary resources 
+            sh '''
+            
+               docker system prune -a -f
+            '''
+            }
+        }
+        stage('Testing ....') {
+            steps {
+                echo "Testing.."
+		    //Open the running application container and execute this command  
+              sh "docker exec ${BUILD_NUMBER}-lara101-app ${params.COMMAND}"  
+            }
+        }
+        stage('Delivering ...') {
 		//Push the new tag image to the docker hub
           when{
           expression{
@@ -74,40 +105,6 @@ pipeline {
                 docker logout
                 
   		'''
-            }
-        }
-        stage('Deploying App Container (K8S) ... '){
-    //create a new image from the current one (job101:latest) to push it to the docker hub
-    // add checker to check whether need to run this command or not
-      //  docker-compose -f docker-compose.yml up -d
-           steps{
-                     
-                   echo 'Post Buidl Proccessing ......'
-                   
-                  sh "sed -i 's,IMAGE_TAG,${dockerImage},' deployment.yaml"
-                  sh "kubectl apply -f deployment.yaml"
-                //   sh "kubectl exec  k8sapp-deployment-0 -- service nginx status"
-		}
-        }
-        
-	
-      
-       
-
-         stage('Clean Environment ....'){
-             when{
-          expression{
-            params.CLEAN_ENV
-          }
-       }
-            steps {
-          echo "Environment Cleaning Process....."
-
-		    //Delete all unnecessary resources 
-            sh '''
-            
-               docker system prune -a -f
-            '''
             }
         }
     }
