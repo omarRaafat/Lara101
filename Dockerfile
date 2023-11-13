@@ -51,7 +51,7 @@ COPY /scripts/cmd.sh /usr/bin/
 # install laravel dependencies and packages via composer
 RUN composer install --no-interaction --no-scripts --no-progress
 
-# copy all installed configuration inside image 
+# copy all installed configuration inside Container image 
 ADD . .   
 
 # fix 301 forbidden permission to laravel storage and caches for read and write
