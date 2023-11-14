@@ -59,15 +59,13 @@ pipeline {
         stage('Deploying App Container ... '){
     //create a new image from the current one (job101:latest) to push it to the docker hub
     // add checker to check whether need to run this command or not
-      //  
+      
            steps{
                      
                    echo 'Post Buidl Proccessing ......'
-                   
-                  sh '''
-                  docker-compose -f docker-compose.yml up -d
-                  
-                  '''
+                     sh " docker-compose -f docker-compose.yml up -d "
+                     //  send notification to slack after deploy 
+                        slackSend channel: '#jenkins-notifications', color: 'good', message: 'Application Deployed successfully !'
 		}
         }
         
