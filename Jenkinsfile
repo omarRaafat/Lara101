@@ -29,7 +29,7 @@ pipeline {
                                 trim: false
                             ),
                             booleanParam(
-                                defaultValue:true,
+                                defaultValue:false,
                                 name:'DKH_PUSH',
                                 description:''
                             )
@@ -90,7 +90,7 @@ pipeline {
             }
         }
         stage('Delivering ...') {
-		//Push the new tag image to the docker hub
+		//Push the new tag image to the docker hub (true or false to skip this stage)
           when{
           expression{
             params.DKH_PUSH
