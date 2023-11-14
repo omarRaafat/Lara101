@@ -87,7 +87,7 @@ pipeline {
               sh "docker exec ${BUILD_NUMBER}-lara101-app ${params.COMMAND}"  
             }
         }
-        stage('Delivering ...') {
+        stage('DockerHub Pushing ...') {
 		//Push the new tag image to the docker hub (true or false to skip this stage)
           when{
           expression{
