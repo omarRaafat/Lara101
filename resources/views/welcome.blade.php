@@ -44,7 +44,7 @@
              
 
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                    <h1 style="color:white"> LARA101 K8S APP</h1>
+                    <h1 style="color:white"> LARA101  APP</h1>
                     </div>
                 </div>
             </div>
