@@ -264,10 +264,6 @@ a {
   <div class="nav-container"><a class="nav-tab" href="#tab-svelte">SVELTE</a><a class="nav-tab" href="#tab-esbuild">ESBUILD</a><a class="nav-tab" href="#tab-next">NEXT.JS</a><a class="nav-tab" href="#tab-typescript">TYPESCRIPT</a><a class="nav-tab" href="#tab-vite">VITE</a><span class="nav-tab-slider"></span></div>
 </sectio>
 <main class="main">
-  <section class="slider" id="tab-esbuild">
-    <h1>ESBUILD</h1>
-    <h2>an extremely fast JavaScript bundler</h2>
-  </section>
   <section class="slider" id="tab-next">
     <h1>NEXT.JS</h1>
     <h2>framework for Production</h2>
