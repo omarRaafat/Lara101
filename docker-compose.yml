@@ -1,17 +1,37 @@
 version: "3.2"
 services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'dev'
+      MYSQL_DATABASE: 'dev'
+      MYSQL_USER: 'dev'
+      MYSQL_PASSWORD: 'dev'
+    ports:
+      - 3306:3306
+    volumes:
+      - my-db:/var/lib/mysql
+    networks:
+      - lara101        
+      
   lara101:
     build:
       context: .
       dockerfile: Dockerfile
-    image: dockerImage
-    container_name: containerName
+    links:
+      - mysql
+    depends_on:
+      - mysql
     ports:
-      - 82:80
+      - 8888:80  
     networks:
       - lara101
 
 networks:
   lara101:
-    external: false
+    driver: bridge
+volumes:
+  my-db:
    
